@@ -7,6 +7,8 @@ target 'VeriApp' do
 
   # Pods for VeriApp
   pod 'RSSelectionMenu'
+  pod 'ScrollStackController'
+
   target 'VeriAppTests' do
     inherit! :search_paths
     # Pods for testing

@@ -8,119 +8,161 @@
 
 /* Begin PBXBuildFile section */
 		0A1652D1A11AB2144A9D2829059F9AA8 /* Pods-VeriAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D26A321FE29F57FC79CA9715CA4DDB /* Pods-VeriAppTests-dummy.m */; };
-		311626956B304D535257D4E5C98729DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		356B088DC1126DB50E5E09FA1B3A2CEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3EB2A4C889C01F4B8B404D32EA3C644A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3FB70B3BDE5361C17FEA870904C75365 /* Pods-VeriApp-VeriAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2A56A26A2004A3DE616829105B4B3 /* Pods-VeriApp-VeriAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		480C0EC0151E4C8B79D6506F5A9B0C67 /* Pods-VeriApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CADAEA96FFA435E26F6D015500BCA5D6 /* Pods-VeriApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5157EC6843F705ED26DDD74D80A3C951 /* RSSelectionMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D787EA8FE78620D20906157B1257BC /* RSSelectionMenuDataSource.swift */; };
-		539EA13B422E731278EDF3CF5B7EA85A /* RSSelectionMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E62AA2499916753F6B8B86BB797730A /* RSSelectionMenuDelegate.swift */; };
-		61D8AD5FA6FE8591113C15FAE146BBDC /* RSFirstRowSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B9FFD97AF402B9ECB7CA8416CDE39 /* RSFirstRowSelection.swift */; };
-		74535B3DCD8B7B3DC79B3FB86F2FAA95 /* RSSelectionMenuSearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63615CED5C36D6C51D0A67E0AFDA0A63 /* RSSelectionMenuSearchDelegate.swift */; };
+		34600227832DCA5BA965EA0DC7FB6FF1 /* ScrollStackRowAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DFCAB3B99C2F5789BF25F0DDC3C3E0 /* ScrollStackRowAnimator.swift */; };
+		35B68C7E4ADA817E272794C2AA8208AF /* ScrollStackRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B36FD9F2C1714C4ACFF8AD3BC6BBBD4 /* ScrollStackRow.swift */; };
+		39EFCA1F6154A44C8782A528056C0809 /* ScrollStack+Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45D8405AC9AA7C90C0F4DE2CD68B8E9 /* ScrollStack+Protocols.swift */; };
+		3EB2A4C889C01F4B8B404D32EA3C644A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		5157EC6843F705ED26DDD74D80A3C951 /* RSSelectionMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9589B27BC31D7A7CB891AEF2F30B3781 /* RSSelectionMenuDataSource.swift */; };
+		539EA13B422E731278EDF3CF5B7EA85A /* RSSelectionMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCAB6D40A3071961A2442597D3108D7 /* RSSelectionMenuDelegate.swift */; };
+		611DC7CBD59347DB49FD381E187DD169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		61D8AD5FA6FE8591113C15FAE146BBDC /* RSFirstRowSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF45B0C18761A369354D9D29BABE5DA /* RSFirstRowSelection.swift */; };
+		6A3D2B3215D1DE666C7ED8B7DFA02FBD /* ScrollStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44EBDA8FB343A14151DCD3409D466F9 /* ScrollStack.swift */; };
+		74535B3DCD8B7B3DC79B3FB86F2FAA95 /* RSSelectionMenuSearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB4F17BC2BDE9EF2DB233CEA7B1F4F0 /* RSSelectionMenuSearchDelegate.swift */; };
 		7B171701EC378A477065F3B3A864044B /* Pods-VeriAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC6FEC4E261D384A3E12C5EB17B191C /* Pods-VeriAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8139D07F3ED142A9C100A3149A23107B /* RSSelectionMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9AA331D32C0E4A96060FAE062CBF87 /* RSSelectionMenu-dummy.m */; };
-		857582D5FD62615C683724F9B07DF3EC /* NavigationBarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6BD56CA23AA5FA0514130A653E2E9A /* NavigationBarTheme.swift */; };
-		AE50D304CCD6ABE3A62C8ED38A5EC68C /* RSSelectionMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBEC0967CBE5577862C58C4073992BC /* RSSelectionMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AE79E5B4526604B6C00F157078E058D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		AF86E456DF1BDB5380766DADF864E785 /* Pods-VeriApp-VeriAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E2C1AFB4C089EEABB359211E85EE90 /* Pods-VeriApp-VeriAppUITests-dummy.m */; };
-		B7012313DF0572209693EB551305FDC9 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D55F1F812A5BA72B7DA20084E5ED1 /* Enums.swift */; };
-		BA5A38EB2D6CC06B29C6C3DDFA981DDF /* RSSelectionMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF30C8D446316CD160F11F56F2826ED /* RSSelectionMenuController.swift */; };
-		C063E602C0FD4C3E37C71683A6714F65 /* RSSelectionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A8A9F1A9D3C450C885C0D970A6262 /* RSSelectionTableView.swift */; };
-		D2733D7599B942675A80A38CE2C80026 /* Pods-VeriApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C9FB7A529A46CA5F7FE18303624BCD /* Pods-VeriApp-dummy.m */; };
-		F20EC294D9460097297323FB7CD017D2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C330F9FDC2C7FCEADFB63D19DF3D41 /* Constants.swift */; };
-		FAC2A0C568472DA91184BC6915F8EB27 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E74A83298FED252E7EFCB4B32C23D8 /* ViewControllerExtension.swift */; };
+		8139D07F3ED142A9C100A3149A23107B /* RSSelectionMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD87B1DA41A4174830AB1CA0D8E4718B /* RSSelectionMenu-dummy.m */; };
+		857582D5FD62615C683724F9B07DF3EC /* NavigationBarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3241142D64BEE0000FC36C1850803F0 /* NavigationBarTheme.swift */; };
+		8E71B4DEF255C64A332B2FBAB6A7F322 /* ScrollStackController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A275F495BC7319E75080FD657564A881 /* ScrollStackController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95254712CAC3174C0FD2BD219F7B3B5D /* ScrollStackController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E55322A94785B5AD52CC3CF13ADF8BC /* ScrollStackController-dummy.m */; };
+		9724C8E69B2B067BDA1778F1815C0B9B /* Pods-VeriApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C9FB7A529A46CA5F7FE18303624BCD /* Pods-VeriApp-dummy.m */; };
+		A1E0BFC8AE06CEC95810AF0F1007CDE3 /* Pods-VeriApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CADAEA96FFA435E26F6D015500BCA5D6 /* Pods-VeriApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A34F2FFC4BA17A2AE1572A68EDCEACF0 /* Pods-VeriApp-VeriAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2A56A26A2004A3DE616829105B4B3 /* Pods-VeriApp-VeriAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD566C9E091EFEE9F78939C69DAC51C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		AE50D304CCD6ABE3A62C8ED38A5EC68C /* RSSelectionMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29561865CB6EB5B95BCE1E347F3FFF27 /* RSSelectionMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE79E5B4526604B6C00F157078E058D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		B295525D67F5AE01CFE448E52451BE4F /* Pods-VeriApp-VeriAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E2C1AFB4C089EEABB359211E85EE90 /* Pods-VeriApp-VeriAppUITests-dummy.m */; };
+		B7012313DF0572209693EB551305FDC9 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E66E7314A2C7520ECC431CBD31F49 /* Enums.swift */; };
+		BA5A38EB2D6CC06B29C6C3DDFA981DDF /* RSSelectionMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C689BB22E30BD246885640633C6CDD /* RSSelectionMenuController.swift */; };
+		C05E80C71552731264A7ED6E5E95979B /* UIView+AutoLayout_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AF81747BCE63F5D50673A3930DA79A /* UIView+AutoLayout_Extensions.swift */; };
+		C063E602C0FD4C3E37C71683A6714F65 /* RSSelectionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7909BA310A847A8BFD0039F87F5AD835 /* RSSelectionTableView.swift */; };
+		C15CE699AE67857CA1BABCCFE31C7450 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		E0B1E0D8045A40F2C34F44778EC03E64 /* ScrollStackSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357F05107285CC60B5181424833E6B46 /* ScrollStackSeparator.swift */; };
+		E3C4B925CE8F82F1AE0BB2A9C7E5ABF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		F20EC294D9460097297323FB7CD017D2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFE6A140CF59D6D145892156FDE3639 /* Constants.swift */; };
+		FAC2A0C568472DA91184BC6915F8EB27 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF28DF99844A812F5627D1A7EEB4D70 /* ViewControllerExtension.swift */; };
+		FAD1589C7CB8B9A699AAF9E383A8A57E /* ScrollStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378697EEB66001414A41C4DCF36A60AE /* ScrollStackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A394AF8040B843497EFD158A07DC8604 /* PBXContainerItemProxy */ = {
+		43BD5090BDDCC79F8E2A591AD93F529B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B1E7AF5035FF0EB2E254C26611AEAAE;
+			remoteInfo = ScrollStackController;
+		};
+		74629B664B8AC492EF470D85A849A561 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F4BA747C8987B7580A893EC859D12686;
 			remoteInfo = RSSelectionMenu;
 		};
-		F483529006972711741E32FC53ECE333 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F4BA747C8987B7580A893EC859D12686;
-			remoteInfo = RSSelectionMenu;
-		};
-		FA06DA1102EB343C154D6EA130CA790F /* PBXContainerItemProxy */ = {
+		8F7A6E7F40BBEADFF0342E45DA9AE513 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = ACFBE725BF0F13FBDE4CD9176EF29A09;
 			remoteInfo = "Pods-VeriApp";
 		};
+		9C253187F4731CAAB8DA6D9DA9B5AD1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4BA747C8987B7580A893EC859D12686;
+			remoteInfo = RSSelectionMenu;
+		};
+		FF2DF1A2693292BAC2C355AD68061C3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B1E7AF5035FF0EB2E254C26611AEAAE;
+			remoteInfo = ScrollStackController;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0169BBBCE4FF05697BE4480B57260277 /* Pods-VeriAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeriAppTests-Info.plist"; sourceTree = "<group>"; };
-		038849C49B66565E0AC16D16A80B0F44 /* RSSelectionMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSSelectionMenu.release.xcconfig; sourceTree = "<group>"; };
 		0C607CC9F04A8CCDBBBBAE765E9BE59E /* Pods-VeriApp-VeriAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VeriApp-VeriAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0F5B3E6BF1ACE5374718D300AA9E19F7 /* RSSelectionMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RSSelectionMenu.modulemap; sourceTree = "<group>"; };
+		1024E6F5C196EAB03550D201B899234C /* ScrollStackController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollStackController.release.xcconfig; sourceTree = "<group>"; };
 		11E8D2593F9DBFEAE875556D665D0D5E /* Pods-VeriApp-VeriAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeriApp-VeriAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B36FD9F2C1714C4ACFF8AD3BC6BBBD4 /* ScrollStackRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollStackRow.swift; path = Sources/ScrollStackController/ScrollStackRow.swift; sourceTree = "<group>"; };
 		1F52455337F56640EA02264D70DEA190 /* Pods-VeriAppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-VeriAppTests"; path = Pods_VeriAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C1D5382EECD5C99186904D9F107762E /* RSSelectionMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RSSelectionMenu-Info.plist"; sourceTree = "<group>"; };
+		2761549B227C15A3AF087DABB1053241 /* RSSelectionMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSSelectionMenu.release.xcconfig; sourceTree = "<group>"; };
+		29561865CB6EB5B95BCE1E347F3FFF27 /* RSSelectionMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSSelectionMenu-umbrella.h"; sourceTree = "<group>"; };
+		2A18494AF7278797FB537CE7944F6625 /* ScrollStackController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollStackController-prefix.pch"; sourceTree = "<group>"; };
 		3044E5C1CA479BF36FD10F75DB320330 /* Pods-VeriAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeriAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		33C689BB22E30BD246885640633C6CDD /* RSSelectionMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuController.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuController.swift; sourceTree = "<group>"; };
+		357F05107285CC60B5181424833E6B46 /* ScrollStackSeparator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollStackSeparator.swift; path = Sources/ScrollStackController/ScrollStackSeparator.swift; sourceTree = "<group>"; };
+		378697EEB66001414A41C4DCF36A60AE /* ScrollStackViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollStackViewController.swift; path = Sources/ScrollStackController/ScrollStackViewController.swift; sourceTree = "<group>"; };
 		444FE3D1C7F8B2C047B598421599D208 /* Pods-VeriApp-VeriAppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-VeriApp-VeriAppUITests"; path = Pods_VeriApp_VeriAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44AF81747BCE63F5D50673A3930DA79A /* UIView+AutoLayout_Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+AutoLayout_Extensions.swift"; path = "Sources/ScrollStackController/Support/UIView+AutoLayout_Extensions.swift"; sourceTree = "<group>"; };
 		451BCC83AA0EB2C43D6B51FBEBE677EE /* Pods-VeriAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeriAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		45E2C1AFB4C089EEABB359211E85EE90 /* Pods-VeriApp-VeriAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VeriApp-VeriAppUITests-dummy.m"; sourceTree = "<group>"; };
+		48E03C5DA3D64BE4C965389FE4D0089A /* ScrollStackController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ScrollStackController-Info.plist"; sourceTree = "<group>"; };
 		4C77BF1CB250B6B02A30012F6BA15249 /* Pods-VeriApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeriApp-frameworks.sh"; sourceTree = "<group>"; };
+		518E66E7314A2C7520ECC431CBD31F49 /* Enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = RSSelectionMenu/RSSelectionMenu/Utilities/Enums.swift; sourceTree = "<group>"; };
+		51F990297F3269B876A3B46F3E6F21AE /* RSSelectionMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RSSelectionMenu-Info.plist"; sourceTree = "<group>"; };
 		54E2A56A26A2004A3DE616829105B4B3 /* Pods-VeriApp-VeriAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VeriApp-VeriAppUITests-umbrella.h"; sourceTree = "<group>"; };
-		59C330F9FDC2C7FCEADFB63D19DF3D41 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = RSSelectionMenu/RSSelectionMenu/Utilities/Constants.swift; sourceTree = "<group>"; };
-		5A7B9FFD97AF402B9ECB7CA8416CDE39 /* RSFirstRowSelection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSFirstRowSelection.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSFirstRowSelection.swift; sourceTree = "<group>"; };
 		5C0B8CCF67C1B15089347BBDACD5AA62 /* Pods-VeriApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeriApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		5C3E36A29F0E5E62B7605985C3236341 /* Pods-VeriAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeriAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CC6FEC4E261D384A3E12C5EB17B191C /* Pods-VeriAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VeriAppTests-umbrella.h"; sourceTree = "<group>"; };
-		5E62AA2499916753F6B8B86BB797730A /* RSSelectionMenuDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuDelegate.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuDelegate.swift; sourceTree = "<group>"; };
-		63615CED5C36D6C51D0A67E0AFDA0A63 /* RSSelectionMenuSearchDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuSearchDelegate.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuSearchDelegate.swift; sourceTree = "<group>"; };
-		70BA1731495B2A114FB028429489B758 /* RSSelectionMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSSelectionMenu.debug.xcconfig; sourceTree = "<group>"; };
+		5DF45B0C18761A369354D9D29BABE5DA /* RSFirstRowSelection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSFirstRowSelection.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSFirstRowSelection.swift; sourceTree = "<group>"; };
+		6E55322A94785B5AD52CC3CF13ADF8BC /* ScrollStackController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ScrollStackController-dummy.m"; sourceTree = "<group>"; };
 		71C9FB7A529A46CA5F7FE18303624BCD /* Pods-VeriApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VeriApp-dummy.m"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		74E74A83298FED252E7EFCB4B32C23D8 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewControllerExtension.swift; path = RSSelectionMenu/RSSelectionMenu/Utilities/Extensions/ViewControllerExtension.swift; sourceTree = "<group>"; };
+		7645584AB6859C8990219308C0AF984F /* RSSelectionMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RSSelectionMenu.modulemap; sourceTree = "<group>"; };
+		7909BA310A847A8BFD0039F87F5AD835 /* RSSelectionTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionTableView.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionTableView.swift; sourceTree = "<group>"; };
 		80DC426472CBB851F149F233BB2B574A /* Pods-VeriAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VeriAppTests.modulemap"; sourceTree = "<group>"; };
 		88DECA3E2E9AFE1982FA5C25C6F75CE7 /* Pods-VeriApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeriApp.debug.xcconfig"; sourceTree = "<group>"; };
-		8E4A8A9F1A9D3C450C885C0D970A6262 /* RSSelectionTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionTableView.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionTableView.swift; sourceTree = "<group>"; };
-		95D787EA8FE78620D20906157B1257BC /* RSSelectionMenuDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuDataSource.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuDataSource.swift; sourceTree = "<group>"; };
+		8BFE6A140CF59D6D145892156FDE3639 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = RSSelectionMenu/RSSelectionMenu/Utilities/Constants.swift; sourceTree = "<group>"; };
+		9520DF99EBDB3EF1AC09E33DB87E210E /* RSSelectionMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSSelectionMenu-prefix.pch"; sourceTree = "<group>"; };
+		9589B27BC31D7A7CB891AEF2F30B3781 /* RSSelectionMenuDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuDataSource.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuDataSource.swift; sourceTree = "<group>"; };
 		99D26A321FE29F57FC79CA9715CA4DDB /* Pods-VeriAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VeriAppTests-dummy.m"; sourceTree = "<group>"; };
 		9D051CAFC6B9E1A60F8D912A5A32F20C /* Pods-VeriApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VeriApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F09C161B965B0FD245BDA0713EEA763 /* RSSelectionMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSSelectionMenu.debug.xcconfig; sourceTree = "<group>"; };
+		A275F495BC7319E75080FD657564A881 /* ScrollStackController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollStackController-umbrella.h"; sourceTree = "<group>"; };
+		A44EBDA8FB343A14151DCD3409D466F9 /* ScrollStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollStack.swift; path = Sources/ScrollStackController/ScrollStack.swift; sourceTree = "<group>"; };
+		A49848BAD296A96E27F6EF2C3BED74F4 /* ScrollStackController */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollStackController; path = ScrollStackController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49FE02F976E2EF46F5B4A99F0830A2F /* Pods-VeriApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VeriApp.modulemap"; sourceTree = "<group>"; };
 		AC32159AA1ECDB37253C69751BB6B3AB /* Pods-VeriApp-VeriAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VeriApp-VeriAppUITests.modulemap"; sourceTree = "<group>"; };
-		ACF30C8D446316CD160F11F56F2826ED /* RSSelectionMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuController.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuController.swift; sourceTree = "<group>"; };
-		B09D55F1F812A5BA72B7DA20084E5ED1 /* Enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = RSSelectionMenu/RSSelectionMenu/Utilities/Enums.swift; sourceTree = "<group>"; };
-		BF6BD56CA23AA5FA0514130A653E2E9A /* NavigationBarTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationBarTheme.swift; path = RSSelectionMenu/RSSelectionMenu/Source/NavigationBarTheme.swift; sourceTree = "<group>"; };
-		BFAB0370A45067FBB521A35A8F1FB77E /* RSSelectionMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSSelectionMenu-prefix.pch"; sourceTree = "<group>"; };
+		BD3DAA8963C332F92D59BD930365D730 /* ScrollStackController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollStackController.debug.xcconfig; sourceTree = "<group>"; };
+		BD87B1DA41A4174830AB1CA0D8E4718B /* RSSelectionMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSSelectionMenu-dummy.m"; sourceTree = "<group>"; };
+		C1DFCAB3B99C2F5789BF25F0DDC3C3E0 /* ScrollStackRowAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollStackRowAnimator.swift; path = Sources/ScrollStackController/Support/ScrollStackRowAnimator.swift; sourceTree = "<group>"; };
+		C3241142D64BEE0000FC36C1850803F0 /* NavigationBarTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationBarTheme.swift; path = RSSelectionMenu/RSSelectionMenu/Source/NavigationBarTheme.swift; sourceTree = "<group>"; };
 		C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RSSelectionMenu; path = RSSelectionMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAAEC755EA7E9014A646C20EDC8D006A /* Pods-VeriApp-VeriAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeriApp-VeriAppUITests-frameworks.sh"; sourceTree = "<group>"; };
 		CADAEA96FFA435E26F6D015500BCA5D6 /* Pods-VeriApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VeriApp-umbrella.h"; sourceTree = "<group>"; };
 		CBD14879CA38C7902C0B40DEC7D070ED /* Pods-VeriApp-VeriAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeriApp-VeriAppUITests-Info.plist"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		DCA1BE1525500A1452888EBF058A8B28 /* Pods-VeriApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-VeriApp"; path = Pods_VeriApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2EC2482770EB6B153C97F60AEC0632E /* Pods-VeriApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeriApp-Info.plist"; sourceTree = "<group>"; };
 		E372601387A10FF58D2CA8E5E7915D7A /* Pods-VeriApp-VeriAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeriApp-VeriAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E446D3902245BD03C879C4B46A15857E /* Pods-VeriAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VeriAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EFBEC0967CBE5577862C58C4073992BC /* RSSelectionMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSSelectionMenu-umbrella.h"; sourceTree = "<group>"; };
+		E45D8405AC9AA7C90C0F4DE2CD68B8E9 /* ScrollStack+Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ScrollStack+Protocols.swift"; path = "Sources/ScrollStackController/Support/ScrollStack+Protocols.swift"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EBCAB6D40A3071961A2442597D3108D7 /* RSSelectionMenuDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuDelegate.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuDelegate.swift; sourceTree = "<group>"; };
+		EBF28DF99844A812F5627D1A7EEB4D70 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewControllerExtension.swift; path = RSSelectionMenu/RSSelectionMenu/Utilities/Extensions/ViewControllerExtension.swift; sourceTree = "<group>"; };
+		F1483F02195B160BE1A3334726279C9C /* ScrollStackController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ScrollStackController.modulemap; sourceTree = "<group>"; };
 		FB97DFA5AB32B0B3DCD488E7415FE4F1 /* Pods-VeriApp-VeriAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeriApp-VeriAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		FC9AA331D32C0E4A96060FAE062CBF87 /* RSSelectionMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSSelectionMenu-dummy.m"; sourceTree = "<group>"; };
+		FCB4F17BC2BDE9EF2DB233CEA7B1F4F0 /* RSSelectionMenuSearchDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuSearchDelegate.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuSearchDelegate.swift; sourceTree = "<group>"; };
 		FFD443DE1E827D814D3CAE00DD4F092D /* Pods-VeriApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeriApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		43699BC19DD5B0F12807ACA3FF5035A7 /* Frameworks */ = {
+		44E7AA0DE3953348D385398500801274 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				356B088DC1126DB50E5E09FA1B3A2CEC /* Foundation.framework in Frameworks */,
+				E3C4B925CE8F82F1AE0BB2A9C7E5ABF9 /* Foundation.framework in Frameworks */,
+				C15CE699AE67857CA1BABCCFE31C7450 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79D20071053F22E29445FD864ED6C105 /* Frameworks */ = {
+		4F98DA7DEF41D14FDBADB7D19C97E78B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				311626956B304D535257D4E5C98729DF /* Foundation.framework in Frameworks */,
+				611DC7CBD59347DB49FD381E187DD169 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,22 +182,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B85948343C12A92B53F35BD672D955F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD566C9E091EFEE9F78939C69DAC51C8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3788573005C352B16A2B4A003DEA2DDA /* Support Files */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0F5B3E6BF1ACE5374718D300AA9E19F7 /* RSSelectionMenu.modulemap */,
-				FC9AA331D32C0E4A96060FAE062CBF87 /* RSSelectionMenu-dummy.m */,
-				2C1D5382EECD5C99186904D9F107762E /* RSSelectionMenu-Info.plist */,
-				BFAB0370A45067FBB521A35A8F1FB77E /* RSSelectionMenu-prefix.pch */,
-				EFBEC0967CBE5577862C58C4073992BC /* RSSelectionMenu-umbrella.h */,
-				70BA1731495B2A114FB028429489B758 /* RSSelectionMenu.debug.xcconfig */,
-				038849C49B66565E0AC16D16A80B0F44 /* RSSelectionMenu.release.xcconfig */,
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/RSSelectionMenu";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D1BE8EA4C3872F9C8C0712F62BAB003 /* RSSelectionMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8BFE6A140CF59D6D145892156FDE3639 /* Constants.swift */,
+				518E66E7314A2C7520ECC431CBD31F49 /* Enums.swift */,
+				C3241142D64BEE0000FC36C1850803F0 /* NavigationBarTheme.swift */,
+				5DF45B0C18761A369354D9D29BABE5DA /* RSFirstRowSelection.swift */,
+				33C689BB22E30BD246885640633C6CDD /* RSSelectionMenuController.swift */,
+				9589B27BC31D7A7CB891AEF2F30B3781 /* RSSelectionMenuDataSource.swift */,
+				EBCAB6D40A3071961A2442597D3108D7 /* RSSelectionMenuDelegate.swift */,
+				FCB4F17BC2BDE9EF2DB233CEA7B1F4F0 /* RSSelectionMenuSearchDelegate.swift */,
+				7909BA310A847A8BFD0039F87F5AD835 /* RSSelectionTableView.swift */,
+				EBF28DF99844A812F5627D1A7EEB4D70 /* ViewControllerExtension.swift */,
+				EF9A323FD68F1C16A4E283A3DF87EF56 /* Support Files */,
+			);
+			name = RSSelectionMenu;
+			path = RSSelectionMenu;
 			sourceTree = "<group>";
 		};
 		45258D54D59AE3CF9D76CB558CD6AC4C /* Pods-VeriAppTests */ = {
@@ -174,23 +236,13 @@
 			path = "Target Support Files/Pods-VeriAppTests";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		5935928F7DB78F12E8E66D2632570DEA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DCA1BE1525500A1452888EBF058A8B28 /* Pods-VeriApp */,
-				444FE3D1C7F8B2C047B598421599D208 /* Pods-VeriApp-VeriAppUITests */,
-				1F52455337F56640EA02264D70DEA190 /* Pods-VeriAppTests */,
-				C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		795A901594F5C3F7009617A97BF69098 /* Pods-VeriApp-VeriAppUITests */ = {
@@ -220,31 +272,32 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9A5A3E11D8719A781D14AEDE06F2D635 /* Pods */ = {
+		AB327C5E1299833F45E11F0582223E42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A17B3D18865F38A3EA5B9CC25D8C3716 /* RSSelectionMenu */,
+				DCA1BE1525500A1452888EBF058A8B28 /* Pods-VeriApp */,
+				444FE3D1C7F8B2C047B598421599D208 /* Pods-VeriApp-VeriAppUITests */,
+				1F52455337F56640EA02264D70DEA190 /* Pods-VeriAppTests */,
+				C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */,
+				A49848BAD296A96E27F6EF2C3BED74F4 /* ScrollStackController */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		A17B3D18865F38A3EA5B9CC25D8C3716 /* RSSelectionMenu */ = {
+		BC1D64CCBE674E33BA2B9D2B4C0A1A5B /* ScrollStackController */ = {
 			isa = PBXGroup;
 			children = (
-				59C330F9FDC2C7FCEADFB63D19DF3D41 /* Constants.swift */,
-				B09D55F1F812A5BA72B7DA20084E5ED1 /* Enums.swift */,
-				BF6BD56CA23AA5FA0514130A653E2E9A /* NavigationBarTheme.swift */,
-				5A7B9FFD97AF402B9ECB7CA8416CDE39 /* RSFirstRowSelection.swift */,
-				ACF30C8D446316CD160F11F56F2826ED /* RSSelectionMenuController.swift */,
-				95D787EA8FE78620D20906157B1257BC /* RSSelectionMenuDataSource.swift */,
-				5E62AA2499916753F6B8B86BB797730A /* RSSelectionMenuDelegate.swift */,
-				63615CED5C36D6C51D0A67E0AFDA0A63 /* RSSelectionMenuSearchDelegate.swift */,
-				8E4A8A9F1A9D3C450C885C0D970A6262 /* RSSelectionTableView.swift */,
-				74E74A83298FED252E7EFCB4B32C23D8 /* ViewControllerExtension.swift */,
-				3788573005C352B16A2B4A003DEA2DDA /* Support Files */,
+				A44EBDA8FB343A14151DCD3409D466F9 /* ScrollStack.swift */,
+				E45D8405AC9AA7C90C0F4DE2CD68B8E9 /* ScrollStack+Protocols.swift */,
+				1B36FD9F2C1714C4ACFF8AD3BC6BBBD4 /* ScrollStackRow.swift */,
+				C1DFCAB3B99C2F5789BF25F0DDC3C3E0 /* ScrollStackRowAnimator.swift */,
+				357F05107285CC60B5181424833E6B46 /* ScrollStackSeparator.swift */,
+				378697EEB66001414A41C4DCF36A60AE /* ScrollStackViewController.swift */,
+				44AF81747BCE63F5D50673A3930DA79A /* UIView+AutoLayout_Extensions.swift */,
+				C1CC02584A95811CA03B376AFF7D86B0 /* Support Files */,
 			);
-			name = RSSelectionMenu;
-			path = RSSelectionMenu;
+			name = ScrollStackController;
+			path = ScrollStackController;
 			sourceTree = "<group>";
 		};
 		C1945207EBECE468C2D65EF45E59D2EC /* Pods-VeriApp */ = {
@@ -264,28 +317,67 @@
 			path = "Target Support Files/Pods-VeriApp";
 			sourceTree = "<group>";
 		};
+		C1CC02584A95811CA03B376AFF7D86B0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1483F02195B160BE1A3334726279C9C /* ScrollStackController.modulemap */,
+				6E55322A94785B5AD52CC3CF13ADF8BC /* ScrollStackController-dummy.m */,
+				48E03C5DA3D64BE4C965389FE4D0089A /* ScrollStackController-Info.plist */,
+				2A18494AF7278797FB537CE7944F6625 /* ScrollStackController-prefix.pch */,
+				A275F495BC7319E75080FD657564A881 /* ScrollStackController-umbrella.h */,
+				BD3DAA8963C332F92D59BD930365D730 /* ScrollStackController.debug.xcconfig */,
+				1024E6F5C196EAB03550D201B899234C /* ScrollStackController.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ScrollStackController";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				9A5A3E11D8719A781D14AEDE06F2D635 /* Pods */,
-				5935928F7DB78F12E8E66D2632570DEA /* Products */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				EA25DC00B54B41822DBD86CADFB66AFB /* Pods */,
+				AB327C5E1299833F45E11F0582223E42 /* Products */,
 				7D4D33DE6324B2E18F82E43E2DACE5CB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		EA25DC00B54B41822DBD86CADFB66AFB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				2D1BE8EA4C3872F9C8C0712F62BAB003 /* RSSelectionMenu */,
+				BC1D64CCBE674E33BA2B9D2B4C0A1A5B /* ScrollStackController */,
 			);
-			name = Frameworks;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF9A323FD68F1C16A4E283A3DF87EF56 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7645584AB6859C8990219308C0AF984F /* RSSelectionMenu.modulemap */,
+				BD87B1DA41A4174830AB1CA0D8E4718B /* RSSelectionMenu-dummy.m */,
+				51F990297F3269B876A3B46F3E6F21AE /* RSSelectionMenu-Info.plist */,
+				9520DF99EBDB3EF1AC09E33DB87E210E /* RSSelectionMenu-prefix.pch */,
+				29561865CB6EB5B95BCE1E347F3FFF27 /* RSSelectionMenu-umbrella.h */,
+				9F09C161B965B0FD245BDA0713EEA763 /* RSSelectionMenu.debug.xcconfig */,
+				2761549B227C15A3AF087DABB1053241 /* RSSelectionMenu.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RSSelectionMenu";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		103CE8DCECFD0F991A5BFF8CD2FBB1FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E0BFC8AE06CEC95810AF0F1007CDE3 /* Pods-VeriApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39DA9CB136F707258184A4CBC3DA7A7A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,27 +386,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4BD6931ABE70C9815564B6049CABA0C8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3FB70B3BDE5361C17FEA870904C75365 /* Pods-VeriApp-VeriAppUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8CA8CB9011B435794B5B7145BA608C25 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				480C0EC0151E4C8B79D6506F5A9B0C67 /* Pods-VeriApp-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D98C26584D679CD83F2C06944289378F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AE50D304CCD6ABE3A62C8ED38A5EC68C /* RSSelectionMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF4B246D15DA2C147DDBF2CD41081C24 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34F2FFC4BA17A2AE1572A68EDCEACF0 /* Pods-VeriApp-VeriAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF9E467D8767C23E82021FF4458E776B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E71B4DEF255C64A332B2FBAB6A7F322 /* ScrollStackController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,26 +425,45 @@
 			buildRules = (
 			);
 			dependencies = (
-				F166D6E6FA3C1D46C8BBE3D95BF886FE /* PBXTargetDependency */,
+				750C33985F827B5DD9031A40F6848883 /* PBXTargetDependency */,
 			);
 			name = "Pods-VeriAppTests";
 			productName = Pods_VeriAppTests;
 			productReference = 1F52455337F56640EA02264D70DEA190 /* Pods-VeriAppTests */;
 			productType = "com.apple.product-type.framework";
 		};
-		ACFBE725BF0F13FBDE4CD9176EF29A09 /* Pods-VeriApp */ = {
+		6B1E7AF5035FF0EB2E254C26611AEAAE /* ScrollStackController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 34CC16543405E10FFDA941AAE5E2C9A3 /* Build configuration list for PBXNativeTarget "Pods-VeriApp" */;
+			buildConfigurationList = 0BCC5304D75F9EA2F96EFDEEB7C9FBB2 /* Build configuration list for PBXNativeTarget "ScrollStackController" */;
 			buildPhases = (
-				8CA8CB9011B435794B5B7145BA608C25 /* Headers */,
-				A000750439F6C45FD8A1CFDDE872AFB8 /* Sources */,
-				43699BC19DD5B0F12807ACA3FF5035A7 /* Frameworks */,
-				5495C81D57BFB6D0FEB1E8291FB0A4F2 /* Resources */,
+				FF9E467D8767C23E82021FF4458E776B /* Headers */,
+				CD3AF58D9034E31125CC71C8AFACE386 /* Sources */,
+				44E7AA0DE3953348D385398500801274 /* Frameworks */,
+				4840D56CBEBDD561A9848FD9EBE12780 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9802AE0C3586E6B377D15FAD44844F59 /* PBXTargetDependency */,
+			);
+			name = ScrollStackController;
+			productName = ScrollStackController;
+			productReference = A49848BAD296A96E27F6EF2C3BED74F4 /* ScrollStackController */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACFBE725BF0F13FBDE4CD9176EF29A09 /* Pods-VeriApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D33D32CAAD01AAB5DDD3CF66D4413A96 /* Build configuration list for PBXNativeTarget "Pods-VeriApp" */;
+			buildPhases = (
+				103CE8DCECFD0F991A5BFF8CD2FBB1FD /* Headers */,
+				47CA282ADE7FAD379B28BF7C20CA3CE3 /* Sources */,
+				B85948343C12A92B53F35BD672D955F6 /* Frameworks */,
+				2DC78AADB2396A92FA970FB19C30161B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67F64267828B1E69F592233A9DA964CB /* PBXTargetDependency */,
+				6D138227CFA2D456674AE8EA8415B47D /* PBXTargetDependency */,
 			);
 			name = "Pods-VeriApp";
 			productName = Pods_VeriApp;
@@ -361,17 +472,18 @@
 		};
 		DA2B42431EFC3E6DD9E7D1E86D7DAE2D /* Pods-VeriApp-VeriAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D04314B93447EC582EC65BF466D79DF2 /* Build configuration list for PBXNativeTarget "Pods-VeriApp-VeriAppUITests" */;
+			buildConfigurationList = 951CB359FBC68B8762EC82A514598321 /* Build configuration list for PBXNativeTarget "Pods-VeriApp-VeriAppUITests" */;
 			buildPhases = (
-				4BD6931ABE70C9815564B6049CABA0C8 /* Headers */,
-				D2BE04CFF9D138A5833F735E4A5A8A36 /* Sources */,
-				79D20071053F22E29445FD864ED6C105 /* Frameworks */,
-				1AFC3587481F95E354B721F3DC737980 /* Resources */,
+				DF4B246D15DA2C147DDBF2CD41081C24 /* Headers */,
+				0E1320D7A715E99A09256B705F087429 /* Sources */,
+				4F98DA7DEF41D14FDBADB7D19C97E78B /* Frameworks */,
+				7B0ADBBD8B6B9FF4B2678F9F07A35115 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				34CBEF55A4AD482014089F2C4592A4B1 /* PBXTargetDependency */,
+				BA55AE241B6C1B16EDAA37D80BF7312B /* PBXTargetDependency */,
+				59FAF0342F661FFDB6E46D7B4534DF61 /* PBXTargetDependency */,
 			);
 			name = "Pods-VeriApp-VeriAppUITests";
 			productName = Pods_VeriApp_VeriAppUITests;
@@ -414,7 +526,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 5935928F7DB78F12E8E66D2632570DEA /* Products */;
+			productRefGroup = AB327C5E1299833F45E11F0582223E42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -422,19 +534,27 @@
 				DA2B42431EFC3E6DD9E7D1E86D7DAE2D /* Pods-VeriApp-VeriAppUITests */,
 				25823C3084A4411CAC463B0C03E339D5 /* Pods-VeriAppTests */,
 				F4BA747C8987B7580A893EC859D12686 /* RSSelectionMenu */,
+				6B1E7AF5035FF0EB2E254C26611AEAAE /* ScrollStackController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1AFC3587481F95E354B721F3DC737980 /* Resources */ = {
+		2DC78AADB2396A92FA970FB19C30161B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5495C81D57BFB6D0FEB1E8291FB0A4F2 /* Resources */ = {
+		4840D56CBEBDD561A9848FD9EBE12780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B0ADBBD8B6B9FF4B2678F9F07A35115 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -458,6 +578,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0E1320D7A715E99A09256B705F087429 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B295525D67F5AE01CFE448E52451BE4F /* Pods-VeriApp-VeriAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47CA282ADE7FAD379B28BF7C20CA3CE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9724C8E69B2B067BDA1778F1815C0B9B /* Pods-VeriApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		53FE58519DC82FCDF6E2836D2493C733 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -484,49 +620,95 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A000750439F6C45FD8A1CFDDE872AFB8 /* Sources */ = {
+		CD3AF58D9034E31125CC71C8AFACE386 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2733D7599B942675A80A38CE2C80026 /* Pods-VeriApp-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2BE04CFF9D138A5833F735E4A5A8A36 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF86E456DF1BDB5380766DADF864E785 /* Pods-VeriApp-VeriAppUITests-dummy.m in Sources */,
+				6A3D2B3215D1DE666C7ED8B7DFA02FBD /* ScrollStack.swift in Sources */,
+				39EFCA1F6154A44C8782A528056C0809 /* ScrollStack+Protocols.swift in Sources */,
+				95254712CAC3174C0FD2BD219F7B3B5D /* ScrollStackController-dummy.m in Sources */,
+				35B68C7E4ADA817E272794C2AA8208AF /* ScrollStackRow.swift in Sources */,
+				34600227832DCA5BA965EA0DC7FB6FF1 /* ScrollStackRowAnimator.swift in Sources */,
+				E0B1E0D8045A40F2C34F44778EC03E64 /* ScrollStackSeparator.swift in Sources */,
+				FAD1589C7CB8B9A699AAF9E383A8A57E /* ScrollStackViewController.swift in Sources */,
+				C05E80C71552731264A7ED6E5E95979B /* UIView+AutoLayout_Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		34CBEF55A4AD482014089F2C4592A4B1 /* PBXTargetDependency */ = {
+		59FAF0342F661FFDB6E46D7B4534DF61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ScrollStackController;
+			target = 6B1E7AF5035FF0EB2E254C26611AEAAE /* ScrollStackController */;
+			targetProxy = FF2DF1A2693292BAC2C355AD68061C3A /* PBXContainerItemProxy */;
+		};
+		67F64267828B1E69F592233A9DA964CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RSSelectionMenu;
 			target = F4BA747C8987B7580A893EC859D12686 /* RSSelectionMenu */;
-			targetProxy = A394AF8040B843497EFD158A07DC8604 /* PBXContainerItemProxy */;
+			targetProxy = 9C253187F4731CAAB8DA6D9DA9B5AD1D /* PBXContainerItemProxy */;
 		};
-		9802AE0C3586E6B377D15FAD44844F59 /* PBXTargetDependency */ = {
+		6D138227CFA2D456674AE8EA8415B47D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = RSSelectionMenu;
-			target = F4BA747C8987B7580A893EC859D12686 /* RSSelectionMenu */;
-			targetProxy = F483529006972711741E32FC53ECE333 /* PBXContainerItemProxy */;
+			name = ScrollStackController;
+			target = 6B1E7AF5035FF0EB2E254C26611AEAAE /* ScrollStackController */;
+			targetProxy = 43BD5090BDDCC79F8E2A591AD93F529B /* PBXContainerItemProxy */;
 		};
-		F166D6E6FA3C1D46C8BBE3D95BF886FE /* PBXTargetDependency */ = {
+		750C33985F827B5DD9031A40F6848883 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-VeriApp";
 			target = ACFBE725BF0F13FBDE4CD9176EF29A09 /* Pods-VeriApp */;
-			targetProxy = FA06DA1102EB343C154D6EA130CA790F /* PBXContainerItemProxy */;
+			targetProxy = 8F7A6E7F40BBEADFF0342E45DA9AE513 /* PBXContainerItemProxy */;
+		};
+		BA55AE241B6C1B16EDAA37D80BF7312B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSSelectionMenu;
+			target = F4BA747C8987B7580A893EC859D12686 /* RSSelectionMenu */;
+			targetProxy = 74629B664B8AC492EF470D85A849A561 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		03BC1016C8124543F1B9508E2D996204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD3DAA8963C332F92D59BD930365D730 /* ScrollStackController.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollStackController/ScrollStackController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollStackController/ScrollStackController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ScrollStackController/ScrollStackController.modulemap";
+				PRODUCT_MODULE_NAME = ScrollStackController;
+				PRODUCT_NAME = ScrollStackController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		22851C4DB01BA0FED0DF190F8CA1EF9E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 038849C49B66565E0AC16D16A80B0F44 /* RSSelectionMenu.release.xcconfig */;
+			baseConfigurationReference = 2761549B227C15A3AF087DABB1053241 /* RSSelectionMenu.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -559,7 +741,7 @@
 			};
 			name = Release;
 		};
-		34C811C4073B635616C892CC81923BAC /* Release */ = {
+		38FAE11810BC1BDD225DF738A39B46D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FFD443DE1E827D814D3CAE00DD4F092D /* Pods-VeriApp.release.xcconfig */;
 			buildSettings = {
@@ -597,9 +779,45 @@
 			};
 			name = Release;
 		};
-		403D6B748A3058FEA72AC4E2090C83FA /* Release */ = {
+		3BE4D80738064A1E5167F9E6716E049D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E372601387A10FF58D2CA8E5E7915D7A /* Pods-VeriApp-VeriAppUITests.release.xcconfig */;
+			baseConfigurationReference = 1024E6F5C196EAB03550D201B899234C /* ScrollStackController.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ScrollStackController/ScrollStackController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ScrollStackController/ScrollStackController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ScrollStackController/ScrollStackController.modulemap";
+				PRODUCT_MODULE_NAME = ScrollStackController;
+				PRODUCT_NAME = ScrollStackController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AD6654B95FE9A9B93787E2ABC8524B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E8D2593F9DBFEAE875556D665D0D5E /* Pods-VeriApp-VeriAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -629,11 +847,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -701,6 +918,43 @@
 			};
 			name = Debug;
 		};
+		9726A44BA7B500B5C1C6248BC15B051C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88DECA3E2E9AFE1982FA5C25C6F75CE7 /* Pods-VeriApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VeriApp/Pods-VeriApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeriApp/Pods-VeriApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -765,7 +1019,7 @@
 		};
 		A79E75ABE12008FCF95AB3434CDD4B3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70BA1731495B2A114FB028429489B758 /* RSSelectionMenu.debug.xcconfig */;
+			baseConfigurationReference = 9F09C161B965B0FD245BDA0713EEA763 /* RSSelectionMenu.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -834,6 +1088,44 @@
 			};
 			name = Debug;
 		};
+		BBFF2184B680430844D18B08DD169517 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E372601387A10FF58D2CA8E5E7915D7A /* Pods-VeriApp-VeriAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VeriApp-VeriAppUITests/Pods-VeriApp-VeriAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeriApp-VeriAppUITests/Pods-VeriApp-VeriAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C95BFE5FA94A5CF26C2DE46F6B3B4B6A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 451BCC83AA0EB2C43D6B51FBEBE677EE /* Pods-VeriAppTests.release.xcconfig */;
@@ -872,88 +1164,14 @@
 			};
 			name = Release;
 		};
-		D2E56D2EB7A3EC9D2D8874FD2EF350CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11E8D2593F9DBFEAE875556D665D0D5E /* Pods-VeriApp-VeriAppUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VeriApp-VeriAppUITests/Pods-VeriApp-VeriAppUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VeriApp-VeriAppUITests/Pods-VeriApp-VeriAppUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E97D8581887899DC96A5A9E08EDC6B75 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88DECA3E2E9AFE1982FA5C25C6F75CE7 /* Pods-VeriApp.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VeriApp/Pods-VeriApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VeriApp/Pods-VeriApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		34CC16543405E10FFDA941AAE5E2C9A3 /* Build configuration list for PBXNativeTarget "Pods-VeriApp" */ = {
+		0BCC5304D75F9EA2F96EFDEEB7C9FBB2 /* Build configuration list for PBXNativeTarget "ScrollStackController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E97D8581887899DC96A5A9E08EDC6B75 /* Debug */,
-				34C811C4073B635616C892CC81923BAC /* Release */,
+				03BC1016C8124543F1B9508E2D996204 /* Debug */,
+				3BE4D80738064A1E5167F9E6716E049D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -976,6 +1194,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		951CB359FBC68B8762EC82A514598321 /* Build configuration list for PBXNativeTarget "Pods-VeriApp-VeriAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AD6654B95FE9A9B93787E2ABC8524B7 /* Debug */,
+				BBFF2184B680430844D18B08DD169517 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AEE15C098F64A7D06A38C1BB75EFCD80 /* Build configuration list for PBXNativeTarget "RSSelectionMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -985,11 +1212,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D04314B93447EC582EC65BF466D79DF2 /* Build configuration list for PBXNativeTarget "Pods-VeriApp-VeriAppUITests" */ = {
+		D33D32CAAD01AAB5DDD3CF66D4413A96 /* Build configuration list for PBXNativeTarget "Pods-VeriApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D2E56D2EB7A3EC9D2D8874FD2EF350CF /* Debug */,
-				403D6B748A3058FEA72AC4E2090C83FA /* Release */,
+				9726A44BA7B500B5C1C6248BC15B051C /* Debug */,
+				38FAE11810BC1BDD225DF738A39B46D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
