@@ -1,0 +1,6 @@
+framework module Pods_VeriApp_VeriAppUITests {
+  umbrella header "Pods-VeriApp-VeriAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

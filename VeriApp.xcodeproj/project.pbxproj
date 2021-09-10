@@ -1,0 +1,955 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5975BB23BA9090F09F28BD3B /* Pods_VeriApp_VeriAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117A7EDAD8C3786EF7290376 /* Pods_VeriApp_VeriAppUITests.framework */; };
+		843CEB9F26C4DC9500782858 /* mainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CEB9E26C4DC9500782858 /* mainTableViewCell.swift */; };
+		8464FAF726C47E92005D398F /* VeriAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464FAF626C47E92005D398F /* VeriAppViewController.swift */; };
+		846C12F126D1A27700541BF1 /* enumKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C12EF26D1A27700541BF1 /* enumKeys.swift */; };
+		846C12F226D1A27700541BF1 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C12F026D1A27700541BF1 /* UserDefaultsManager.swift */; };
+		847D68FF26C4755A00631B1E /* ColibriPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D68F926C4755A00631B1E /* ColibriPresenter.swift */; };
+		847D690026C4755A00631B1E /* ColibriWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D68FA26C4755A00631B1E /* ColibriWorker.swift */; };
+		847D690126C4755A00631B1E /* ColibriRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D68FB26C4755A00631B1E /* ColibriRouter.swift */; };
+		847D690226C4755A00631B1E /* ColibriModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D68FC26C4755A00631B1E /* ColibriModels.swift */; };
+		847D690326C4755A00631B1E /* ColibriViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D68FD26C4755A00631B1E /* ColibriViewController.swift */; };
+		847D690426C4755A00631B1E /* ColibriInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D68FE26C4755A00631B1E /* ColibriInteractor.swift */; };
+		848528D126E5D0540002908D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848528D026E5D0540002908D /* Constants.swift */; };
+		84D5A06226C47BEC00B34AA6 /* RequisitosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A05C26C47BEC00B34AA6 /* RequisitosPresenter.swift */; };
+		84D5A06326C47BEC00B34AA6 /* RequisitosWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A05D26C47BEC00B34AA6 /* RequisitosWorker.swift */; };
+		84D5A06426C47BEC00B34AA6 /* RequisitosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A05E26C47BEC00B34AA6 /* RequisitosRouter.swift */; };
+		84D5A06526C47BEC00B34AA6 /* RequisitosModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A05F26C47BEC00B34AA6 /* RequisitosModels.swift */; };
+		84D5A06626C47BEC00B34AA6 /* RequisitosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A06026C47BEC00B34AA6 /* RequisitosViewController.swift */; };
+		84D5A06726C47BEC00B34AA6 /* RequisitosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A06126C47BEC00B34AA6 /* RequisitosInteractor.swift */; };
+		84D5A07226C47C0F00B34AA6 /* ConfigPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A06C26C47C0F00B34AA6 /* ConfigPresenter.swift */; };
+		84D5A07326C47C0F00B34AA6 /* ConfigWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A06D26C47C0F00B34AA6 /* ConfigWorker.swift */; };
+		84D5A07426C47C0F00B34AA6 /* ConfigRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A06E26C47C0F00B34AA6 /* ConfigRouter.swift */; };
+		84D5A07526C47C0F00B34AA6 /* ConfigModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A06F26C47C0F00B34AA6 /* ConfigModels.swift */; };
+		84D5A07626C47C0F00B34AA6 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A07026C47C0F00B34AA6 /* ConfigViewController.swift */; };
+		84D5A07726C47C0F00B34AA6 /* ConfigInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A07126C47C0F00B34AA6 /* ConfigInteractor.swift */; };
+		84D5A08126C47C8800B34AA6 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A07B26C47C8800B34AA6 /* MainPresenter.swift */; };
+		84D5A08226C47C8800B34AA6 /* MainWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A07C26C47C8800B34AA6 /* MainWorker.swift */; };
+		84D5A08326C47C8800B34AA6 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A07D26C47C8800B34AA6 /* MainRouter.swift */; };
+		84D5A08426C47C8800B34AA6 /* MainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A07E26C47C8800B34AA6 /* MainModels.swift */; };
+		84D5A08526C47C8800B34AA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A07F26C47C8800B34AA6 /* MainViewController.swift */; };
+		84D5A08626C47C8800B34AA6 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A08026C47C8800B34AA6 /* MainInteractor.swift */; };
+		90E3111225DCA770226BBAEC /* Pods_VeriAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0F2D8444C8AC806ACE0BC8 /* Pods_VeriAppTests.framework */; };
+		BC6EAFEE26473702006E8BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EAFED26473702006E8BBA /* AppDelegate.swift */; };
+		BC6EAFF026473702006E8BBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EAFEF26473702006E8BBA /* SceneDelegate.swift */; };
+		BC6EAFF526473702006E8BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6EAFF326473702006E8BBA /* Main.storyboard */; };
+		BC6EAFF826473702006E8BBA /* VeriApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BC6EAFF626473702006E8BBA /* VeriApp.xcdatamodeld */; };
+		BC6EAFFA26473703006E8BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6EAFF926473703006E8BBA /* Assets.xcassets */; };
+		BC6EAFFD26473703006E8BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6EAFFB26473703006E8BBA /* LaunchScreen.storyboard */; };
+		BC6EB00826473703006E8BBA /* VeriAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EB00726473703006E8BBA /* VeriAppTests.swift */; };
+		BC6EB01326473703006E8BBA /* VeriAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EB01226473703006E8BBA /* VeriAppUITests.swift */; };
+		CAA0F4EC3CD57792E84C658D /* Pods_VeriApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70CC120AE17B05B4B7DE5898 /* Pods_VeriApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC6EB00426473703006E8BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC6EAFE226473702006E8BBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC6EAFE926473702006E8BBA;
+			remoteInfo = VeriApp;
+		};
+		BC6EB00F26473703006E8BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC6EAFE226473702006E8BBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC6EAFE926473702006E8BBA;
+			remoteInfo = VeriApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		117A7EDAD8C3786EF7290376 /* Pods_VeriApp_VeriAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeriApp_VeriAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70CC120AE17B05B4B7DE5898 /* Pods_VeriApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeriApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		843CEB9E26C4DC9500782858 /* mainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTableViewCell.swift; sourceTree = "<group>"; };
+		8464FAF626C47E92005D398F /* VeriAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriAppViewController.swift; sourceTree = "<group>"; };
+		846C12EF26D1A27700541BF1 /* enumKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = enumKeys.swift; path = VeriApp/Utilities/enumKeys.swift; sourceTree = SOURCE_ROOT; };
+		846C12F026D1A27700541BF1 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultsManager.swift; path = VeriApp/Utilities/UserDefaultsManager.swift; sourceTree = SOURCE_ROOT; };
+		847D68F926C4755A00631B1E /* ColibriPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColibriPresenter.swift; path = VeriApp/Scene/Colibri/ColibriPresenter.swift; sourceTree = SOURCE_ROOT; };
+		847D68FA26C4755A00631B1E /* ColibriWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColibriWorker.swift; path = VeriApp/Scene/Colibri/ColibriWorker.swift; sourceTree = SOURCE_ROOT; };
+		847D68FB26C4755A00631B1E /* ColibriRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColibriRouter.swift; path = VeriApp/Scene/Colibri/ColibriRouter.swift; sourceTree = SOURCE_ROOT; };
+		847D68FC26C4755A00631B1E /* ColibriModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColibriModels.swift; path = VeriApp/Scene/Colibri/ColibriModels.swift; sourceTree = SOURCE_ROOT; };
+		847D68FD26C4755A00631B1E /* ColibriViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColibriViewController.swift; path = VeriApp/Scene/Colibri/ColibriViewController.swift; sourceTree = SOURCE_ROOT; };
+		847D68FE26C4755A00631B1E /* ColibriInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColibriInteractor.swift; path = VeriApp/Scene/Colibri/ColibriInteractor.swift; sourceTree = SOURCE_ROOT; };
+		848528D026E5D0540002908D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84D5A05C26C47BEC00B34AA6 /* RequisitosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequisitosPresenter.swift; sourceTree = "<group>"; };
+		84D5A05D26C47BEC00B34AA6 /* RequisitosWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequisitosWorker.swift; sourceTree = "<group>"; };
+		84D5A05E26C47BEC00B34AA6 /* RequisitosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequisitosRouter.swift; sourceTree = "<group>"; };
+		84D5A05F26C47BEC00B34AA6 /* RequisitosModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequisitosModels.swift; sourceTree = "<group>"; };
+		84D5A06026C47BEC00B34AA6 /* RequisitosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequisitosViewController.swift; sourceTree = "<group>"; };
+		84D5A06126C47BEC00B34AA6 /* RequisitosInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequisitosInteractor.swift; sourceTree = "<group>"; };
+		84D5A06C26C47C0F00B34AA6 /* ConfigPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigPresenter.swift; sourceTree = "<group>"; };
+		84D5A06D26C47C0F00B34AA6 /* ConfigWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigWorker.swift; sourceTree = "<group>"; };
+		84D5A06E26C47C0F00B34AA6 /* ConfigRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigRouter.swift; sourceTree = "<group>"; };
+		84D5A06F26C47C0F00B34AA6 /* ConfigModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigModels.swift; sourceTree = "<group>"; };
+		84D5A07026C47C0F00B34AA6 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		84D5A07126C47C0F00B34AA6 /* ConfigInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigInteractor.swift; sourceTree = "<group>"; };
+		84D5A07B26C47C8800B34AA6 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		84D5A07C26C47C8800B34AA6 /* MainWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWorker.swift; sourceTree = "<group>"; };
+		84D5A07D26C47C8800B34AA6 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		84D5A07E26C47C8800B34AA6 /* MainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModels.swift; sourceTree = "<group>"; };
+		84D5A07F26C47C8800B34AA6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		84D5A08026C47C8800B34AA6 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		96D6EEB68E3F0902F8FB67A3 /* Pods-VeriApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriApp.release.xcconfig"; path = "Target Support Files/Pods-VeriApp/Pods-VeriApp.release.xcconfig"; sourceTree = "<group>"; };
+		AF0F2D8444C8AC806ACE0BC8 /* Pods_VeriAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeriAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6EAFEA26473702006E8BBA /* VeriApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeriApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6EAFED26473702006E8BBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC6EAFEF26473702006E8BBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC6EAFF426473702006E8BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC6EAFF726473702006E8BBA /* VeriApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VeriApp.xcdatamodel; sourceTree = "<group>"; };
+		BC6EAFF926473703006E8BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC6EAFFC26473703006E8BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC6EAFFE26473703006E8BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC6EB00326473703006E8BBA /* VeriAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeriAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6EB00726473703006E8BBA /* VeriAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriAppTests.swift; sourceTree = "<group>"; };
+		BC6EB00926473703006E8BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC6EB00E26473703006E8BBA /* VeriAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeriAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6EB01226473703006E8BBA /* VeriAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriAppUITests.swift; sourceTree = "<group>"; };
+		BC6EB01426473703006E8BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF54DB052D889F71F790FC1 /* Pods-VeriApp-VeriAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriApp-VeriAppUITests.release.xcconfig"; path = "Target Support Files/Pods-VeriApp-VeriAppUITests/Pods-VeriApp-VeriAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C581268B8963CF5447DDE1A3 /* Pods-VeriAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriAppTests.release.xcconfig"; path = "Target Support Files/Pods-VeriAppTests/Pods-VeriAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		C82A31A7D065687B48985176 /* Pods-VeriAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriAppTests.debug.xcconfig"; path = "Target Support Files/Pods-VeriAppTests/Pods-VeriAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D52B510B3185FBD241D8247F /* Pods-VeriApp-VeriAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriApp-VeriAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-VeriApp-VeriAppUITests/Pods-VeriApp-VeriAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E69D0E75E925F3D287D9206F /* Pods-VeriApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriApp.debug.xcconfig"; path = "Target Support Files/Pods-VeriApp/Pods-VeriApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC6EAFE726473702006E8BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA0F4EC3CD57792E84C658D /* Pods_VeriApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6EB00026473703006E8BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E3111225DCA770226BBAEC /* Pods_VeriAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6EB00B26473703006E8BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5975BB23BA9090F09F28BD3B /* Pods_VeriApp_VeriAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8464FAF526C47E66005D398F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8464FAF626C47E92005D398F /* VeriAppViewController.swift */,
+				843CEB9E26C4DC9500782858 /* mainTableViewCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		846C12F326D1A28400541BF1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				846C12F026D1A27700541BF1 /* UserDefaultsManager.swift */,
+				846C12EF26D1A27700541BF1 /* enumKeys.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		847D68F426C4752200631B1E /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				8464FAF526C47E66005D398F /* Base */,
+				84D5A06B26C47BF800B34AA6 /* Config */,
+				847D690C26C475C800631B1E /* Requisitos */,
+				847D690826C4758000631B1E /* Colibri */,
+				847D68F826C4752900631B1E /* Main */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		847D68F826C4752900631B1E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				84D5A07B26C47C8800B34AA6 /* MainPresenter.swift */,
+				84D5A07C26C47C8800B34AA6 /* MainWorker.swift */,
+				84D5A07D26C47C8800B34AA6 /* MainRouter.swift */,
+				84D5A07E26C47C8800B34AA6 /* MainModels.swift */,
+				84D5A07F26C47C8800B34AA6 /* MainViewController.swift */,
+				84D5A08026C47C8800B34AA6 /* MainInteractor.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		847D690826C4758000631B1E /* Colibri */ = {
+			isa = PBXGroup;
+			children = (
+				847D68F926C4755A00631B1E /* ColibriPresenter.swift */,
+				847D68FA26C4755A00631B1E /* ColibriWorker.swift */,
+				847D68FB26C4755A00631B1E /* ColibriRouter.swift */,
+				847D68FC26C4755A00631B1E /* ColibriModels.swift */,
+				847D68FD26C4755A00631B1E /* ColibriViewController.swift */,
+				847D68FE26C4755A00631B1E /* ColibriInteractor.swift */,
+			);
+			path = Colibri;
+			sourceTree = "<group>";
+		};
+		847D690C26C475C800631B1E /* Requisitos */ = {
+			isa = PBXGroup;
+			children = (
+				84D5A05C26C47BEC00B34AA6 /* RequisitosPresenter.swift */,
+				84D5A05D26C47BEC00B34AA6 /* RequisitosWorker.swift */,
+				84D5A05E26C47BEC00B34AA6 /* RequisitosRouter.swift */,
+				84D5A05F26C47BEC00B34AA6 /* RequisitosModels.swift */,
+				84D5A06026C47BEC00B34AA6 /* RequisitosViewController.swift */,
+				84D5A06126C47BEC00B34AA6 /* RequisitosInteractor.swift */,
+			);
+			path = Requisitos;
+			sourceTree = "<group>";
+		};
+		848528CE26E5C7AD0002908D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BC6EAFF326473702006E8BBA /* Main.storyboard */,
+				BC6EAFFB26473703006E8BBA /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		848528CF26E5D0410002908D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				848528D026E5D0540002908D /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		84D5A06B26C47BF800B34AA6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				84D5A06C26C47C0F00B34AA6 /* ConfigPresenter.swift */,
+				84D5A06D26C47C0F00B34AA6 /* ConfigWorker.swift */,
+				84D5A06E26C47C0F00B34AA6 /* ConfigRouter.swift */,
+				84D5A06F26C47C0F00B34AA6 /* ConfigModels.swift */,
+				84D5A07026C47C0F00B34AA6 /* ConfigViewController.swift */,
+				84D5A07126C47C0F00B34AA6 /* ConfigInteractor.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		8D0EA9BE810132F7C8B6E378 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E69D0E75E925F3D287D9206F /* Pods-VeriApp.debug.xcconfig */,
+				96D6EEB68E3F0902F8FB67A3 /* Pods-VeriApp.release.xcconfig */,
+				D52B510B3185FBD241D8247F /* Pods-VeriApp-VeriAppUITests.debug.xcconfig */,
+				BFF54DB052D889F71F790FC1 /* Pods-VeriApp-VeriAppUITests.release.xcconfig */,
+				C82A31A7D065687B48985176 /* Pods-VeriAppTests.debug.xcconfig */,
+				C581268B8963CF5447DDE1A3 /* Pods-VeriAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC6EAFE126473702006E8BBA = {
+			isa = PBXGroup;
+			children = (
+				BC6EAFEC26473702006E8BBA /* VeriApp */,
+				BC6EB00626473703006E8BBA /* VeriAppTests */,
+				BC6EB01126473703006E8BBA /* VeriAppUITests */,
+				BC6EAFEB26473702006E8BBA /* Products */,
+				8D0EA9BE810132F7C8B6E378 /* Pods */,
+				CE09505B42EDBE7F934A1AF1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC6EAFEB26473702006E8BBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC6EAFEA26473702006E8BBA /* VeriApp.app */,
+				BC6EB00326473703006E8BBA /* VeriAppTests.xctest */,
+				BC6EB00E26473703006E8BBA /* VeriAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC6EAFEC26473702006E8BBA /* VeriApp */ = {
+			isa = PBXGroup;
+			children = (
+				848528CF26E5D0410002908D /* Constants */,
+				847D68F426C4752200631B1E /* Scene */,
+				848528CE26E5C7AD0002908D /* UI */,
+				846C12F326D1A28400541BF1 /* Utilities */,
+				BC6EAFED26473702006E8BBA /* AppDelegate.swift */,
+				BC6EAFEF26473702006E8BBA /* SceneDelegate.swift */,
+				BC6EAFF926473703006E8BBA /* Assets.xcassets */,
+				BC6EAFFE26473703006E8BBA /* Info.plist */,
+				BC6EAFF626473702006E8BBA /* VeriApp.xcdatamodeld */,
+			);
+			path = VeriApp;
+			sourceTree = "<group>";
+		};
+		BC6EB00626473703006E8BBA /* VeriAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC6EB00726473703006E8BBA /* VeriAppTests.swift */,
+				BC6EB00926473703006E8BBA /* Info.plist */,
+			);
+			path = VeriAppTests;
+			sourceTree = "<group>";
+		};
+		BC6EB01126473703006E8BBA /* VeriAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC6EB01226473703006E8BBA /* VeriAppUITests.swift */,
+				BC6EB01426473703006E8BBA /* Info.plist */,
+			);
+			path = VeriAppUITests;
+			sourceTree = "<group>";
+		};
+		CE09505B42EDBE7F934A1AF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70CC120AE17B05B4B7DE5898 /* Pods_VeriApp.framework */,
+				117A7EDAD8C3786EF7290376 /* Pods_VeriApp_VeriAppUITests.framework */,
+				AF0F2D8444C8AC806ACE0BC8 /* Pods_VeriAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC6EAFE926473702006E8BBA /* VeriApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC6EB01726473703006E8BBA /* Build configuration list for PBXNativeTarget "VeriApp" */;
+			buildPhases = (
+				FE751CFBB377967AE0497976 /* [CP] Check Pods Manifest.lock */,
+				BC6EAFE626473702006E8BBA /* Sources */,
+				BC6EAFE726473702006E8BBA /* Frameworks */,
+				BC6EAFE826473702006E8BBA /* Resources */,
+				AEB722BA72BB141DF21D3D0F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VeriApp;
+			productName = VeriApp;
+			productReference = BC6EAFEA26473702006E8BBA /* VeriApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC6EB00226473703006E8BBA /* VeriAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC6EB01A26473703006E8BBA /* Build configuration list for PBXNativeTarget "VeriAppTests" */;
+			buildPhases = (
+				ABA80E910C3DB039D0ACA4A8 /* [CP] Check Pods Manifest.lock */,
+				BC6EAFFF26473703006E8BBA /* Sources */,
+				BC6EB00026473703006E8BBA /* Frameworks */,
+				BC6EB00126473703006E8BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC6EB00526473703006E8BBA /* PBXTargetDependency */,
+			);
+			name = VeriAppTests;
+			productName = VeriAppTests;
+			productReference = BC6EB00326473703006E8BBA /* VeriAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC6EB00D26473703006E8BBA /* VeriAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC6EB01D26473703006E8BBA /* Build configuration list for PBXNativeTarget "VeriAppUITests" */;
+			buildPhases = (
+				1200ADD50A949A2C5C5CCD20 /* [CP] Check Pods Manifest.lock */,
+				BC6EB00A26473703006E8BBA /* Sources */,
+				BC6EB00B26473703006E8BBA /* Frameworks */,
+				BC6EB00C26473703006E8BBA /* Resources */,
+				C3F29D25A6DAA88C2DAC53A4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC6EB01026473703006E8BBA /* PBXTargetDependency */,
+			);
+			name = VeriAppUITests;
+			productName = VeriAppUITests;
+			productReference = BC6EB00E26473703006E8BBA /* VeriAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC6EAFE226473702006E8BBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BC6EAFE926473702006E8BBA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					BC6EB00226473703006E8BBA = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BC6EAFE926473702006E8BBA;
+					};
+					BC6EB00D26473703006E8BBA = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BC6EAFE926473702006E8BBA;
+					};
+				};
+			};
+			buildConfigurationList = BC6EAFE526473702006E8BBA /* Build configuration list for PBXProject "VeriApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC6EAFE126473702006E8BBA;
+			productRefGroup = BC6EAFEB26473702006E8BBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC6EAFE926473702006E8BBA /* VeriApp */,
+				BC6EB00226473703006E8BBA /* VeriAppTests */,
+				BC6EB00D26473703006E8BBA /* VeriAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC6EAFE826473702006E8BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6EAFFD26473703006E8BBA /* LaunchScreen.storyboard in Resources */,
+				BC6EAFFA26473703006E8BBA /* Assets.xcassets in Resources */,
+				BC6EAFF526473702006E8BBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6EB00126473703006E8BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6EB00C26473703006E8BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1200ADD50A949A2C5C5CCD20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VeriApp-VeriAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABA80E910C3DB039D0ACA4A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VeriAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEB722BA72BB141DF21D3D0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VeriApp/Pods-VeriApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VeriApp/Pods-VeriApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VeriApp/Pods-VeriApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3F29D25A6DAA88C2DAC53A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VeriApp-VeriAppUITests/Pods-VeriApp-VeriAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VeriApp-VeriAppUITests/Pods-VeriApp-VeriAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VeriApp-VeriAppUITests/Pods-VeriApp-VeriAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE751CFBB377967AE0497976 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VeriApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC6EAFE626473702006E8BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				847D690326C4755A00631B1E /* ColibriViewController.swift in Sources */,
+				84D5A07326C47C0F00B34AA6 /* ConfigWorker.swift in Sources */,
+				84D5A06526C47BEC00B34AA6 /* RequisitosModels.swift in Sources */,
+				847D690026C4755A00631B1E /* ColibriWorker.swift in Sources */,
+				846C12F226D1A27700541BF1 /* UserDefaultsManager.swift in Sources */,
+				846C12F126D1A27700541BF1 /* enumKeys.swift in Sources */,
+				BC6EAFEE26473702006E8BBA /* AppDelegate.swift in Sources */,
+				848528D126E5D0540002908D /* Constants.swift in Sources */,
+				847D68FF26C4755A00631B1E /* ColibriPresenter.swift in Sources */,
+				84D5A07526C47C0F00B34AA6 /* ConfigModels.swift in Sources */,
+				BC6EAFF026473702006E8BBA /* SceneDelegate.swift in Sources */,
+				84D5A06226C47BEC00B34AA6 /* RequisitosPresenter.swift in Sources */,
+				84D5A08226C47C8800B34AA6 /* MainWorker.swift in Sources */,
+				84D5A06726C47BEC00B34AA6 /* RequisitosInteractor.swift in Sources */,
+				84D5A07626C47C0F00B34AA6 /* ConfigViewController.swift in Sources */,
+				84D5A07226C47C0F00B34AA6 /* ConfigPresenter.swift in Sources */,
+				84D5A06326C47BEC00B34AA6 /* RequisitosWorker.swift in Sources */,
+				84D5A08326C47C8800B34AA6 /* MainRouter.swift in Sources */,
+				847D690126C4755A00631B1E /* ColibriRouter.swift in Sources */,
+				8464FAF726C47E92005D398F /* VeriAppViewController.swift in Sources */,
+				84D5A06426C47BEC00B34AA6 /* RequisitosRouter.swift in Sources */,
+				843CEB9F26C4DC9500782858 /* mainTableViewCell.swift in Sources */,
+				84D5A06626C47BEC00B34AA6 /* RequisitosViewController.swift in Sources */,
+				84D5A08626C47C8800B34AA6 /* MainInteractor.swift in Sources */,
+				847D690226C4755A00631B1E /* ColibriModels.swift in Sources */,
+				84D5A08126C47C8800B34AA6 /* MainPresenter.swift in Sources */,
+				BC6EAFF826473702006E8BBA /* VeriApp.xcdatamodeld in Sources */,
+				84D5A07426C47C0F00B34AA6 /* ConfigRouter.swift in Sources */,
+				84D5A07726C47C0F00B34AA6 /* ConfigInteractor.swift in Sources */,
+				84D5A08526C47C8800B34AA6 /* MainViewController.swift in Sources */,
+				84D5A08426C47C8800B34AA6 /* MainModels.swift in Sources */,
+				847D690426C4755A00631B1E /* ColibriInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6EAFFF26473703006E8BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6EB00826473703006E8BBA /* VeriAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6EB00A26473703006E8BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6EB01326473703006E8BBA /* VeriAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC6EB00526473703006E8BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC6EAFE926473702006E8BBA /* VeriApp */;
+			targetProxy = BC6EB00426473703006E8BBA /* PBXContainerItemProxy */;
+		};
+		BC6EB01026473703006E8BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC6EAFE926473702006E8BBA /* VeriApp */;
+			targetProxy = BC6EB00F26473703006E8BBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC6EAFF326473702006E8BBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC6EAFF426473702006E8BBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC6EAFFB26473703006E8BBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC6EAFFC26473703006E8BBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC6EB01526473703006E8BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC6EB01626473703006E8BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC6EB01826473703006E8BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E69D0E75E925F3D287D9206F /* Pods-VeriApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3WR744854;
+				INFOPLIST_FILE = VeriApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emg.com.VeriApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BC6EB01926473703006E8BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D6EEB68E3F0902F8FB67A3 /* Pods-VeriApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3WR744854;
+				INFOPLIST_FILE = VeriApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emg.com.VeriApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		BC6EB01B26473703006E8BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C82A31A7D065687B48985176 /* Pods-VeriAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3WR744854;
+				INFOPLIST_FILE = VeriAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.intercam.VeriAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeriApp.app/VeriApp";
+			};
+			name = Debug;
+		};
+		BC6EB01C26473703006E8BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C581268B8963CF5447DDE1A3 /* Pods-VeriAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3WR744854;
+				INFOPLIST_FILE = VeriAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.intercam.VeriAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeriApp.app/VeriApp";
+			};
+			name = Release;
+		};
+		BC6EB01E26473703006E8BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D52B510B3185FBD241D8247F /* Pods-VeriApp-VeriAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3WR744854;
+				INFOPLIST_FILE = VeriAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.intercam.VeriAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VeriApp;
+			};
+			name = Debug;
+		};
+		BC6EB01F26473703006E8BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF54DB052D889F71F790FC1 /* Pods-VeriApp-VeriAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A3WR744854;
+				INFOPLIST_FILE = VeriAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mx.com.intercam.VeriAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VeriApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC6EAFE526473702006E8BBA /* Build configuration list for PBXProject "VeriApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6EB01526473703006E8BBA /* Debug */,
+				BC6EB01626473703006E8BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC6EB01726473703006E8BBA /* Build configuration list for PBXNativeTarget "VeriApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6EB01826473703006E8BBA /* Debug */,
+				BC6EB01926473703006E8BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC6EB01A26473703006E8BBA /* Build configuration list for PBXNativeTarget "VeriAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6EB01B26473703006E8BBA /* Debug */,
+				BC6EB01C26473703006E8BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC6EB01D26473703006E8BBA /* Build configuration list for PBXNativeTarget "VeriAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6EB01E26473703006E8BBA /* Debug */,
+				BC6EB01F26473703006E8BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BC6EAFF626473702006E8BBA /* VeriApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BC6EAFF726473702006E8BBA /* VeriApp.xcdatamodel */,
+			);
+			currentVersion = BC6EAFF726473702006E8BBA /* VeriApp.xcdatamodel */;
+			path = VeriApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BC6EAFE226473702006E8BBA /* Project object */;
+}

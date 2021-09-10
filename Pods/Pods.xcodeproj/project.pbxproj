@@ -1,0 +1,1000 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A1652D1A11AB2144A9D2829059F9AA8 /* Pods-VeriAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D26A321FE29F57FC79CA9715CA4DDB /* Pods-VeriAppTests-dummy.m */; };
+		311626956B304D535257D4E5C98729DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		356B088DC1126DB50E5E09FA1B3A2CEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3EB2A4C889C01F4B8B404D32EA3C644A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		3FB70B3BDE5361C17FEA870904C75365 /* Pods-VeriApp-VeriAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54E2A56A26A2004A3DE616829105B4B3 /* Pods-VeriApp-VeriAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		480C0EC0151E4C8B79D6506F5A9B0C67 /* Pods-VeriApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CADAEA96FFA435E26F6D015500BCA5D6 /* Pods-VeriApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5157EC6843F705ED26DDD74D80A3C951 /* RSSelectionMenuDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D787EA8FE78620D20906157B1257BC /* RSSelectionMenuDataSource.swift */; };
+		539EA13B422E731278EDF3CF5B7EA85A /* RSSelectionMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E62AA2499916753F6B8B86BB797730A /* RSSelectionMenuDelegate.swift */; };
+		61D8AD5FA6FE8591113C15FAE146BBDC /* RSFirstRowSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7B9FFD97AF402B9ECB7CA8416CDE39 /* RSFirstRowSelection.swift */; };
+		74535B3DCD8B7B3DC79B3FB86F2FAA95 /* RSSelectionMenuSearchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63615CED5C36D6C51D0A67E0AFDA0A63 /* RSSelectionMenuSearchDelegate.swift */; };
+		7B171701EC378A477065F3B3A864044B /* Pods-VeriAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC6FEC4E261D384A3E12C5EB17B191C /* Pods-VeriAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8139D07F3ED142A9C100A3149A23107B /* RSSelectionMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9AA331D32C0E4A96060FAE062CBF87 /* RSSelectionMenu-dummy.m */; };
+		857582D5FD62615C683724F9B07DF3EC /* NavigationBarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6BD56CA23AA5FA0514130A653E2E9A /* NavigationBarTheme.swift */; };
+		AE50D304CCD6ABE3A62C8ED38A5EC68C /* RSSelectionMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFBEC0967CBE5577862C58C4073992BC /* RSSelectionMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE79E5B4526604B6C00F157078E058D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		AF86E456DF1BDB5380766DADF864E785 /* Pods-VeriApp-VeriAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E2C1AFB4C089EEABB359211E85EE90 /* Pods-VeriApp-VeriAppUITests-dummy.m */; };
+		B7012313DF0572209693EB551305FDC9 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09D55F1F812A5BA72B7DA20084E5ED1 /* Enums.swift */; };
+		BA5A38EB2D6CC06B29C6C3DDFA981DDF /* RSSelectionMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF30C8D446316CD160F11F56F2826ED /* RSSelectionMenuController.swift */; };
+		C063E602C0FD4C3E37C71683A6714F65 /* RSSelectionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A8A9F1A9D3C450C885C0D970A6262 /* RSSelectionTableView.swift */; };
+		D2733D7599B942675A80A38CE2C80026 /* Pods-VeriApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71C9FB7A529A46CA5F7FE18303624BCD /* Pods-VeriApp-dummy.m */; };
+		F20EC294D9460097297323FB7CD017D2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C330F9FDC2C7FCEADFB63D19DF3D41 /* Constants.swift */; };
+		FAC2A0C568472DA91184BC6915F8EB27 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E74A83298FED252E7EFCB4B32C23D8 /* ViewControllerExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A394AF8040B843497EFD158A07DC8604 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4BA747C8987B7580A893EC859D12686;
+			remoteInfo = RSSelectionMenu;
+		};
+		F483529006972711741E32FC53ECE333 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4BA747C8987B7580A893EC859D12686;
+			remoteInfo = RSSelectionMenu;
+		};
+		FA06DA1102EB343C154D6EA130CA790F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACFBE725BF0F13FBDE4CD9176EF29A09;
+			remoteInfo = "Pods-VeriApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0169BBBCE4FF05697BE4480B57260277 /* Pods-VeriAppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeriAppTests-Info.plist"; sourceTree = "<group>"; };
+		038849C49B66565E0AC16D16A80B0F44 /* RSSelectionMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSSelectionMenu.release.xcconfig; sourceTree = "<group>"; };
+		0C607CC9F04A8CCDBBBBAE765E9BE59E /* Pods-VeriApp-VeriAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VeriApp-VeriAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0F5B3E6BF1ACE5374718D300AA9E19F7 /* RSSelectionMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RSSelectionMenu.modulemap; sourceTree = "<group>"; };
+		11E8D2593F9DBFEAE875556D665D0D5E /* Pods-VeriApp-VeriAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeriApp-VeriAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F52455337F56640EA02264D70DEA190 /* Pods-VeriAppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-VeriAppTests"; path = Pods_VeriAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C1D5382EECD5C99186904D9F107762E /* RSSelectionMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RSSelectionMenu-Info.plist"; sourceTree = "<group>"; };
+		3044E5C1CA479BF36FD10F75DB320330 /* Pods-VeriAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeriAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		444FE3D1C7F8B2C047B598421599D208 /* Pods-VeriApp-VeriAppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-VeriApp-VeriAppUITests"; path = Pods_VeriApp_VeriAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		451BCC83AA0EB2C43D6B51FBEBE677EE /* Pods-VeriAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeriAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		45E2C1AFB4C089EEABB359211E85EE90 /* Pods-VeriApp-VeriAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VeriApp-VeriAppUITests-dummy.m"; sourceTree = "<group>"; };
+		4C77BF1CB250B6B02A30012F6BA15249 /* Pods-VeriApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeriApp-frameworks.sh"; sourceTree = "<group>"; };
+		54E2A56A26A2004A3DE616829105B4B3 /* Pods-VeriApp-VeriAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VeriApp-VeriAppUITests-umbrella.h"; sourceTree = "<group>"; };
+		59C330F9FDC2C7FCEADFB63D19DF3D41 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = RSSelectionMenu/RSSelectionMenu/Utilities/Constants.swift; sourceTree = "<group>"; };
+		5A7B9FFD97AF402B9ECB7CA8416CDE39 /* RSFirstRowSelection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSFirstRowSelection.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSFirstRowSelection.swift; sourceTree = "<group>"; };
+		5C0B8CCF67C1B15089347BBDACD5AA62 /* Pods-VeriApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeriApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		5C3E36A29F0E5E62B7605985C3236341 /* Pods-VeriAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeriAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5CC6FEC4E261D384A3E12C5EB17B191C /* Pods-VeriAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VeriAppTests-umbrella.h"; sourceTree = "<group>"; };
+		5E62AA2499916753F6B8B86BB797730A /* RSSelectionMenuDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuDelegate.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuDelegate.swift; sourceTree = "<group>"; };
+		63615CED5C36D6C51D0A67E0AFDA0A63 /* RSSelectionMenuSearchDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuSearchDelegate.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuSearchDelegate.swift; sourceTree = "<group>"; };
+		70BA1731495B2A114FB028429489B758 /* RSSelectionMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSSelectionMenu.debug.xcconfig; sourceTree = "<group>"; };
+		71C9FB7A529A46CA5F7FE18303624BCD /* Pods-VeriApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VeriApp-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74E74A83298FED252E7EFCB4B32C23D8 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewControllerExtension.swift; path = RSSelectionMenu/RSSelectionMenu/Utilities/Extensions/ViewControllerExtension.swift; sourceTree = "<group>"; };
+		80DC426472CBB851F149F233BB2B574A /* Pods-VeriAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VeriAppTests.modulemap"; sourceTree = "<group>"; };
+		88DECA3E2E9AFE1982FA5C25C6F75CE7 /* Pods-VeriApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeriApp.debug.xcconfig"; sourceTree = "<group>"; };
+		8E4A8A9F1A9D3C450C885C0D970A6262 /* RSSelectionTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionTableView.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionTableView.swift; sourceTree = "<group>"; };
+		95D787EA8FE78620D20906157B1257BC /* RSSelectionMenuDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuDataSource.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuDataSource.swift; sourceTree = "<group>"; };
+		99D26A321FE29F57FC79CA9715CA4DDB /* Pods-VeriAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VeriAppTests-dummy.m"; sourceTree = "<group>"; };
+		9D051CAFC6B9E1A60F8D912A5A32F20C /* Pods-VeriApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VeriApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A49FE02F976E2EF46F5B4A99F0830A2F /* Pods-VeriApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VeriApp.modulemap"; sourceTree = "<group>"; };
+		AC32159AA1ECDB37253C69751BB6B3AB /* Pods-VeriApp-VeriAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VeriApp-VeriAppUITests.modulemap"; sourceTree = "<group>"; };
+		ACF30C8D446316CD160F11F56F2826ED /* RSSelectionMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuController.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuController.swift; sourceTree = "<group>"; };
+		B09D55F1F812A5BA72B7DA20084E5ED1 /* Enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = RSSelectionMenu/RSSelectionMenu/Utilities/Enums.swift; sourceTree = "<group>"; };
+		BF6BD56CA23AA5FA0514130A653E2E9A /* NavigationBarTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationBarTheme.swift; path = RSSelectionMenu/RSSelectionMenu/Source/NavigationBarTheme.swift; sourceTree = "<group>"; };
+		BFAB0370A45067FBB521A35A8F1FB77E /* RSSelectionMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSSelectionMenu-prefix.pch"; sourceTree = "<group>"; };
+		C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RSSelectionMenu; path = RSSelectionMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAAEC755EA7E9014A646C20EDC8D006A /* Pods-VeriApp-VeriAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeriApp-VeriAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		CADAEA96FFA435E26F6D015500BCA5D6 /* Pods-VeriApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VeriApp-umbrella.h"; sourceTree = "<group>"; };
+		CBD14879CA38C7902C0B40DEC7D070ED /* Pods-VeriApp-VeriAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeriApp-VeriAppUITests-Info.plist"; sourceTree = "<group>"; };
+		DCA1BE1525500A1452888EBF058A8B28 /* Pods-VeriApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-VeriApp"; path = Pods_VeriApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2EC2482770EB6B153C97F60AEC0632E /* Pods-VeriApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeriApp-Info.plist"; sourceTree = "<group>"; };
+		E372601387A10FF58D2CA8E5E7915D7A /* Pods-VeriApp-VeriAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeriApp-VeriAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E446D3902245BD03C879C4B46A15857E /* Pods-VeriAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VeriAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EFBEC0967CBE5577862C58C4073992BC /* RSSelectionMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSSelectionMenu-umbrella.h"; sourceTree = "<group>"; };
+		FB97DFA5AB32B0B3DCD488E7415FE4F1 /* Pods-VeriApp-VeriAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeriApp-VeriAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FC9AA331D32C0E4A96060FAE062CBF87 /* RSSelectionMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSSelectionMenu-dummy.m"; sourceTree = "<group>"; };
+		FFD443DE1E827D814D3CAE00DD4F092D /* Pods-VeriApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VeriApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43699BC19DD5B0F12807ACA3FF5035A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				356B088DC1126DB50E5E09FA1B3A2CEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D20071053F22E29445FD864ED6C105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311626956B304D535257D4E5C98729DF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B6F52B305B64BAF3AABBAC8D8E8E5DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB2A4C889C01F4B8B404D32EA3C644A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E9B4283087F1447CDE8396572984E99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE79E5B4526604B6C00F157078E058D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3788573005C352B16A2B4A003DEA2DDA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F5B3E6BF1ACE5374718D300AA9E19F7 /* RSSelectionMenu.modulemap */,
+				FC9AA331D32C0E4A96060FAE062CBF87 /* RSSelectionMenu-dummy.m */,
+				2C1D5382EECD5C99186904D9F107762E /* RSSelectionMenu-Info.plist */,
+				BFAB0370A45067FBB521A35A8F1FB77E /* RSSelectionMenu-prefix.pch */,
+				EFBEC0967CBE5577862C58C4073992BC /* RSSelectionMenu-umbrella.h */,
+				70BA1731495B2A114FB028429489B758 /* RSSelectionMenu.debug.xcconfig */,
+				038849C49B66565E0AC16D16A80B0F44 /* RSSelectionMenu.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RSSelectionMenu";
+			sourceTree = "<group>";
+		};
+		45258D54D59AE3CF9D76CB558CD6AC4C /* Pods-VeriAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				80DC426472CBB851F149F233BB2B574A /* Pods-VeriAppTests.modulemap */,
+				E446D3902245BD03C879C4B46A15857E /* Pods-VeriAppTests-acknowledgements.markdown */,
+				3044E5C1CA479BF36FD10F75DB320330 /* Pods-VeriAppTests-acknowledgements.plist */,
+				99D26A321FE29F57FC79CA9715CA4DDB /* Pods-VeriAppTests-dummy.m */,
+				0169BBBCE4FF05697BE4480B57260277 /* Pods-VeriAppTests-Info.plist */,
+				5CC6FEC4E261D384A3E12C5EB17B191C /* Pods-VeriAppTests-umbrella.h */,
+				5C3E36A29F0E5E62B7605985C3236341 /* Pods-VeriAppTests.debug.xcconfig */,
+				451BCC83AA0EB2C43D6B51FBEBE677EE /* Pods-VeriAppTests.release.xcconfig */,
+			);
+			name = "Pods-VeriAppTests";
+			path = "Target Support Files/Pods-VeriAppTests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5935928F7DB78F12E8E66D2632570DEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCA1BE1525500A1452888EBF058A8B28 /* Pods-VeriApp */,
+				444FE3D1C7F8B2C047B598421599D208 /* Pods-VeriApp-VeriAppUITests */,
+				1F52455337F56640EA02264D70DEA190 /* Pods-VeriAppTests */,
+				C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		795A901594F5C3F7009617A97BF69098 /* Pods-VeriApp-VeriAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC32159AA1ECDB37253C69751BB6B3AB /* Pods-VeriApp-VeriAppUITests.modulemap */,
+				0C607CC9F04A8CCDBBBBAE765E9BE59E /* Pods-VeriApp-VeriAppUITests-acknowledgements.markdown */,
+				FB97DFA5AB32B0B3DCD488E7415FE4F1 /* Pods-VeriApp-VeriAppUITests-acknowledgements.plist */,
+				45E2C1AFB4C089EEABB359211E85EE90 /* Pods-VeriApp-VeriAppUITests-dummy.m */,
+				CAAEC755EA7E9014A646C20EDC8D006A /* Pods-VeriApp-VeriAppUITests-frameworks.sh */,
+				CBD14879CA38C7902C0B40DEC7D070ED /* Pods-VeriApp-VeriAppUITests-Info.plist */,
+				54E2A56A26A2004A3DE616829105B4B3 /* Pods-VeriApp-VeriAppUITests-umbrella.h */,
+				11E8D2593F9DBFEAE875556D665D0D5E /* Pods-VeriApp-VeriAppUITests.debug.xcconfig */,
+				E372601387A10FF58D2CA8E5E7915D7A /* Pods-VeriApp-VeriAppUITests.release.xcconfig */,
+			);
+			name = "Pods-VeriApp-VeriAppUITests";
+			path = "Target Support Files/Pods-VeriApp-VeriAppUITests";
+			sourceTree = "<group>";
+		};
+		7D4D33DE6324B2E18F82E43E2DACE5CB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1945207EBECE468C2D65EF45E59D2EC /* Pods-VeriApp */,
+				795A901594F5C3F7009617A97BF69098 /* Pods-VeriApp-VeriAppUITests */,
+				45258D54D59AE3CF9D76CB558CD6AC4C /* Pods-VeriAppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9A5A3E11D8719A781D14AEDE06F2D635 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A17B3D18865F38A3EA5B9CC25D8C3716 /* RSSelectionMenu */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A17B3D18865F38A3EA5B9CC25D8C3716 /* RSSelectionMenu */ = {
+			isa = PBXGroup;
+			children = (
+				59C330F9FDC2C7FCEADFB63D19DF3D41 /* Constants.swift */,
+				B09D55F1F812A5BA72B7DA20084E5ED1 /* Enums.swift */,
+				BF6BD56CA23AA5FA0514130A653E2E9A /* NavigationBarTheme.swift */,
+				5A7B9FFD97AF402B9ECB7CA8416CDE39 /* RSFirstRowSelection.swift */,
+				ACF30C8D446316CD160F11F56F2826ED /* RSSelectionMenuController.swift */,
+				95D787EA8FE78620D20906157B1257BC /* RSSelectionMenuDataSource.swift */,
+				5E62AA2499916753F6B8B86BB797730A /* RSSelectionMenuDelegate.swift */,
+				63615CED5C36D6C51D0A67E0AFDA0A63 /* RSSelectionMenuSearchDelegate.swift */,
+				8E4A8A9F1A9D3C450C885C0D970A6262 /* RSSelectionTableView.swift */,
+				74E74A83298FED252E7EFCB4B32C23D8 /* ViewControllerExtension.swift */,
+				3788573005C352B16A2B4A003DEA2DDA /* Support Files */,
+			);
+			name = RSSelectionMenu;
+			path = RSSelectionMenu;
+			sourceTree = "<group>";
+		};
+		C1945207EBECE468C2D65EF45E59D2EC /* Pods-VeriApp */ = {
+			isa = PBXGroup;
+			children = (
+				A49FE02F976E2EF46F5B4A99F0830A2F /* Pods-VeriApp.modulemap */,
+				9D051CAFC6B9E1A60F8D912A5A32F20C /* Pods-VeriApp-acknowledgements.markdown */,
+				5C0B8CCF67C1B15089347BBDACD5AA62 /* Pods-VeriApp-acknowledgements.plist */,
+				71C9FB7A529A46CA5F7FE18303624BCD /* Pods-VeriApp-dummy.m */,
+				4C77BF1CB250B6B02A30012F6BA15249 /* Pods-VeriApp-frameworks.sh */,
+				E2EC2482770EB6B153C97F60AEC0632E /* Pods-VeriApp-Info.plist */,
+				CADAEA96FFA435E26F6D015500BCA5D6 /* Pods-VeriApp-umbrella.h */,
+				88DECA3E2E9AFE1982FA5C25C6F75CE7 /* Pods-VeriApp.debug.xcconfig */,
+				FFD443DE1E827D814D3CAE00DD4F092D /* Pods-VeriApp.release.xcconfig */,
+			);
+			name = "Pods-VeriApp";
+			path = "Target Support Files/Pods-VeriApp";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				9A5A3E11D8719A781D14AEDE06F2D635 /* Pods */,
+				5935928F7DB78F12E8E66D2632570DEA /* Products */,
+				7D4D33DE6324B2E18F82E43E2DACE5CB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		39DA9CB136F707258184A4CBC3DA7A7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B171701EC378A477065F3B3A864044B /* Pods-VeriAppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD6931ABE70C9815564B6049CABA0C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB70B3BDE5361C17FEA870904C75365 /* Pods-VeriApp-VeriAppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CA8CB9011B435794B5B7145BA608C25 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				480C0EC0151E4C8B79D6506F5A9B0C67 /* Pods-VeriApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98C26584D679CD83F2C06944289378F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE50D304CCD6ABE3A62C8ED38A5EC68C /* RSSelectionMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		25823C3084A4411CAC463B0C03E339D5 /* Pods-VeriAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 803167EBC8C99999E24ACB2CC9807593 /* Build configuration list for PBXNativeTarget "Pods-VeriAppTests" */;
+			buildPhases = (
+				39DA9CB136F707258184A4CBC3DA7A7A /* Headers */,
+				53FE58519DC82FCDF6E2836D2493C733 /* Sources */,
+				7B6F52B305B64BAF3AABBAC8D8E8E5DA /* Frameworks */,
+				F29677C6F431B9329653C5320824ECFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F166D6E6FA3C1D46C8BBE3D95BF886FE /* PBXTargetDependency */,
+			);
+			name = "Pods-VeriAppTests";
+			productName = Pods_VeriAppTests;
+			productReference = 1F52455337F56640EA02264D70DEA190 /* Pods-VeriAppTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACFBE725BF0F13FBDE4CD9176EF29A09 /* Pods-VeriApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34CC16543405E10FFDA941AAE5E2C9A3 /* Build configuration list for PBXNativeTarget "Pods-VeriApp" */;
+			buildPhases = (
+				8CA8CB9011B435794B5B7145BA608C25 /* Headers */,
+				A000750439F6C45FD8A1CFDDE872AFB8 /* Sources */,
+				43699BC19DD5B0F12807ACA3FF5035A7 /* Frameworks */,
+				5495C81D57BFB6D0FEB1E8291FB0A4F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9802AE0C3586E6B377D15FAD44844F59 /* PBXTargetDependency */,
+			);
+			name = "Pods-VeriApp";
+			productName = Pods_VeriApp;
+			productReference = DCA1BE1525500A1452888EBF058A8B28 /* Pods-VeriApp */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA2B42431EFC3E6DD9E7D1E86D7DAE2D /* Pods-VeriApp-VeriAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D04314B93447EC582EC65BF466D79DF2 /* Build configuration list for PBXNativeTarget "Pods-VeriApp-VeriAppUITests" */;
+			buildPhases = (
+				4BD6931ABE70C9815564B6049CABA0C8 /* Headers */,
+				D2BE04CFF9D138A5833F735E4A5A8A36 /* Sources */,
+				79D20071053F22E29445FD864ED6C105 /* Frameworks */,
+				1AFC3587481F95E354B721F3DC737980 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34CBEF55A4AD482014089F2C4592A4B1 /* PBXTargetDependency */,
+			);
+			name = "Pods-VeriApp-VeriAppUITests";
+			productName = Pods_VeriApp_VeriAppUITests;
+			productReference = 444FE3D1C7F8B2C047B598421599D208 /* Pods-VeriApp-VeriAppUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4BA747C8987B7580A893EC859D12686 /* RSSelectionMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEE15C098F64A7D06A38C1BB75EFCD80 /* Build configuration list for PBXNativeTarget "RSSelectionMenu" */;
+			buildPhases = (
+				D98C26584D679CD83F2C06944289378F /* Headers */,
+				99D8AEB3D5C49903FE9F461A1A311FDD /* Sources */,
+				8E9B4283087F1447CDE8396572984E99 /* Frameworks */,
+				AEB53F8F708E7DFC758C9CA68AE30441 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSSelectionMenu;
+			productName = RSSelectionMenu;
+			productReference = C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5935928F7DB78F12E8E66D2632570DEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACFBE725BF0F13FBDE4CD9176EF29A09 /* Pods-VeriApp */,
+				DA2B42431EFC3E6DD9E7D1E86D7DAE2D /* Pods-VeriApp-VeriAppUITests */,
+				25823C3084A4411CAC463B0C03E339D5 /* Pods-VeriAppTests */,
+				F4BA747C8987B7580A893EC859D12686 /* RSSelectionMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AFC3587481F95E354B721F3DC737980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5495C81D57BFB6D0FEB1E8291FB0A4F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEB53F8F708E7DFC758C9CA68AE30441 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F29677C6F431B9329653C5320824ECFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53FE58519DC82FCDF6E2836D2493C733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1652D1A11AB2144A9D2829059F9AA8 /* Pods-VeriAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99D8AEB3D5C49903FE9F461A1A311FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20EC294D9460097297323FB7CD017D2 /* Constants.swift in Sources */,
+				B7012313DF0572209693EB551305FDC9 /* Enums.swift in Sources */,
+				857582D5FD62615C683724F9B07DF3EC /* NavigationBarTheme.swift in Sources */,
+				61D8AD5FA6FE8591113C15FAE146BBDC /* RSFirstRowSelection.swift in Sources */,
+				8139D07F3ED142A9C100A3149A23107B /* RSSelectionMenu-dummy.m in Sources */,
+				BA5A38EB2D6CC06B29C6C3DDFA981DDF /* RSSelectionMenuController.swift in Sources */,
+				5157EC6843F705ED26DDD74D80A3C951 /* RSSelectionMenuDataSource.swift in Sources */,
+				539EA13B422E731278EDF3CF5B7EA85A /* RSSelectionMenuDelegate.swift in Sources */,
+				74535B3DCD8B7B3DC79B3FB86F2FAA95 /* RSSelectionMenuSearchDelegate.swift in Sources */,
+				C063E602C0FD4C3E37C71683A6714F65 /* RSSelectionTableView.swift in Sources */,
+				FAC2A0C568472DA91184BC6915F8EB27 /* ViewControllerExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A000750439F6C45FD8A1CFDDE872AFB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2733D7599B942675A80A38CE2C80026 /* Pods-VeriApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2BE04CFF9D138A5833F735E4A5A8A36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF86E456DF1BDB5380766DADF864E785 /* Pods-VeriApp-VeriAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34CBEF55A4AD482014089F2C4592A4B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSSelectionMenu;
+			target = F4BA747C8987B7580A893EC859D12686 /* RSSelectionMenu */;
+			targetProxy = A394AF8040B843497EFD158A07DC8604 /* PBXContainerItemProxy */;
+		};
+		9802AE0C3586E6B377D15FAD44844F59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSSelectionMenu;
+			target = F4BA747C8987B7580A893EC859D12686 /* RSSelectionMenu */;
+			targetProxy = F483529006972711741E32FC53ECE333 /* PBXContainerItemProxy */;
+		};
+		F166D6E6FA3C1D46C8BBE3D95BF886FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-VeriApp";
+			target = ACFBE725BF0F13FBDE4CD9176EF29A09 /* Pods-VeriApp */;
+			targetProxy = FA06DA1102EB343C154D6EA130CA790F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22851C4DB01BA0FED0DF190F8CA1EF9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 038849C49B66565E0AC16D16A80B0F44 /* RSSelectionMenu.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RSSelectionMenu/RSSelectionMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSSelectionMenu/RSSelectionMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RSSelectionMenu/RSSelectionMenu.modulemap";
+				PRODUCT_MODULE_NAME = RSSelectionMenu;
+				PRODUCT_NAME = RSSelectionMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34C811C4073B635616C892CC81923BAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFD443DE1E827D814D3CAE00DD4F092D /* Pods-VeriApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VeriApp/Pods-VeriApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeriApp/Pods-VeriApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		403D6B748A3058FEA72AC4E2090C83FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E372601387A10FF58D2CA8E5E7915D7A /* Pods-VeriApp-VeriAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VeriApp-VeriAppUITests/Pods-VeriApp-VeriAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeriApp-VeriAppUITests/Pods-VeriApp-VeriAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A79E75ABE12008FCF95AB3434CDD4B3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70BA1731495B2A114FB028429489B758 /* RSSelectionMenu.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RSSelectionMenu/RSSelectionMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSSelectionMenu/RSSelectionMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RSSelectionMenu/RSSelectionMenu.modulemap";
+				PRODUCT_MODULE_NAME = RSSelectionMenu;
+				PRODUCT_NAME = RSSelectionMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE79F180A7C779D32F16BBF74A68684B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C3E36A29F0E5E62B7605985C3236341 /* Pods-VeriAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VeriAppTests/Pods-VeriAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeriAppTests/Pods-VeriAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C95BFE5FA94A5CF26C2DE46F6B3B4B6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 451BCC83AA0EB2C43D6B51FBEBE677EE /* Pods-VeriAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VeriAppTests/Pods-VeriAppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeriAppTests/Pods-VeriAppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D2E56D2EB7A3EC9D2D8874FD2EF350CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E8D2593F9DBFEAE875556D665D0D5E /* Pods-VeriApp-VeriAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VeriApp-VeriAppUITests/Pods-VeriApp-VeriAppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeriApp-VeriAppUITests/Pods-VeriApp-VeriAppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E97D8581887899DC96A5A9E08EDC6B75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88DECA3E2E9AFE1982FA5C25C6F75CE7 /* Pods-VeriApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-VeriApp/Pods-VeriApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-VeriApp/Pods-VeriApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34CC16543405E10FFDA941AAE5E2C9A3 /* Build configuration list for PBXNativeTarget "Pods-VeriApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E97D8581887899DC96A5A9E08EDC6B75 /* Debug */,
+				34C811C4073B635616C892CC81923BAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		803167EBC8C99999E24ACB2CC9807593 /* Build configuration list for PBXNativeTarget "Pods-VeriAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE79F180A7C779D32F16BBF74A68684B /* Debug */,
+				C95BFE5FA94A5CF26C2DE46F6B3B4B6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEE15C098F64A7D06A38C1BB75EFCD80 /* Build configuration list for PBXNativeTarget "RSSelectionMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79E75ABE12008FCF95AB3434CDD4B3C /* Debug */,
+				22851C4DB01BA0FED0DF190F8CA1EF9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D04314B93447EC582EC65BF466D79DF2 /* Build configuration list for PBXNativeTarget "Pods-VeriApp-VeriAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2E56D2EB7A3EC9D2D8874FD2EF350CF /* Debug */,
+				403D6B748A3058FEA72AC4E2090C83FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
