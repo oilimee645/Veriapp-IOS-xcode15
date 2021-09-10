@@ -37,6 +37,9 @@
 		84D5A08426C47C8800B34AA6 /* MainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A07E26C47C8800B34AA6 /* MainModels.swift */; };
 		84D5A08526C47C8800B34AA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A07F26C47C8800B34AA6 /* MainViewController.swift */; };
 		84D5A08626C47C8800B34AA6 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A08026C47C8800B34AA6 /* MainInteractor.swift */; };
+		84E0883726EB0F0200E49501 /* colibriTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0883526EB0F0200E49501 /* colibriTableViewCell.swift */; };
+		84E0883826EB0F0200E49501 /* colibriTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0883626EB0F0200E49501 /* colibriTableViewCell.xib */; };
+		84E0883A26EB131800E49501 /* TittleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0883926EB131800E49501 /* TittleTableViewCell.swift */; };
 		90E3111225DCA770226BBAEC /* Pods_VeriAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0F2D8444C8AC806ACE0BC8 /* Pods_VeriAppTests.framework */; };
 		BC6EAFEE26473702006E8BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EAFED26473702006E8BBA /* AppDelegate.swift */; };
 		BC6EAFF026473702006E8BBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EAFEF26473702006E8BBA /* SceneDelegate.swift */; };
@@ -98,6 +101,9 @@
 		84D5A07E26C47C8800B34AA6 /* MainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModels.swift; sourceTree = "<group>"; };
 		84D5A07F26C47C8800B34AA6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		84D5A08026C47C8800B34AA6 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		84E0883526EB0F0200E49501 /* colibriTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colibriTableViewCell.swift; sourceTree = "<group>"; };
+		84E0883626EB0F0200E49501 /* colibriTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = colibriTableViewCell.xib; sourceTree = "<group>"; };
+		84E0883926EB131800E49501 /* TittleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TittleTableViewCell.swift; sourceTree = "<group>"; };
 		96D6EEB68E3F0902F8FB67A3 /* Pods-VeriApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriApp.release.xcconfig"; path = "Target Support Files/Pods-VeriApp/Pods-VeriApp.release.xcconfig"; sourceTree = "<group>"; };
 		AF0F2D8444C8AC806ACE0BC8 /* Pods_VeriAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeriAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6EAFEA26473702006E8BBA /* VeriApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeriApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +160,9 @@
 			children = (
 				8464FAF626C47E92005D398F /* VeriAppViewController.swift */,
 				843CEB9E26C4DC9500782858 /* mainTableViewCell.swift */,
+				84E0883526EB0F0200E49501 /* colibriTableViewCell.swift */,
+				84E0883626EB0F0200E49501 /* colibriTableViewCell.xib */,
+				84E0883926EB131800E49501 /* TittleTableViewCell.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -435,6 +444,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E0883826EB0F0200E49501 /* colibriTableViewCell.xib in Resources */,
 				BC6EAFFD26473703006E8BBA /* LaunchScreen.storyboard in Resources */,
 				BC6EAFFA26473703006E8BBA /* Assets.xcassets in Resources */,
 				BC6EAFF526473702006E8BBA /* Main.storyboard in Resources */,
@@ -572,6 +582,7 @@
 				846C12F226D1A27700541BF1 /* UserDefaultsManager.swift in Sources */,
 				846C12F126D1A27700541BF1 /* enumKeys.swift in Sources */,
 				BC6EAFEE26473702006E8BBA /* AppDelegate.swift in Sources */,
+				84E0883A26EB131800E49501 /* TittleTableViewCell.swift in Sources */,
 				848528D126E5D0540002908D /* Constants.swift in Sources */,
 				847D68FF26C4755A00631B1E /* ColibriPresenter.swift in Sources */,
 				84D5A07526C47C0F00B34AA6 /* ConfigModels.swift in Sources */,
@@ -594,6 +605,7 @@
 				BC6EAFF826473702006E8BBA /* VeriApp.xcdatamodeld in Sources */,
 				84D5A07426C47C0F00B34AA6 /* ConfigRouter.swift in Sources */,
 				84D5A07726C47C0F00B34AA6 /* ConfigInteractor.swift in Sources */,
+				84E0883726EB0F0200E49501 /* colibriTableViewCell.swift in Sources */,
 				84D5A08526C47C8800B34AA6 /* MainViewController.swift in Sources */,
 				84D5A08426C47C8800B34AA6 /* MainModels.swift in Sources */,
 				847D690426C4755A00631B1E /* ColibriInteractor.swift in Sources */,

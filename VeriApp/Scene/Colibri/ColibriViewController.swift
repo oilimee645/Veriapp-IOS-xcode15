@@ -12,7 +12,7 @@
 
 import UIKit
 
-protocol ColibriDisplayLogic: class
+protocol ColibriDisplayLogic: AnyObject
 {
   func displaySomething(viewModel: Colibri.Something.ViewModel)
 }
@@ -21,7 +21,13 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
 {
   var interactor: ColibriBusinessLogic?
   var router: (NSObjectProtocol & ColibriRoutingLogic & ColibriDataPassing)?
-
+    // MARK: Outlets
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    
   // MARK: Object lifecycle
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -69,21 +75,58 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    doSomething()
+    Configure()
   }
   
   // MARK: Do something
   
   //@IBOutlet weak var nameTextField: UITextField!
   
-  func doSomething()
+  func Configure()
   {
     let request = Colibri.Something.Request()
     interactor?.doSomething(request: request)
+    
+    
+    //table
+   
+    tableView.tableFooterView = UIView()
+    self.tableView.delegate = self
+    self.tableView.dataSource = self
   }
   
   func displaySomething(viewModel: Colibri.Something.ViewModel)
   {
     //nameTextField.text = viewModel.name
   }
+}
+
+
+extension ColibriViewController: UITableViewDelegate,UITableViewDataSource{
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+        
+    }
+    
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.row == 0 {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Title2Cell", for: indexPath) as? TittleTableViewCell else{
+            return UITableViewCell()
+        }
+            return cell
+        }else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "colibriCell", for: indexPath) as? colibriTableViewCell else{
+                return UITableViewCell()
+        }
+            return cell
+        }
+                
+    }
+    
+    
 }
