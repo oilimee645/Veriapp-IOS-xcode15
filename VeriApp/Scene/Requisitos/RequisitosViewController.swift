@@ -11,14 +11,21 @@
 //
 
 import UIKit
+import ScrollStackController
 
-protocol RequisitosDisplayLogic: class
+protocol RequisitosDisplayLogic: AnyObject
 {
-  func displaySomething(viewModel: Requisitos.Something.ViewModel)
+ 
 }
 
 class RequisitosViewController: VeriAppViewController, RequisitosDisplayLogic
 {
+    
+ private var stackController = ScrollStackViewController()
+    // MARK: Outlets
+    
+   
+    
   var interactor: RequisitosBusinessLogic?
   var router: (NSObjectProtocol & RequisitosRoutingLogic & RequisitosDataPassing)?
 
@@ -69,17 +76,23 @@ class RequisitosViewController: VeriAppViewController, RequisitosDisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    doSomething()
+    
+   
+    
+    Config()
   }
   
   // MARK: Do something
   
   //@IBOutlet weak var nameTextField: UITextField!
   
-  func doSomething()
+  func Config()
   {
     let request = Requisitos.Something.Request()
     interactor?.doSomething(request: request)
+    
+    
+    
   }
   
   func displaySomething(viewModel: Requisitos.Something.ViewModel)

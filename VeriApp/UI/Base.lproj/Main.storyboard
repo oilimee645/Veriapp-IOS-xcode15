@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vKc-HG-MsG">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -14,24 +14,24 @@
             <objects>
                 <viewController id="hna-3c-rLc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HRU-ce-Qk9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Verificentros" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWV-lD-Yc1">
-                                <rect key="frame" x="137.66666666666666" y="197" width="124.99999999999997" height="28"/>
+                                <rect key="frame" x="164" y="197" width="125" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Capture" translatesAutoresizingMaskIntoConstraints="NO" id="Fuv-1z-dK5">
-                                <rect key="frame" x="76.666666666666671" y="203" width="33" height="22"/>
+                                <rect key="frame" x="103" y="203" width="33" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="BKO-ZI-fj7"/>
                                     <constraint firstAttribute="height" constant="22" id="d5P-bW-XQW"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Capture" translatesAutoresizingMaskIntoConstraints="NO" id="hSd-Ne-uD0">
-                                <rect key="frame" x="290.66666666666669" y="203" width="33" height="22"/>
+                                <rect key="frame" x="317" y="203" width="33" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hSd-Ne-uD0" secondAttribute="height" multiplier="3:2" id="mIS-sr-mkg"/>
                                     <constraint firstAttribute="height" constant="22" id="olg-SN-jXi"/>
@@ -227,24 +227,24 @@ Noviembre - Diciembre</string>
             <objects>
                 <viewController id="99D-AP-MaW" customClass="MainViewController" customModule="VeriApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YIZ-wO-3ee">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="veriapp_logo" translatesAutoresizingMaskIntoConstraints="NO" id="V6Y-eA-dNg">
-                                <rect key="frame" x="115.66666666666669" y="49" width="144" height="40"/>
+                                <rect key="frame" x="142" y="49" width="144" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6YO-Aj-cWt"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kvA-Ks-365">
-                                <rect key="frame" x="0.0" y="94" width="375" height="7"/>
+                                <rect key="frame" x="0.0" y="94" width="428" height="7"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="7" id="HBt-ap-dym"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpi-VQ-FSA">
-                                <rect key="frame" x="0.0" y="722" width="375" height="7"/>
+                                <rect key="frame" x="0.0" y="836" width="428" height="7"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="7" id="bHi-Fe-jkE"/>
@@ -262,7 +262,7 @@ en el estado de México:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terminación de placa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m85-n4-EYn">
-                                <rect key="frame" x="96" y="228" width="83" height="29.333333333333314"/>
+                                <rect key="frame" x="96" y="228" width="136" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="m85-n4-EYn" secondAttribute="height" multiplier="122:43" id="d1l-Fw-wqi"/>
                                 </constraints>
@@ -271,7 +271,7 @@ en el estado de México:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="Capture" translatesAutoresizingMaskIntoConstraints="NO" id="Rom-bf-upU">
-                                <rect key="frame" x="205" y="223.33333333333334" width="45" height="39.000000000000028"/>
+                                <rect key="frame" x="258" y="232.66666666666666" width="45" height="38.999999999999972"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Rom-bf-upU" secondAttribute="height" multiplier="15:13" id="763-J9-pBy"/>
                                     <constraint firstAttribute="width" constant="45" id="OT0-Db-1b3"/>
@@ -279,7 +279,7 @@ en el estado de México:</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Me-4q-2Ry">
-                                <rect key="frame" x="15" y="657" width="237" height="21"/>
+                                <rect key="frame" x="15" y="771" width="237" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0Me-4q-2Ry" secondAttribute="height" multiplier="79:7" id="8nX-0D-Ja1"/>
                                     <constraint firstAttribute="width" secondItem="0Me-4q-2Ry" secondAttribute="height" multiplier="79:7" id="Ouj-6g-6TP"/>
@@ -291,14 +291,14 @@ en el estado de México:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cee-lG-6xI">
-                                <rect key="frame" x="25" y="307.33333333333326" width="325" height="279.66666666666674"/>
+                                <rect key="frame" x="25" y="326" width="378" height="375"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainCell" id="mVy-He-97w" customClass="mainTableViewCell" customModule="VeriApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="325" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="378" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mVy-He-97w" id="ghb-cp-lom">
-                                            <rect key="frame" x="0.0" y="0.0" width="325" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="378" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Periodo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" id="tyz-mP-Vnb">
@@ -386,29 +386,48 @@ en el estado de México:</string>
             <objects>
                 <viewController id="PUC-eT-enr" customClass="RequisitosViewController" customModule="VeriApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cX1-Pm-H9D">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="veriapp_logo" translatesAutoresizingMaskIntoConstraints="NO" id="N60-zR-RBK">
-                                <rect key="frame" x="115.66666666666669" y="49" width="144" height="40"/>
+                                <rect key="frame" x="142" y="49" width="144" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="N60-zR-RBK" secondAttribute="height" multiplier="18:5" id="hfw-8e-0Za"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dK3-jW-0rp">
-                                <rect key="frame" x="0.0" y="94" width="375" height="7"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dK3-jW-0rp" userLabel="top">
+                                <rect key="frame" x="0.0" y="94" width="428" height="7"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="7" id="EjW-AU-0Rc"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCT-6Y-cix">
-                                <rect key="frame" x="0.0" y="722" width="375" height="7"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCT-6Y-cix" userLabel="down">
+                                <rect key="frame" x="0.0" y="836" width="428" height="7"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="7" id="yiP-VV-rlt"/>
                                 </constraints>
                             </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hjg-nY-FaD">
+                                <rect key="frame" x="0.0" y="101" width="428" height="735"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SN9-gS-oCQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="1200"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="AeW-9M-Ahe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="SN9-gS-oCQ" secondAttribute="bottom" constant="100" id="0eY-o9-wwt"/>
+                                    <constraint firstItem="SN9-gS-oCQ" firstAttribute="top" secondItem="Hjg-nY-FaD" secondAttribute="top" id="JiJ-ng-XxS"/>
+                                    <constraint firstItem="SN9-gS-oCQ" firstAttribute="centerX" secondItem="Hjg-nY-FaD" secondAttribute="centerX" id="PT4-I9-1ej"/>
+                                    <constraint firstItem="SN9-gS-oCQ" firstAttribute="leading" secondItem="Hjg-nY-FaD" secondAttribute="leading" id="VqQ-Q3-tDu"/>
+                                    <constraint firstAttribute="trailing" secondItem="SN9-gS-oCQ" secondAttribute="trailing" id="bD9-mU-etA"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="I6F-4f-BGh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -418,10 +437,14 @@ en el estado de México:</string>
                             <constraint firstItem="CCT-6Y-cix" firstAttribute="leading" secondItem="I6F-4f-BGh" secondAttribute="leading" id="DDF-2Y-yRY"/>
                             <constraint firstItem="N60-zR-RBK" firstAttribute="width" secondItem="N60-zR-RBK" secondAttribute="height" multiplier="18:5" id="KOr-Wb-dyM"/>
                             <constraint firstItem="N60-zR-RBK" firstAttribute="centerX" secondItem="cX1-Pm-H9D" secondAttribute="centerX" id="NOp-p7-XU9"/>
+                            <constraint firstItem="Hjg-nY-FaD" firstAttribute="leading" secondItem="I6F-4f-BGh" secondAttribute="leading" id="PJM-vJ-83N"/>
                             <constraint firstItem="I6F-4f-BGh" firstAttribute="bottom" secondItem="CCT-6Y-cix" secondAttribute="bottom" id="Uh5-lR-UaG"/>
                             <constraint firstItem="CCT-6Y-cix" firstAttribute="trailing" secondItem="I6F-4f-BGh" secondAttribute="trailing" id="d8G-5E-6VN"/>
+                            <constraint firstItem="Hjg-nY-FaD" firstAttribute="top" secondItem="dK3-jW-0rp" secondAttribute="bottom" id="dcE-ZM-0q8"/>
                             <constraint firstItem="dK3-jW-0rp" firstAttribute="leading" secondItem="I6F-4f-BGh" secondAttribute="leading" id="duO-wZ-2Q0"/>
+                            <constraint firstItem="CCT-6Y-cix" firstAttribute="top" secondItem="Hjg-nY-FaD" secondAttribute="bottom" id="hRe-7u-zYz"/>
                             <constraint firstItem="dK3-jW-0rp" firstAttribute="trailing" secondItem="I6F-4f-BGh" secondAttribute="trailing" id="k20-to-Qye"/>
+                            <constraint firstItem="Hjg-nY-FaD" firstAttribute="trailing" secondItem="I6F-4f-BGh" secondAttribute="trailing" id="vc6-IJ-sOD"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="documentos_verde" id="8eh-JH-Phb">
@@ -430,56 +453,56 @@ en el estado de México:</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4la-xb-Qju" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="389.85507246376812" y="242.41071428571428"/>
+            <point key="canvasLocation" x="388.31775700934577" y="242.33261339092874"/>
         </scene>
         <!--Config View Controller-->
         <scene sceneID="EQ8-4p-Adz">
             <objects>
                 <viewController id="KfS-Yf-Ly6" customClass="ConfigViewController" customModule="VeriApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eoK-OT-9c3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="veriapp_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ohC-Sl-uyF">
-                                <rect key="frame" x="115.66666666666669" y="49" width="144" height="40"/>
+                                <rect key="frame" x="142" y="49" width="144" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ohC-Sl-uyF" secondAttribute="height" multiplier="18:5" id="MJ7-lg-Mm7"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIV-nI-y0K">
-                                <rect key="frame" x="0.0" y="94" width="375" height="7"/>
+                                <rect key="frame" x="0.0" y="94" width="428" height="7"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="7" id="5Yq-mS-vqf"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wU-mg-EDf">
-                                <rect key="frame" x="0.0" y="722" width="375" height="7"/>
+                                <rect key="frame" x="0.0" y="836" width="428" height="7"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="7" id="lZ0-e9-TNq"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Configuración" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9u-tr-L4n">
-                                <rect key="frame" x="123.33333333333333" y="116.99999999999999" width="128.66666666666669" height="25.333333333333329"/>
+                                <rect key="frame" x="149.66666666666669" y="116.99999999999999" width="128.66666666666669" height="25.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Configuración de alarma de inicio de periodo de verificación." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqK-0S-eqJ">
-                                <rect key="frame" x="14" y="163.33333333333334" width="299" height="50.333333333333343"/>
+                                <rect key="frame" x="14" y="163.33333333333334" width="352" height="50.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="G58-Ri-yxl">
-                                <rect key="frame" x="0.0" y="234.66666666666663" width="375" height="467"/>
+                                <rect key="frame" x="0.0" y="234.66666666666666" width="428" height="511.66666666666674"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTt-yA-InL">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="60.333333333333336"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terminacion de placa " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2W-xV-c4s">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="53"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="60.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="S2W-xV-c4s" secondAttribute="height" multiplier="97:41" id="8U6-kw-gIL"/>
                                                 </constraints>
@@ -488,13 +511,13 @@ en el estado de México:</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZO-it-x04">
-                                                <rect key="frame" x="125" y="0.0" width="125" height="53"/>
+                                                <rect key="frame" x="142.66666666666669" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado  de alarma" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5M-nP-2g7">
-                                                <rect key="frame" x="250" y="0.0" width="125" height="53"/>
+                                                <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -502,10 +525,10 @@ en el estado de México:</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hn-4X-Jk6">
-                                        <rect key="frame" x="0.0" y="83.000000000000028" width="375" height="52.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="90.333333333333343" width="428" height="60.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 y 6" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygw-1Q-Ofm">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="52.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="60.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Ygw-1Q-Ofm" secondAttribute="height" multiplier="97:41" id="BaB-CC-YLJ"/>
                                                 </constraints>
@@ -514,14 +537,15 @@ en el estado de México:</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LB2-82-3B0">
-                                                <rect key="frame" x="125" y="0.0" width="125" height="52.666666666666664"/>
-                                                <string key="text">Enero - FebreroJulio - Agosto</string>
+                                                <rect key="frame" x="142.66666666666669" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
+                                                <string key="text">Enero - Febrero
+Julio - Agosto</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cG5-dV-x3l">
-                                                <rect key="frame" x="250" y="0.0" width="125" height="52.666666666666664"/>
+                                                <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bX4-Sp-5mZ">
                                                         <rect key="frame" x="38" y="10.333333333333343" width="49" height="31"/>
@@ -533,10 +557,10 @@ en el estado de México:</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZY1-RH-bos">
-                                        <rect key="frame" x="0.0" y="165.66666666666666" width="375" height="53"/>
+                                        <rect key="frame" x="0.0" y="180.66666666666666" width="428" height="60.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 y 8" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdT-T3-3w2">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="53"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="60.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="bdT-T3-3w2" secondAttribute="height" multiplier="97:41" id="r8r-6q-OMN"/>
                                                 </constraints>
@@ -545,14 +569,15 @@ en el estado de México:</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="imD-BJ-5sG">
-                                                <rect key="frame" x="125" y="0.0" width="125" height="53"/>
-                                                <string key="text">Febrero - MarzoAgosto - Septiembre</string>
+                                                <rect key="frame" x="142.66666666666669" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
+                                                <string key="text">Febrero - Marzo
+Agosto - Septiembre</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ty5-mQ-VXn">
-                                                <rect key="frame" x="250" y="0.0" width="125" height="53"/>
+                                                <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L0E-Rl-PSE">
                                                         <rect key="frame" x="38" y="10.333333333333343" width="49" height="31"/>
@@ -564,10 +589,10 @@ en el estado de México:</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-S4-K1b">
-                                        <rect key="frame" x="0.0" y="248.66666666666666" width="375" height="52.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="271" width="428" height="60.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 y 4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSL-iZ-mLl">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="52.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="60.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="JSL-iZ-mLl" secondAttribute="height" multiplier="97:41" id="Qpk-Ia-c7c"/>
                                                 </constraints>
@@ -576,14 +601,15 @@ en el estado de México:</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bbe-Sj-6Qb">
-                                                <rect key="frame" x="125" y="0.0" width="125" height="52.666666666666664"/>
-                                                <string key="text">Marzo - AbrilSeptiembre - Octubre</string>
+                                                <rect key="frame" x="142.66666666666669" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
+                                                <string key="text">Marzo - Abril
+Septiembre - Octubre</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9Z-4w-ZRr">
-                                                <rect key="frame" x="250" y="0.0" width="125" height="52.666666666666664"/>
+                                                <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ze-4m-Yo1">
                                                         <rect key="frame" x="38" y="10.333333333333343" width="49" height="31"/>
@@ -595,10 +621,10 @@ en el estado de México:</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MGz-DY-EUl">
-                                        <rect key="frame" x="0.0" y="331.33333333333337" width="375" height="53"/>
+                                        <rect key="frame" x="0.0" y="361.33333333333337" width="428" height="60.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 y 2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXw-5a-udr">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="53"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="60.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="gXw-5a-udr" secondAttribute="height" multiplier="97:41" id="1lF-CU-rla"/>
                                                 </constraints>
@@ -607,14 +633,15 @@ en el estado de México:</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jjw-JC-iPl">
-                                                <rect key="frame" x="125" y="0.0" width="125" height="53"/>
-                                                <string key="text">Abril - MayoOctubre - Noviembre</string>
+                                                <rect key="frame" x="142.66666666666669" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
+                                                <string key="text">Abril - Mayo
+Octubre - Noviembre</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwv-2f-s0Y">
-                                                <rect key="frame" x="250" y="0.0" width="125" height="53"/>
+                                                <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2V-fN-42D">
                                                         <rect key="frame" x="38" y="10.333333333333343" width="49" height="31"/>
@@ -626,10 +653,10 @@ en el estado de México:</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zw3-cH-YwS">
-                                        <rect key="frame" x="0.0" y="414.33333333333337" width="375" height="52.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="451.66666666666674" width="428" height="60"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 y 9" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufz-8Y-FTu">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="52.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Ufz-8Y-FTu" secondAttribute="height" multiplier="97:41" id="Ywg-E8-gPf"/>
                                                 </constraints>
@@ -638,14 +665,15 @@ en el estado de México:</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9WM-L7-6RU">
-                                                <rect key="frame" x="125" y="0.0" width="125" height="52.666666666666664"/>
-                                                <string key="text">Mayo - JunioNoviembre - Diciembre</string>
+                                                <rect key="frame" x="142.66666666666669" y="0.0" width="142.66666666666669" height="60"/>
+                                                <string key="text">Mayo - Junio
+Noviembre - Diciembre</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5f-q8-aal">
-                                                <rect key="frame" x="250" y="0.0" width="125" height="52.666666666666664"/>
+                                                <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="60"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="13c-vi-StD">
                                                         <rect key="frame" x="38" y="10.333333333333343" width="49" height="31"/>
@@ -707,24 +735,24 @@ en el estado de México:</string>
             <objects>
                 <viewController id="QWW-aL-b6D" customClass="ColibriViewController" customModule="VeriApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YaQ-hJ-HV4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="veriapp_logo" translatesAutoresizingMaskIntoConstraints="NO" id="lWZ-HI-5sU">
-                                <rect key="frame" x="115.66666666666669" y="49" width="144" height="40"/>
+                                <rect key="frame" x="142" y="49" width="144" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="lWZ-HI-5sU" secondAttribute="height" multiplier="18:5" id="M7s-C2-4KE"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awB-mx-P8y">
-                                <rect key="frame" x="0.0" y="94" width="375" height="7"/>
+                                <rect key="frame" x="0.0" y="94" width="428" height="7"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="7" id="mFh-fP-kZp"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TG0-u8-ixO">
-                                <rect key="frame" x="0.0" y="722" width="375" height="7"/>
+                                <rect key="frame" x="0.0" y="836" width="428" height="7"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="7" id="ZVi-gV-QbS"/>
@@ -769,6 +797,9 @@ en el estado de México:</string>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
