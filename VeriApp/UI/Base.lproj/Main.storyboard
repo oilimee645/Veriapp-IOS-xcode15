@@ -41,173 +41,6 @@
                                 <rect key="frame" x="33" y="241" width="374" height="485"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Requisitos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W3t-1u-1dn">
-                                <rect key="frame" x="168" y="88" width="104" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- Certificado de verificación anterior o reposición. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuK-sP-e5z">
-                                <rect key="frame" x="33" y="128" width="216" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- Tarjeta de circulación." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ6-7J-OmA">
-                                <rect key="frame" x="33" y="337" width="216" height="20.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- Alta/baja de placas de servicio particular." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGB-64-s8g">
-                                <rect key="frame" x="33" y="516" width="245" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="certificado_anterior_sin_datos" translatesAutoresizingMaskIntoConstraints="NO" id="zbw-3h-3WB">
-                                <rect key="frame" x="84" y="170" width="271" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8t-m4-Cyr">
-                                <rect key="frame" x="105" y="297" width="238" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Aprende a obtener tu formato de pago de reposición. ">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="cellTitle"/>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WG5-C6-GlI">
-                                <rect key="frame" x="105" y="482" width="238" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Aprende a tramitar la reposición de tu tarjeta de ciculación.">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="cellTitle"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            <integer key="NSUnderline" value="1"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tarjeta_x" translatesAutoresizingMaskIntoConstraints="NO" id="k7D-Ba-OOg">
-                                <rect key="frame" x="135" y="369" width="169" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alta_y_baja_sin_datos" translatesAutoresizingMaskIntoConstraints="NO" id="mMd-X6-HBy">
-                                <rect key="frame" x="163" y="573" width="114" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 o 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UrZ-6f-T7y">
-                                <rect key="frame" x="61" y="357" width="39" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="7 u 8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8Q-op-bcg">
-                                <rect key="frame" x="61" y="453" width="89.5" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" fixedFrame="YES" text="3 o 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pQ-cY-i8s">
-                                <rect key="frame" x="61" y="549" width="44" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="1 y 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMa-N4-8fr">
-                                <rect key="frame" x="61" y="645" width="39" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 y 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KK9-31-giA">
-                                <rect key="frame" x="61" y="741" width="39" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWI-zD-xS8">
-                                <rect key="frame" x="159" y="344" width="119.5" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Enero - Febrero
-Julio - Agosto</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndL-L1-F6y">
-                                <rect key="frame" x="159" y="440" width="160" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Febrero - Marzo
-Agosto - Septiembre</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5U-RF-JNx">
-                                <rect key="frame" x="159" y="536" width="170.5" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Marzo - Abril
-Septiembre - Octubre</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zww-gT-C4l">
-                                <rect key="frame" x="159" y="632" width="163" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Abril - Mayo
-Octubre - Noviembre</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qem-ye-Drj">
-                                <rect key="frame" x="334" y="352" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rhe-vF-mcP">
-                                <rect key="frame" x="335" y="448" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8SF-IF-FuR">
-                                <rect key="frame" x="334" y="544" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bwp-jb-k1x">
-                                <rect key="frame" x="334" y="640" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Epk-z6-Gcn">
-                                <rect key="frame" x="335" y="736" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPe-JC-5Lk">
-                                <rect key="frame" x="159" y="726" width="171" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Mayo - Junio
-Noviembre - Diciembre</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aZd-EX-qDt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -413,10 +246,139 @@ en el estado de México:</string>
                                 <rect key="frame" x="0.0" y="101" width="428" height="735"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SN9-gS-oCQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="1200"/>
-                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="1000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Requisitos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Og-s0-lqj">
+                                                <rect key="frame" x="162" y="13" width="104" height="28"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Certificado de verificación anterior o reposición. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3bU-KM-zGC">
+                                                <rect key="frame" x="8" y="49" width="412" height="45.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Tarjeta de circulación." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n25-lN-Ijz">
+                                                <rect key="frame" x="8" y="291" width="197.33333333333334" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Alta/baja de placas de servicio particular." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uOo-0L-ahB">
+                                                <rect key="frame" x="8" y="474.66666666666663" width="322.33333333333331" height="20.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewQ-fU-ehE">
+                                                <rect key="frame" x="-82" y="105" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgt-CN-7qd" userLabel="1">
+                                                <rect key="frame" x="0.0" y="110.66666666666664" width="428" height="164.33333333333337"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="certificado_anterior_sin_datos" translatesAutoresizingMaskIntoConstraints="NO" id="zbw-3h-3WB">
+                                                        <rect key="frame" x="56.333333333333343" y="0.0" width="315.66666666666663" height="145.33333333333334"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WG5-C6-GlI">
+                                                        <rect key="frame" x="69.666666666666686" y="150.33333333333334" width="289" height="14"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Aprende a obtener tu formato de pago de reposición. ">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                    <integer key="NSUnderline" value="1"/>
+                                                                    <color key="NSUnderlineColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="WG5-C6-GlI" secondAttribute="bottom" id="2jc-qx-9EI"/>
+                                                    <constraint firstItem="zbw-3h-3WB" firstAttribute="top" secondItem="Fgt-CN-7qd" secondAttribute="top" id="PLi-A0-bfq"/>
+                                                    <constraint firstItem="zbw-3h-3WB" firstAttribute="centerX" secondItem="Fgt-CN-7qd" secondAttribute="centerX" id="mLC-By-pYB"/>
+                                                    <constraint firstItem="WG5-C6-GlI" firstAttribute="top" secondItem="zbw-3h-3WB" secondAttribute="bottom" constant="5" id="nNC-Ci-RUB"/>
+                                                    <constraint firstItem="WG5-C6-GlI" firstAttribute="centerX" secondItem="Fgt-CN-7qd" secondAttribute="centerX" id="s8e-YZ-fpr"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3uM-qc-Zy9" userLabel="2">
+                                                <rect key="frame" x="0.0" y="330" width="428" height="128.66666666666663"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tarjeta_x" translatesAutoresizingMaskIntoConstraints="NO" id="P4O-hW-HU5">
+                                                        <rect key="frame" x="129.66666666666666" y="0.0" width="168.99999999999997" height="109.66666666666667"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8q-WI-NqN">
+                                                        <rect key="frame" x="52.333333333333343" y="114.66666666666663" width="323.66666666666663" height="14"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Aprende a tramitar la reposición de tu tarjeta de circulación. ">
+                                                                <attributes>
+                                                                    <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                    <integer key="NSUnderline" value="1"/>
+                                                                    <color key="NSUnderlineColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="v8q-WI-NqN" secondAttribute="bottom" id="2tM-Kj-adK"/>
+                                                    <constraint firstItem="P4O-hW-HU5" firstAttribute="centerX" secondItem="3uM-qc-Zy9" secondAttribute="centerX" id="6qz-UV-kKF"/>
+                                                    <constraint firstItem="P4O-hW-HU5" firstAttribute="top" secondItem="3uM-qc-Zy9" secondAttribute="top" id="h10-r5-fhQ"/>
+                                                    <constraint firstItem="v8q-WI-NqN" firstAttribute="top" secondItem="P4O-hW-HU5" secondAttribute="bottom" constant="5" id="hKy-Hc-Ab3"/>
+                                                    <constraint firstItem="P4O-hW-HU5" firstAttribute="centerX" secondItem="3uM-qc-Zy9" secondAttribute="centerX" id="jVo-0G-THg"/>
+                                                    <constraint firstItem="v8q-WI-NqN" firstAttribute="centerX" secondItem="3uM-qc-Zy9" secondAttribute="centerX" id="zAb-p6-mel"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYt-aA-toO" userLabel="3">
+                                                <rect key="frame" x="0.0" y="510.99999999999994" width="428" height="2.3333333333333144"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alta_y_baja_sin_datos" translatesAutoresizingMaskIntoConstraints="NO" id="sUq-3V-R7v">
+                                                        <rect key="frame" x="157" y="8" width="114" height="169"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="114" id="GZc-ef-cTL"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="sUq-3V-R7v" firstAttribute="centerX" secondItem="jYt-aA-toO" secondAttribute="centerX" id="DFu-nX-pa3"/>
+                                                    <constraint firstItem="sUq-3V-R7v" firstAttribute="top" secondItem="jYt-aA-toO" secondAttribute="topMargin" id="eue-UL-tGZ"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="1200" id="AeW-9M-Ahe"/>
+                                            <constraint firstItem="uOo-0L-ahB" firstAttribute="top" secondItem="3uM-qc-Zy9" secondAttribute="bottom" constant="16" id="1Sy-cg-f5C"/>
+                                            <constraint firstItem="n25-lN-Ijz" firstAttribute="leading" secondItem="SN9-gS-oCQ" secondAttribute="leading" constant="8" id="4Vz-4o-SVJ"/>
+                                            <constraint firstItem="3uM-qc-Zy9" firstAttribute="top" secondItem="n25-lN-Ijz" secondAttribute="bottom" constant="16" id="8pc-uY-iaP"/>
+                                            <constraint firstAttribute="height" constant="1000" id="AeW-9M-Ahe"/>
+                                            <constraint firstAttribute="trailing" secondItem="jYt-aA-toO" secondAttribute="trailing" id="DyJ-ep-BFg"/>
+                                            <constraint firstItem="5Og-s0-lqj" firstAttribute="top" secondItem="SN9-gS-oCQ" secondAttribute="top" constant="13" id="Fiw-FV-07i"/>
+                                            <constraint firstItem="Fgt-CN-7qd" firstAttribute="top" secondItem="3bU-KM-zGC" secondAttribute="bottom" constant="16" id="G1z-OS-Ewo"/>
+                                            <constraint firstItem="3bU-KM-zGC" firstAttribute="top" secondItem="5Og-s0-lqj" secondAttribute="bottom" constant="8" id="Hob-Wb-PWw"/>
+                                            <constraint firstAttribute="trailing" secondItem="3uM-qc-Zy9" secondAttribute="trailing" id="N7f-hZ-Ceq"/>
+                                            <constraint firstItem="uOo-0L-ahB" firstAttribute="leading" secondItem="n25-lN-Ijz" secondAttribute="leading" id="RSJ-UY-PrS"/>
+                                            <constraint firstItem="3uM-qc-Zy9" firstAttribute="leading" secondItem="SN9-gS-oCQ" secondAttribute="leading" id="T3b-Z8-Kmb"/>
+                                            <constraint firstItem="5Og-s0-lqj" firstAttribute="centerX" secondItem="SN9-gS-oCQ" secondAttribute="centerX" id="UBA-el-XNb"/>
+                                            <constraint firstItem="3bU-KM-zGC" firstAttribute="leading" secondItem="SN9-gS-oCQ" secondAttribute="leading" constant="8" id="UgB-Mo-cBf"/>
+                                            <constraint firstItem="n25-lN-Ijz" firstAttribute="top" secondItem="Fgt-CN-7qd" secondAttribute="bottom" constant="16" id="Z6q-7g-Wsk"/>
+                                            <constraint firstItem="Fgt-CN-7qd" firstAttribute="centerX" secondItem="3bU-KM-zGC" secondAttribute="centerX" id="aKX-X6-sI5"/>
+                                            <constraint firstItem="jYt-aA-toO" firstAttribute="leading" secondItem="SN9-gS-oCQ" secondAttribute="leading" id="alL-Xh-lZF"/>
+                                            <constraint firstAttribute="bottom" secondItem="jYt-aA-toO" secondAttribute="bottom" constant="486.66666666666663" id="ctb-bW-7uo"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uOo-0L-ahB" secondAttribute="trailing" constant="20" symbolic="YES" id="kR0-72-Vk2"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="n25-lN-Ijz" secondAttribute="trailing" constant="20" symbolic="YES" id="lcR-PL-p2N"/>
+                                            <constraint firstItem="jYt-aA-toO" firstAttribute="top" secondItem="uOo-0L-ahB" secondAttribute="bottom" constant="16" id="usk-j4-p0x"/>
+                                            <constraint firstItem="Fgt-CN-7qd" firstAttribute="leading" secondItem="SN9-gS-oCQ" secondAttribute="leading" id="vzy-IV-DcB"/>
+                                            <constraint firstItem="Fgt-CN-7qd" firstAttribute="centerX" secondItem="SN9-gS-oCQ" secondAttribute="centerX" id="yR0-ns-Msr"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -450,6 +412,11 @@ en el estado de México:</string>
                     <tabBarItem key="tabBarItem" title="" image="documentos_verde" id="8eh-JH-Phb">
                         <inset key="imageInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="view1" destination="Fgt-CN-7qd" id="ddR-4b-AO8"/>
+                        <outlet property="view2" destination="3uM-qc-Zy9" id="nbL-mR-7d4"/>
+                        <outlet property="view3" destination="jYt-aA-toO" id="bFz-EN-VNn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4la-xb-Qju" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -797,9 +764,6 @@ Noviembre - Diciembre</string>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

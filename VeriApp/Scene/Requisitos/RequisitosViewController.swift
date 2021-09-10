@@ -25,8 +25,12 @@ class RequisitosViewController: VeriAppViewController, RequisitosDisplayLogic
     // MARK: Outlets
     
    
+    @IBOutlet weak var view1: UIView!
+    @IBOutlet weak var view2: UIView!
+    @IBOutlet weak var view3: UIView!
     
-  var interactor: RequisitosBusinessLogic?
+    
+    var interactor: RequisitosBusinessLogic?
   var router: (NSObjectProtocol & RequisitosRoutingLogic & RequisitosDataPassing)?
 
   // MARK: Object lifecycle
@@ -91,8 +95,7 @@ class RequisitosViewController: VeriAppViewController, RequisitosDisplayLogic
     let request = Requisitos.Something.Request()
     interactor?.doSomething(request: request)
     
-    
-    
+    //
   }
   
   func displaySomething(viewModel: Requisitos.Something.ViewModel)
