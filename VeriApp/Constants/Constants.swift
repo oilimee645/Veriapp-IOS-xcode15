@@ -16,6 +16,10 @@ class Constants{
         static let eight:Int = 667
     }
     
+    struct Color {
+        static let ColibriGreen:UIColor = UIColor(red: 0.44, green: 0.66, blue: 0.23, alpha: 1.00)
+    }
+    
 }
     
     

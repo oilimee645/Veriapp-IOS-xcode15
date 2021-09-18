@@ -99,6 +99,19 @@ class MainViewController: VeriAppViewController, MainDisplayLogic
         self.tableView.layer.borderWidth = 2
         self.tableView.layer.borderColor = UIColor.black.cgColor
         
+        //Constrains for differents models
+        let screenSize: CGRect = UIScreen.main.bounds
+        
+        if Int(screenSize.height) <= Constants.DevicesHeight.eight {
+        
+            self.tableView.height(constant: 263)
+            
+        }else if Int(screenSize.height) >= Constants.DevicesHeight.TwelveProMax{
+            
+            self.tableView.height(constant: 263)
+            
+        }
+
         
         
         

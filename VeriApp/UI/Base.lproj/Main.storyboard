@@ -9,27 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="yVC-Y1-KFt">
-            <objects>
-                <viewController id="hna-3c-rLc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HRU-ce-Qk9">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="table" translatesAutoresizingMaskIntoConstraints="NO" id="tOG-f2-IW0">
-                                <rect key="frame" x="33" y="241" width="374" height="485"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="aZd-EX-qDt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EB0-iX-weK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-529" y="-1088"/>
-        </scene>
         <!--Main View Controller-->
         <scene sceneID="clF-LE-GuM">
             <objects>
@@ -701,13 +680,13 @@ Noviembre - Diciembre</string>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verificentros" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWV-lD-Yc1">
-                                <rect key="frame" x="151.66666666666666" y="111" width="124.99999999999997" height="28"/>
+                                <rect key="frame" x="151.33333333333334" y="111" width="125.33333333333334" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Capture" translatesAutoresizingMaskIntoConstraints="NO" id="Fuv-1z-dK5">
-                                <rect key="frame" x="91.666666666666671" y="114" width="33" height="22"/>
+                                <rect key="frame" x="91.333333333333329" y="114" width="33" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="33" id="5eK-zr-xk9"/>
                                     <constraint firstAttribute="height" constant="22" id="boO-sV-org"/>
@@ -721,31 +700,11 @@ Noviembre - Diciembre</string>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rqy-2s-g2T">
-                                <rect key="frame" x="15" y="154" width="398" height="672"/>
+                                <rect key="frame" x="15" y="209" width="398" height="617"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Title2Cell" id="fE8-no-VYI" customClass="TittleTableViewCell" customModule="VeriApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="398" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fE8-no-VYI" id="1Fz-AI-HNM">
-                                            <rect key="frame" x="0.0" y="0.0" width="398" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2n-K3-VU2">
-                                                    <rect key="frame" x="152.33333333333334" y="7" width="93.333333333333343" height="30"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="G2n-K3-VU2" firstAttribute="centerX" secondItem="1Fz-AI-HNM" secondAttribute="centerX" id="Bj5-le-VgQ"/>
-                                                <constraint firstItem="G2n-K3-VU2" firstAttribute="centerY" secondItem="1Fz-AI-HNM" secondAttribute="centerY" id="rMV-eN-9Bl"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="colibriCell" id="UUE-yp-EZE" customClass="colibriTableViewCell" customModule="VeriApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="68.000001907348633" width="398" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="398" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UUE-yp-EZE" id="umm-pi-Xkz">
                                             <rect key="frame" x="0.0" y="0.0" width="398" height="43.666667938232422"/>
@@ -766,17 +725,46 @@ Noviembre - Diciembre</string>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmx-fn-hgO" userLabel="tableTittle">
+                                <rect key="frame" x="15" y="159" width="398" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pL2-ZH-cpJ">
+                                        <rect key="frame" x="160.33333333333334" y="12.333333333333341" width="77.333333333333343" height="25.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="dic-CV-Ra2">
+                                        <rect key="frame" x="343" y="4" width="40" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dic-CV-Ra2" secondAttribute="height" multiplier="20:21" id="ZBS-md-NJs"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dic-CV-Ra2" firstAttribute="top" secondItem="pmx-fn-hgO" secondAttribute="top" constant="4" id="4DJ-6q-qMY"/>
+                                    <constraint firstAttribute="trailing" secondItem="dic-CV-Ra2" secondAttribute="trailing" constant="15" id="6TR-zJ-Lcu"/>
+                                    <constraint firstAttribute="height" constant="50" id="L11-IN-ayl"/>
+                                    <constraint firstAttribute="bottom" secondItem="dic-CV-Ra2" secondAttribute="bottom" constant="4" id="h43-Jo-eke"/>
+                                    <constraint firstItem="pL2-ZH-cpJ" firstAttribute="centerY" secondItem="pmx-fn-hgO" secondAttribute="centerY" id="upr-57-Oao"/>
+                                    <constraint firstItem="pL2-ZH-cpJ" firstAttribute="centerX" secondItem="pmx-fn-hgO" secondAttribute="centerX" id="x1S-9q-Wz6"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KCG-xN-Ajp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hSd-Ne-uD0" firstAttribute="leading" secondItem="iWV-lD-Yc1" secondAttribute="trailing" constant="27" id="32m-rB-Gqz"/>
                             <constraint firstItem="lWZ-HI-5sU" firstAttribute="centerX" secondItem="YaQ-hJ-HV4" secondAttribute="centerX" id="97y-CA-YGl"/>
+                            <constraint firstItem="KCG-xN-Ajp" firstAttribute="trailing" secondItem="pmx-fn-hgO" secondAttribute="trailing" constant="15" id="AnU-2M-yOD"/>
+                            <constraint firstItem="KCG-xN-Ajp" firstAttribute="trailing" secondItem="hSd-Ne-uD0" secondAttribute="trailing" constant="91.333333333333314" id="HgL-Uh-SD0"/>
                             <constraint firstItem="iWV-lD-Yc1" firstAttribute="leading" secondItem="Fuv-1z-dK5" secondAttribute="trailing" constant="27" id="K6T-f9-pzo"/>
+                            <constraint firstItem="pmx-fn-hgO" firstAttribute="top" secondItem="iWV-lD-Yc1" secondAttribute="bottom" constant="20" id="KvL-DW-527"/>
                             <constraint firstItem="TG0-u8-ixO" firstAttribute="leading" secondItem="KCG-xN-Ajp" secondAttribute="leading" id="M51-YK-qhs"/>
                             <constraint firstItem="awB-mx-P8y" firstAttribute="top" secondItem="lWZ-HI-5sU" secondAttribute="bottom" constant="5" id="O83-ut-IC9"/>
                             <constraint firstItem="KCG-xN-Ajp" firstAttribute="trailing" secondItem="Rqy-2s-g2T" secondAttribute="trailing" constant="15" id="Qzg-b5-qES"/>
                             <constraint firstItem="iWV-lD-Yc1" firstAttribute="centerX" secondItem="YaQ-hJ-HV4" secondAttribute="centerX" id="XPM-jt-y6C"/>
+                            <constraint firstItem="Rqy-2s-g2T" firstAttribute="top" secondItem="pmx-fn-hgO" secondAttribute="bottom" id="Zpf-QX-fRY"/>
                             <constraint firstItem="TG0-u8-ixO" firstAttribute="trailing" secondItem="KCG-xN-Ajp" secondAttribute="trailing" id="ant-io-FOA"/>
                             <constraint firstItem="Rqy-2s-g2T" firstAttribute="leading" secondItem="KCG-xN-Ajp" secondAttribute="leading" constant="15" id="bS3-AD-0cA"/>
                             <constraint firstItem="KCG-xN-Ajp" firstAttribute="bottom" secondItem="TG0-u8-ixO" secondAttribute="bottom" id="ba0-ef-aSC"/>
@@ -786,7 +774,9 @@ Noviembre - Diciembre</string>
                             <constraint firstItem="awB-mx-P8y" firstAttribute="leading" secondItem="YaQ-hJ-HV4" secondAttribute="leading" id="igl-TZ-nc3"/>
                             <constraint firstItem="TG0-u8-ixO" firstAttribute="top" secondItem="Rqy-2s-g2T" secondAttribute="bottom" constant="10" id="k2p-jO-5cb"/>
                             <constraint firstItem="KCG-xN-Ajp" firstAttribute="trailing" secondItem="awB-mx-P8y" secondAttribute="trailing" id="lEu-tO-LP9"/>
-                            <constraint firstItem="Rqy-2s-g2T" firstAttribute="top" secondItem="iWV-lD-Yc1" secondAttribute="bottom" constant="15" id="lFH-tD-NNy"/>
+                            <constraint firstItem="pmx-fn-hgO" firstAttribute="centerX" secondItem="iWV-lD-Yc1" secondAttribute="centerX" id="rdC-KH-N6r"/>
+                            <constraint firstItem="pmx-fn-hgO" firstAttribute="leading" secondItem="KCG-xN-Ajp" secondAttribute="leading" constant="15" id="tFW-69-Rg8"/>
+                            <constraint firstItem="Rqy-2s-g2T" firstAttribute="top" secondItem="pmx-fn-hgO" secondAttribute="bottom" id="tVJ-ia-vml"/>
                             <constraint firstItem="iWV-lD-Yc1" firstAttribute="top" secondItem="awB-mx-P8y" secondAttribute="bottom" constant="10" id="w85-HS-Ln9"/>
                         </constraints>
                     </view>
@@ -795,11 +785,12 @@ Noviembre - Diciembre</string>
                     </tabBarItem>
                     <connections>
                         <outlet property="tableView" destination="Rqy-2s-g2T" id="dxB-Hr-tbi"/>
+                        <outlet property="tiitleView" destination="pmx-fn-hgO" id="1Al-IO-H1P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUY-U2-jpN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="389.85507246376812" y="-408.48214285714283"/>
+            <point key="canvasLocation" x="389.71962616822429" y="-409.50323974082079"/>
         </scene>
     </scenes>
     <resources>
@@ -810,7 +801,7 @@ Noviembre - Diciembre</string>
         <image name="colibri_verde" width="85.333335876464844" height="62.333332061767578"/>
         <image name="documentos_verde" width="85.333335876464844" height="62.333332061767578"/>
         <image name="herramienta_verde" width="85.333335876464844" height="62.333332061767578"/>
-        <image name="table" width="329.33334350585938" height="379.66665649414062"/>
+        <image name="mapa" width="69" height="66.333335876464844"/>
         <image name="tarjeta_x" width="169" height="109.33333587646484"/>
         <image name="veriapp_logo" width="144" height="37"/>
         <systemColor name="systemBackgroundColor">

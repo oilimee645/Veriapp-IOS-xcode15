@@ -26,6 +26,7 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var tiitleView: UIView!
     
     
   // MARK: Object lifecycle
@@ -93,6 +94,15 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
     tableView.tableFooterView = UIView()
     self.tableView.delegate = self
     self.tableView.dataSource = self
+    //Color and table border
+    tableView.layer.masksToBounds = true
+    tableView.layer.borderColor = Constants.Color.ColibriGreen.cgColor
+    tableView.layer.borderWidth = 3.0
+    
+    //tittleview
+    self.tiitleView.layer.masksToBounds = true
+    self.tiitleView.layer.borderColor = Constants.Color.ColibriGreen.cgColor
+    self.tiitleView.layer.borderWidth = 3.0
   }
   
   func displaySomething(viewModel: Colibri.Something.ViewModel)
@@ -114,17 +124,13 @@ extension ColibriViewController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        if indexPath.row == 0 {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Title2Cell", for: indexPath) as? TittleTableViewCell else{
-            return UITableViewCell()
-        }
-            return cell
-        }else {
+        
+    
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "colibriCell", for: indexPath) as? colibriTableViewCell else{
                 return UITableViewCell()
         }
             return cell
-        }
+        
                 
     }
     
