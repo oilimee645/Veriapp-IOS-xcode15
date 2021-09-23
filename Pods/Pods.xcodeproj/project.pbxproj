@@ -118,18 +118,18 @@
 		9589B27BC31D7A7CB891AEF2F30B3781 /* RSSelectionMenuDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RSSelectionMenuDataSource.swift; path = RSSelectionMenu/RSSelectionMenu/Source/RSSelectionMenuDataSource.swift; sourceTree = "<group>"; };
 		99D26A321FE29F57FC79CA9715CA4DDB /* Pods-VeriAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VeriAppTests-dummy.m"; sourceTree = "<group>"; };
 		9D051CAFC6B9E1A60F8D912A5A32F20C /* Pods-VeriApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VeriApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F09C161B965B0FD245BDA0713EEA763 /* RSSelectionMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSSelectionMenu.debug.xcconfig; sourceTree = "<group>"; };
 		A275F495BC7319E75080FD657564A881 /* ScrollStackController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ScrollStackController-umbrella.h"; sourceTree = "<group>"; };
 		A44EBDA8FB343A14151DCD3409D466F9 /* ScrollStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollStack.swift; path = Sources/ScrollStackController/ScrollStack.swift; sourceTree = "<group>"; };
-		A49848BAD296A96E27F6EF2C3BED74F4 /* ScrollStackController */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ScrollStackController; path = ScrollStackController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A49848BAD296A96E27F6EF2C3BED74F4 /* ScrollStackController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScrollStackController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A49FE02F976E2EF46F5B4A99F0830A2F /* Pods-VeriApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VeriApp.modulemap"; sourceTree = "<group>"; };
 		AC32159AA1ECDB37253C69751BB6B3AB /* Pods-VeriApp-VeriAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VeriApp-VeriAppUITests.modulemap"; sourceTree = "<group>"; };
 		BD3DAA8963C332F92D59BD930365D730 /* ScrollStackController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrollStackController.debug.xcconfig; sourceTree = "<group>"; };
 		BD87B1DA41A4174830AB1CA0D8E4718B /* RSSelectionMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSSelectionMenu-dummy.m"; sourceTree = "<group>"; };
 		C1DFCAB3B99C2F5789BF25F0DDC3C3E0 /* ScrollStackRowAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScrollStackRowAnimator.swift; path = Sources/ScrollStackController/Support/ScrollStackRowAnimator.swift; sourceTree = "<group>"; };
 		C3241142D64BEE0000FC36C1850803F0 /* NavigationBarTheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationBarTheme.swift; path = RSSelectionMenu/RSSelectionMenu/Source/NavigationBarTheme.swift; sourceTree = "<group>"; };
-		C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RSSelectionMenu; path = RSSelectionMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSSelectionMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAAEC755EA7E9014A646C20EDC8D006A /* Pods-VeriApp-VeriAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VeriApp-VeriAppUITests-frameworks.sh"; sourceTree = "<group>"; };
 		CADAEA96FFA435E26F6D015500BCA5D6 /* Pods-VeriApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VeriApp-umbrella.h"; sourceTree = "<group>"; };
 		CBD14879CA38C7902C0B40DEC7D070ED /* Pods-VeriApp-VeriAppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VeriApp-VeriAppUITests-Info.plist"; sourceTree = "<group>"; };
@@ -216,7 +216,6 @@
 				EBF28DF99844A812F5627D1A7EEB4D70 /* ViewControllerExtension.swift */,
 				EF9A323FD68F1C16A4E283A3DF87EF56 /* Support Files */,
 			);
-			name = RSSelectionMenu;
 			path = RSSelectionMenu;
 			sourceTree = "<group>";
 		};
@@ -278,8 +277,8 @@
 				DCA1BE1525500A1452888EBF058A8B28 /* Pods-VeriApp */,
 				444FE3D1C7F8B2C047B598421599D208 /* Pods-VeriApp-VeriAppUITests */,
 				1F52455337F56640EA02264D70DEA190 /* Pods-VeriAppTests */,
-				C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */,
-				A49848BAD296A96E27F6EF2C3BED74F4 /* ScrollStackController */,
+				C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu.framework */,
+				A49848BAD296A96E27F6EF2C3BED74F4 /* ScrollStackController.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -296,7 +295,6 @@
 				44AF81747BCE63F5D50673A3930DA79A /* UIView+AutoLayout_Extensions.swift */,
 				C1CC02584A95811CA03B376AFF7D86B0 /* Support Files */,
 			);
-			name = ScrollStackController;
 			path = ScrollStackController;
 			sourceTree = "<group>";
 		};
@@ -447,7 +445,7 @@
 			);
 			name = ScrollStackController;
 			productName = ScrollStackController;
-			productReference = A49848BAD296A96E27F6EF2C3BED74F4 /* ScrollStackController */;
+			productReference = A49848BAD296A96E27F6EF2C3BED74F4 /* ScrollStackController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		ACFBE725BF0F13FBDE4CD9176EF29A09 /* Pods-VeriApp */ = {
@@ -505,7 +503,7 @@
 			);
 			name = RSSelectionMenu;
 			productName = RSSelectionMenu;
-			productReference = C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu */;
+			productReference = C8C4578432714A1A74A7A0C4B4023447 /* RSSelectionMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -515,7 +513,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -687,7 +685,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ScrollStackController/ScrollStackController-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ScrollStackController/ScrollStackController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -721,7 +719,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/RSSelectionMenu/RSSelectionMenu-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/RSSelectionMenu/RSSelectionMenu-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -795,7 +793,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ScrollStackController/ScrollStackController-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ScrollStackController/ScrollStackController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1032,7 +1030,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/RSSelectionMenu/RSSelectionMenu-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/RSSelectionMenu/RSSelectionMenu-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

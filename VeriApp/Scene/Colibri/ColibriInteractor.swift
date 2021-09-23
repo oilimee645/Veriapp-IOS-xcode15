@@ -14,28 +14,53 @@ import UIKit
 
 protocol ColibriBusinessLogic
 {
-  func doSomething(request: Colibri.Something.Request)
+func readLocalFile(forName name: String) -> Data?
+func parse(jsonData: Data)
 }
 
 protocol ColibriDataStore
 {
-  //var name: String { get set }
+    var tableData: ColibriModel.Verificentros? { get set }
 }
 
 class ColibriInteractor: ColibriBusinessLogic, ColibriDataStore
 {
+  var tableData: ColibriModel.Verificentros?
   var presenter: ColibriPresentationLogic?
   var worker: ColibriWorker?
   //var name: String = ""
   
   // MARK: Do something
   
-  func doSomething(request: Colibri.Something.Request)
-  {
-    worker = ColibriWorker()
-    worker?.doSomeWork()
+     func readLocalFile(forName name: String) -> Data? {
+        do {
+            if let bundlePath = Bundle.main.path(forResource: name,
+                                                 ofType: "json"),
+                let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
+                return jsonData
+            }
+        } catch {
+            print(error)
+        }
+        
+        return nil
+    }
     
-    let response = Colibri.Something.Response()
-    presenter?.presentSomething(response: response)
-  }
+     func parse(jsonData: Data) {
+        do {
+            let decodedData = try JSONDecoder().decode(ColibriModel.Verificentros.self,
+                                                       from: jsonData)
+        /*    let index = 0
+            print("ID: ", decodedData.Table![index].Id!)
+            print("Nombre: ", decodedData.Table![index].Nombre!)
+            print("Tipo: ", decodedData.Table![index].Tipo!)
+            print("Especialidad: ", decodedData.Table![index].Especialidad!)
+            print("===================================")
+            print(decodedData)*/
+            self.tableData = decodedData
+            self.presenter?.presentTableData(data: self.tableData)
+        } catch {
+            print("decode error")
+        }
+    }
 }

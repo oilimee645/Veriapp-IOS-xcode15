@@ -25,7 +25,7 @@ class MainPresenter: MainPresentationLogic
   
   func presentSomething(response: Main.Something.Response)
   {
-    let viewModel = Main.Something.ViewModel()
+    //let viewModel = Main.Something.ViewModel()
     
   }
 }

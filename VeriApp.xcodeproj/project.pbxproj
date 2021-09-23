@@ -12,7 +12,7 @@
 		8464FAF726C47E92005D398F /* VeriAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464FAF626C47E92005D398F /* VeriAppViewController.swift */; };
 		846C12F126D1A27700541BF1 /* enumKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C12EF26D1A27700541BF1 /* enumKeys.swift */; };
 		846C12F226D1A27700541BF1 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C12F026D1A27700541BF1 /* UserDefaultsManager.swift */; };
-		846E736D26F647E90012CB10 /* Verificentros.plist in Resources */ = {isa = PBXBuildFile; fileRef = 846E736C26F647E90012CB10 /* Verificentros.plist */; };
+		8476B8E126FCFD1C0081C682 /* ListaVeri.json in Resources */ = {isa = PBXBuildFile; fileRef = 8476B8E026FCFD1C0081C682 /* ListaVeri.json */; };
 		847D68FF26C4755A00631B1E /* ColibriPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D68F926C4755A00631B1E /* ColibriPresenter.swift */; };
 		847D690026C4755A00631B1E /* ColibriWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D68FA26C4755A00631B1E /* ColibriWorker.swift */; };
 		847D690126C4755A00631B1E /* ColibriRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D68FB26C4755A00631B1E /* ColibriRouter.swift */; };
@@ -39,7 +39,6 @@
 		84D5A08526C47C8800B34AA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A07F26C47C8800B34AA6 /* MainViewController.swift */; };
 		84D5A08626C47C8800B34AA6 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D5A08026C47C8800B34AA6 /* MainInteractor.swift */; };
 		84E0883726EB0F0200E49501 /* colibriTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0883526EB0F0200E49501 /* colibriTableViewCell.swift */; };
-		84E0883826EB0F0200E49501 /* colibriTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E0883626EB0F0200E49501 /* colibriTableViewCell.xib */; };
 		84E0883A26EB131800E49501 /* TittleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E0883926EB131800E49501 /* TittleTableViewCell.swift */; };
 		90E3111225DCA770226BBAEC /* Pods_VeriAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF0F2D8444C8AC806ACE0BC8 /* Pods_VeriAppTests.framework */; };
 		BC6EAFEE26473702006E8BBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6EAFED26473702006E8BBA /* AppDelegate.swift */; };
@@ -77,7 +76,7 @@
 		8464FAF626C47E92005D398F /* VeriAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeriAppViewController.swift; sourceTree = "<group>"; };
 		846C12EF26D1A27700541BF1 /* enumKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = enumKeys.swift; path = VeriApp/Utilities/enumKeys.swift; sourceTree = SOURCE_ROOT; };
 		846C12F026D1A27700541BF1 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDefaultsManager.swift; path = VeriApp/Utilities/UserDefaultsManager.swift; sourceTree = SOURCE_ROOT; };
-		846E736C26F647E90012CB10 /* Verificentros.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Verificentros.plist; sourceTree = "<group>"; };
+		8476B8E026FCFD1C0081C682 /* ListaVeri.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ListaVeri.json; sourceTree = "<group>"; };
 		847D68F926C4755A00631B1E /* ColibriPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColibriPresenter.swift; path = VeriApp/Scene/Colibri/ColibriPresenter.swift; sourceTree = SOURCE_ROOT; };
 		847D68FA26C4755A00631B1E /* ColibriWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColibriWorker.swift; path = VeriApp/Scene/Colibri/ColibriWorker.swift; sourceTree = SOURCE_ROOT; };
 		847D68FB26C4755A00631B1E /* ColibriRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColibriRouter.swift; path = VeriApp/Scene/Colibri/ColibriRouter.swift; sourceTree = SOURCE_ROOT; };
@@ -104,7 +103,6 @@
 		84D5A07F26C47C8800B34AA6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		84D5A08026C47C8800B34AA6 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		84E0883526EB0F0200E49501 /* colibriTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colibriTableViewCell.swift; sourceTree = "<group>"; };
-		84E0883626EB0F0200E49501 /* colibriTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = colibriTableViewCell.xib; sourceTree = "<group>"; };
 		84E0883926EB131800E49501 /* TittleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TittleTableViewCell.swift; sourceTree = "<group>"; };
 		96D6EEB68E3F0902F8FB67A3 /* Pods-VeriApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeriApp.release.xcconfig"; path = "Target Support Files/Pods-VeriApp/Pods-VeriApp.release.xcconfig"; sourceTree = "<group>"; };
 		AF0F2D8444C8AC806ACE0BC8 /* Pods_VeriAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeriAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,7 +161,6 @@
 				8464FAF626C47E92005D398F /* VeriAppViewController.swift */,
 				843CEB9E26C4DC9500782858 /* mainTableViewCell.swift */,
 				84E0883526EB0F0200E49501 /* colibriTableViewCell.swift */,
-				84E0883626EB0F0200E49501 /* colibriTableViewCell.xib */,
 				84E0883926EB131800E49501 /* TittleTableViewCell.swift */,
 			);
 			path = Base;
@@ -212,7 +209,6 @@
 				847D68FC26C4755A00631B1E /* ColibriModels.swift */,
 				847D68FD26C4755A00631B1E /* ColibriViewController.swift */,
 				847D68FE26C4755A00631B1E /* ColibriInteractor.swift */,
-				846E736C26F647E90012CB10 /* Verificentros.plist */,
 			);
 			path = Colibri;
 			sourceTree = "<group>";
@@ -298,6 +294,7 @@
 		BC6EAFEC26473702006E8BBA /* VeriApp */ = {
 			isa = PBXGroup;
 			children = (
+				8476B8E026FCFD1C0081C682 /* ListaVeri.json */,
 				848528CF26E5D0410002908D /* Constants */,
 				847D68F426C4752200631B1E /* Scene */,
 				848528CE26E5C7AD0002908D /* UI */,
@@ -447,9 +444,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84E0883826EB0F0200E49501 /* colibriTableViewCell.xib in Resources */,
-				846E736D26F647E90012CB10 /* Verificentros.plist in Resources */,
 				BC6EAFFD26473703006E8BBA /* LaunchScreen.storyboard in Resources */,
+				8476B8E126FCFD1C0081C682 /* ListaVeri.json in Resources */,
 				BC6EAFFA26473703006E8BBA /* Assets.xcassets in Resources */,
 				BC6EAFF526473702006E8BBA /* Main.storyboard in Resources */,
 			);

@@ -25,7 +25,7 @@ class RequisitosPresenter: RequisitosPresentationLogic
   
   func presentSomething(response: Requisitos.Something.Response)
   {
-    let viewModel = Requisitos.Something.ViewModel()
+   // let viewModel = Requisitos.Something.ViewModel()
     
   }
 }

@@ -14,11 +14,15 @@ import UIKit
 
 protocol ColibriDisplayLogic: AnyObject
 {
-  func displaySomething(viewModel: Colibri.Something.ViewModel)
+    func displayTableData(data: ColibriModel.Verificentros?)
 }
 
 class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
 {
+    func displayTableData(data: ColibriModel.Verificentros?) {
+        self.tableData = data
+    }
+    
   var interactor: ColibriBusinessLogic?
   var router: (NSObjectProtocol & ColibriRoutingLogic & ColibriDataPassing)?
     // MARK: Outlets
@@ -27,7 +31,8 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var tiitleView: UIView!
-    
+   //
+    var tableData : ColibriModel.Verificentros?
     
   // MARK: Object lifecycle
   
@@ -85,12 +90,12 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
   
   func Configure()
   {
-    let request = Colibri.Something.Request()
-    interactor?.doSomething(request: request)
-    
-    
+    //read json
+     
+      if let localData = self.interactor?.readLocalFile(forName: "ListaVeri") {
+          self.interactor!.parse(jsonData: localData)
+      }
     //table
-   
     tableView.tableFooterView = UIView()
     self.tableView.delegate = self
     self.tableView.dataSource = self
@@ -98,17 +103,13 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
     tableView.layer.masksToBounds = true
     tableView.layer.borderColor = Constants.Color.ColibriGreen.cgColor
     tableView.layer.borderWidth = 3.0
-    
     //tittleview
     self.tiitleView.layer.masksToBounds = true
     self.tiitleView.layer.borderColor = Constants.Color.ColibriGreen.cgColor
     self.tiitleView.layer.borderWidth = 3.0
   }
   
-  func displaySomething(viewModel: Colibri.Something.ViewModel)
-  {
-    //nameTextField.text = viewModel.name
-  }
+  
 }
 
 
@@ -116,7 +117,7 @@ extension ColibriViewController: UITableViewDelegate,UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return (self.tableData?.Table!.count)!
         
     }
     
@@ -129,9 +130,24 @@ extension ColibriViewController: UITableViewDelegate,UITableViewDataSource{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "colibriCell", for: indexPath) as? colibriTableViewCell else{
                 return UITableViewCell()
         }
+        //
+        cell.layer.masksToBounds = true
+        cell.layer.borderColor = Constants.Color.ColibriGreen.cgColor
+        cell.layer.borderWidth = 3.0
+        
+        cell.lblName.text = self.tableData?.Table![indexPath.row].Nombre
             return cell
         
                 
+    }
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        
+        print(indexPath.row)
+        if let url = URL(string: (self.tableData?.Table![indexPath.row].Link)! ){
+            UIApplication.shared.open(url)
+        }
+        return indexPath
     }
     
     

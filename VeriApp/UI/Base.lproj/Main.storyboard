@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vKc-HG-MsG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vKc-HG-MsG">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -82,7 +82,7 @@ en el estado de México:</string>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mainCell" id="mVy-He-97w" customClass="mainTableViewCell" customModule="VeriApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="378" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="378" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mVy-He-97w" id="ghb-cp-lom">
                                             <rect key="frame" x="0.0" y="0.0" width="378" height="43.666667938232422"/>
@@ -417,13 +417,13 @@ en el estado de México:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="G58-Ri-yxl">
-                                <rect key="frame" x="0.0" y="234.66666666666666" width="428" height="511.66666666666674"/>
+                                <rect key="frame" x="0.0" y="234.66666666666666" width="428" height="510.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTt-yA-InL">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="60.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="70"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terminacion de placa " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2W-xV-c4s">
-                                                <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="60.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="166" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="S2W-xV-c4s" secondAttribute="height" multiplier="97:41" id="8U6-kw-gIL"/>
                                                 </constraints>
@@ -431,14 +431,14 @@ en el estado de México:</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZO-it-x04">
-                                                <rect key="frame" x="142.66666666666669" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Meses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZO-it-x04">
+                                                <rect key="frame" x="166" y="0.0" width="125.66666666666669" height="70"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado  de alarma" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5M-nP-2g7">
-                                                <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
+                                                <rect key="frame" x="291.66666666666669" y="0.0" width="136.33333333333331" height="70"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -446,7 +446,7 @@ en el estado de México:</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2hn-4X-Jk6">
-                                        <rect key="frame" x="0.0" y="90.333333333333343" width="428" height="60.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="100.00000000000001" width="428" height="60.333333333333329"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 y 6" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygw-1Q-Ofm">
                                                 <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="60.333333333333336"/>
@@ -458,7 +458,7 @@ en el estado de México:</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LB2-82-3B0">
-                                                <rect key="frame" x="142.66666666666669" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
+                                                <rect key="frame" x="142.66666666666666" y="0.0" width="107.66666666666666" height="60.333333333333336"/>
                                                 <string key="text">Enero - Febrero
 Julio - Agosto</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -466,7 +466,7 @@ Julio - Agosto</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cG5-dV-x3l">
-                                                <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
+                                                <rect key="frame" x="250.33333333333337" y="0.0" width="177.66666666666663" height="60.333333333333336"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bX4-Sp-5mZ">
                                                         <rect key="frame" x="38" y="10.333333333333343" width="49" height="31"/>
@@ -478,7 +478,7 @@ Julio - Agosto</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZY1-RH-bos">
-                                        <rect key="frame" x="0.0" y="180.66666666666666" width="428" height="60.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="190.33333333333334" width="428" height="60.333333333333343"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 y 8" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdT-T3-3w2">
                                                 <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="60.333333333333336"/>
@@ -490,7 +490,7 @@ Julio - Agosto</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="imD-BJ-5sG">
-                                                <rect key="frame" x="142.66666666666669" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
+                                                <rect key="frame" x="142.66666666666663" y="0.0" width="142.33333333333337" height="60.333333333333336"/>
                                                 <string key="text">Febrero - Marzo
 Agosto - Septiembre</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -498,7 +498,7 @@ Agosto - Septiembre</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ty5-mQ-VXn">
-                                                <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
+                                                <rect key="frame" x="285" y="0.0" width="143" height="60.333333333333336"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L0E-Rl-PSE">
                                                         <rect key="frame" x="38" y="10.333333333333343" width="49" height="31"/>
@@ -510,10 +510,10 @@ Agosto - Septiembre</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcg-S4-K1b">
-                                        <rect key="frame" x="0.0" y="271" width="428" height="60.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="280.66666666666674" width="428" height="57.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 y 4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSL-iZ-mLl">
-                                                <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="60.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="135.33333333333334" height="57.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="JSL-iZ-mLl" secondAttribute="height" multiplier="97:41" id="Qpk-Ia-c7c"/>
                                                 </constraints>
@@ -522,7 +522,7 @@ Agosto - Septiembre</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bbe-Sj-6Qb">
-                                                <rect key="frame" x="142.66666666666669" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
+                                                <rect key="frame" x="135.33333333333334" y="0.0" width="150.00000000000003" height="57.333333333333336"/>
                                                 <string key="text">Marzo - Abril
 Septiembre - Octubre</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -530,7 +530,7 @@ Septiembre - Octubre</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9Z-4w-ZRr">
-                                                <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
+                                                <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="57.333333333333336"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ze-4m-Yo1">
                                                         <rect key="frame" x="38" y="10.333333333333343" width="49" height="31"/>
@@ -542,10 +542,10 @@ Septiembre - Octubre</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MGz-DY-EUl">
-                                        <rect key="frame" x="0.0" y="361.33333333333337" width="428" height="60.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="368" width="428" height="59"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 y 2" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXw-5a-udr">
-                                                <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="60.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="139.66666666666666" height="59"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="gXw-5a-udr" secondAttribute="height" multiplier="97:41" id="1lF-CU-rla"/>
                                                 </constraints>
@@ -554,7 +554,7 @@ Septiembre - Octubre</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jjw-JC-iPl">
-                                                <rect key="frame" x="142.66666666666669" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
+                                                <rect key="frame" x="139.66666666666663" y="0.0" width="145.33333333333337" height="59"/>
                                                 <string key="text">Abril - Mayo
 Octubre - Noviembre</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -562,7 +562,7 @@ Octubre - Noviembre</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwv-2f-s0Y">
-                                                <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="60.333333333333336"/>
+                                                <rect key="frame" x="285" y="0.0" width="143" height="59"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w2V-fN-42D">
                                                         <rect key="frame" x="38" y="10.333333333333343" width="49" height="31"/>
@@ -574,10 +574,10 @@ Octubre - Noviembre</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zw3-cH-YwS">
-                                        <rect key="frame" x="0.0" y="451.66666666666674" width="428" height="60"/>
+                                        <rect key="frame" x="0.0" y="457" width="428" height="53.333333333333314"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 y 9" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufz-8Y-FTu">
-                                                <rect key="frame" x="0.0" y="0.0" width="142.66666666666666" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="126.33333333333333" height="53.333333333333336"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="Ufz-8Y-FTu" secondAttribute="height" multiplier="97:41" id="Ywg-E8-gPf"/>
                                                 </constraints>
@@ -586,7 +586,7 @@ Octubre - Noviembre</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9WM-L7-6RU">
-                                                <rect key="frame" x="142.66666666666669" y="0.0" width="142.66666666666669" height="60"/>
+                                                <rect key="frame" x="126.33333333333333" y="0.0" width="158.66666666666669" height="53.333333333333336"/>
                                                 <string key="text">Mayo - Junio
 Noviembre - Diciembre</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -594,7 +594,7 @@ Noviembre - Diciembre</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5f-q8-aal">
-                                                <rect key="frame" x="285.33333333333331" y="0.0" width="142.66666666666669" height="60"/>
+                                                <rect key="frame" x="285" y="0.0" width="143" height="53.333333333333336"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="13c-vi-StD">
                                                         <rect key="frame" x="38" y="10.333333333333343" width="49" height="31"/>
@@ -704,24 +704,29 @@ Noviembre - Diciembre</string>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="colibriCell" id="UUE-yp-EZE" customClass="colibriTableViewCell" customModule="VeriApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="398" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="398" height="45.333332061767578"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UUE-yp-EZE" id="umm-pi-Xkz">
-                                            <rect key="frame" x="0.0" y="0.0" width="398" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="398" height="45.333332061767578"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direccion " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xys-uN-1A4">
-                                                    <rect key="frame" x="161" y="11.333333333333336" width="76.333333333333314" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Direccion " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xys-uN-1A4">
+                                                    <rect key="frame" x="20" y="13.999999999999998" width="358" height="17.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="xys-uN-1A4" firstAttribute="centerY" secondItem="umm-pi-Xkz" secondAttribute="centerY" id="hFg-SE-fWM"/>
-                                                <constraint firstItem="xys-uN-1A4" firstAttribute="centerX" secondItem="umm-pi-Xkz" secondAttribute="centerX" id="pQw-9C-NNJ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="xys-uN-1A4" secondAttribute="trailing" id="E4o-MW-AQa"/>
+                                                <constraint firstItem="xys-uN-1A4" firstAttribute="leading" secondItem="umm-pi-Xkz" secondAttribute="leadingMargin" id="NuQ-zt-5xK"/>
+                                                <constraint firstItem="xys-uN-1A4" firstAttribute="top" secondItem="umm-pi-Xkz" secondAttribute="topMargin" constant="3" id="UOu-bR-7ac"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="xys-uN-1A4" secondAttribute="bottom" constant="3" id="q4f-C8-HHU"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblName" destination="xys-uN-1A4" id="4gx-br-cCu"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

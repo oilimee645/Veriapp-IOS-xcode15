@@ -14,18 +14,18 @@ import UIKit
 
 protocol ColibriPresentationLogic
 {
-  func presentSomething(response: Colibri.Something.Response)
+    func presentTableData(data:ColibriModel.Verificentros?)
 }
 
 class ColibriPresenter: ColibriPresentationLogic
 {
+    
+    
   weak var viewController: ColibriDisplayLogic?
   
   // MARK: Do something
   
-  func presentSomething(response: Colibri.Something.Response)
-  {
-    let viewModel = Colibri.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
-  }
+    func presentTableData(data: ColibriModel.Verificentros?) {
+        self.viewController?.displayTableData(data: data)
+    }
 }

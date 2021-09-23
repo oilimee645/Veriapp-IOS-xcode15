@@ -10,22 +10,20 @@
 //  see http://clean-swift.com
 //
 
-import UIKit
+import Foundation
 
-enum Colibri
-{
-  // MARK: Use cases
-  
-  enum Something
-  {
-    struct Request
-    {
-    }
-    struct Response
-    {
-    }
-    struct ViewModel
-    {
-    }
-  }
+enum ColibriModel {
+// MARK: - Verificentros
+struct Verificentros: Codable {
+    var Table: [Table1]?
+}
+
+// MARK: - Table1
+struct Table1: Codable {
+    var Id, Nombre: String?
+    var Link: String?
+    var Tipo: String?
+    var Localidad: String?
+    var Especialidad: String?
+}
 }
