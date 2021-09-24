@@ -10,5 +10,6 @@
 enum enumUDKeys : String {
     
     case numeroPlacaUserDefault = "numeroPlacaUserDefault"
-
+    case lugar = "lugar"
+    case municipio = "municipio"
 }

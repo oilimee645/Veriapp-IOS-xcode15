@@ -1,4 +1,4 @@
-//
+		//
 //  VeriAppViewController.swift
 //  VeriApp
 //
@@ -8,9 +8,6 @@
 import UIKit
 
 class VeriAppViewController: UIViewController {
-    
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -16,6 +16,7 @@ protocol ColibriBusinessLogic
 {
 func readLocalFile(forName name: String) -> Data?
 func parse(jsonData: Data)
+func parseFiltered(jsonData: Data,filtro: String)
 }
 
 protocol ColibriDataStore
@@ -63,4 +64,23 @@ class ColibriInteractor: ColibriBusinessLogic, ColibriDataStore
             print("decode error")
         }
     }
+    
+    func parseFiltered(jsonData: Data, filtro: String = "Verificentro") {
+       do {
+           let decodedData = try JSONDecoder().decode(ColibriModel.Verificentros.self,
+                                                      from: jsonData)
+           self.tableData = decodedData
+           if filtro == "Verificentro" || filtro == "Taller"{
+           let filtroSucursal = self.tableData?.Table!.filter{ $0.Tipo == filtro}
+           self.tableData?.Table = filtroSucursal
+           }else{
+               let filtroSucursal = self.tableData?.Table!.filter{ $0.Localidad == filtro}
+               self.tableData?.Table = filtroSucursal
+           }
+           
+           self.presenter?.presentTableData(data: self.tableData)
+       } catch {
+           print("decode error")
+       }
+   }
 }

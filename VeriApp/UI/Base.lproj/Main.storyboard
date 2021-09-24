@@ -789,8 +789,10 @@ Noviembre - Diciembre</string>
                         <inset key="imageInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="MunicipioTipo" destination="hSd-Ne-uD0" id="WAr-3y-l98"/>
                         <outlet property="tableView" destination="Rqy-2s-g2T" id="dxB-Hr-tbi"/>
                         <outlet property="tiitleView" destination="pmx-fn-hgO" id="1Al-IO-H1P"/>
+                        <outlet property="verificentroTaller" destination="Fuv-1z-dK5" id="ddx-VT-tvt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUY-U2-jpN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

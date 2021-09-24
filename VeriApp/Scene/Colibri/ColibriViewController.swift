@@ -11,6 +11,8 @@
 //
 
 import UIKit
+import RSSelectionMenu
+
 
 protocol ColibriDisplayLogic: AnyObject
 {
@@ -29,11 +31,15 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
     
     
     @IBOutlet weak var tableView: UITableView!
-    
     @IBOutlet weak var tiitleView: UIView!
+    @IBOutlet weak var verificentroTaller: UIImageView!
+    @IBOutlet weak var MunicipioTipo: UIImageView!
+    
    //
     var tableData : ColibriModel.Verificentros?
-    
+    let simpleDataArray = ["Verificentro", "Taller"]
+    let municipios = ["Acolman","Amecameca"]
+    var simpleSelectedArray = [String]()
   // MARK: Object lifecycle
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -95,6 +101,15 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
       if let localData = self.interactor?.readLocalFile(forName: "ListaVeri") {
           self.interactor!.parse(jsonData: localData)
       }
+      //filter config images
+      let tapFiltro1 = UITapGestureRecognizer(target: self, action: #selector(tapFiltroVT))
+      self.verificentroTaller.isUserInteractionEnabled = true
+      self.verificentroTaller.addGestureRecognizer(tapFiltro1)
+      
+      let tapFiltro2 = UITapGestureRecognizer(target: self, action: #selector(tapFiltroMunicipio))
+      self.MunicipioTipo.isUserInteractionEnabled = true
+      self.MunicipioTipo.addGestureRecognizer(tapFiltro2)
+      
     //table
     tableView.tableFooterView = UIView()
     self.tableView.delegate = self
@@ -109,7 +124,52 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
     self.tiitleView.layer.borderWidth = 3.0
   }
   
-  
+    @objc func tapFiltroVT(sender:UITapGestureRecognizer) {
+        //dropDownList
+        let selectionMenu = RSSelectionMenu(dataSource: simpleDataArray) { (cell, item, indexPath) in
+            cell.textLabel?.text = item
+        }
+        
+       
+        //mostrar pop
+        selectionMenu.show(style: .popover(sourceView: self.verificentroTaller, size: CGSize(width: 250, height: 70)), from: self)
+        
+        //seleccionando
+        selectionMenu.onDismiss = {selectedItems in
+            UserDefaultsManager.saveUserDefaults(value: selectedItems, key: .lugar)
+           
+           let toprint = UserDefaultsManager.getUserDefaultsArray(.lugar)
+            
+            //de nuevo datos
+            if let localData = self.interactor?.readLocalFile(forName: "ListaVeri") {
+                self.interactor!.parseFiltered(jsonData: localData, filtro: toprint![0] as! String)
+            }
+            self.tableView.reloadData()
+        }
+    }
+    
+    @objc func tapFiltroMunicipio(sender:UITapGestureRecognizer) {
+        //dropDownList
+        let selectionMenu = RSSelectionMenu(dataSource: municipios) { (cell, item, indexPath) in
+            cell.textLabel?.text = item
+        }
+        //mostrar pop
+        selectionMenu.show(style: .popover(sourceView: self.MunicipioTipo, size: CGSize(width: 250, height: 70)), from: self)
+        
+        //seleccionando
+        selectionMenu.onDismiss = {selectedItems in
+            UserDefaultsManager.saveUserDefaults(value: selectedItems, key: .municipio)
+           
+           let toprint = UserDefaultsManager.getUserDefaultsArray(.municipio)
+            
+            //de nuevo datos
+            if let localData = self.interactor?.readLocalFile(forName: "ListaVeri") {
+                
+                self.interactor!.parseFiltered(jsonData: localData, filtro: toprint![0] as! String)
+            }
+            self.tableView.reloadData()
+        }
+    }
 }
 
 
@@ -133,7 +193,7 @@ extension ColibriViewController: UITableViewDelegate,UITableViewDataSource{
         //
         cell.layer.masksToBounds = true
         cell.layer.borderColor = Constants.Color.ColibriGreen.cgColor
-        cell.layer.borderWidth = 3.0
+        cell.layer.borderWidth = 1.5
         
         cell.lblName.text = self.tableData?.Table![indexPath.row].Nombre
             return cell
