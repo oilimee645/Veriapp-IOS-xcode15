@@ -679,24 +679,27 @@ Noviembre - Diciembre</string>
                                     <constraint firstAttribute="height" constant="7" id="ZVi-gV-QbS"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verificentros" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWV-lD-Yc1">
-                                <rect key="frame" x="151.33333333333334" y="111" width="125.33333333333334" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="iWV-lD-Yc1">
+                                <rect key="frame" x="164" y="111" width="100" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="xpX-J7-veu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Capture" translatesAutoresizingMaskIntoConstraints="NO" id="Fuv-1z-dK5">
-                                <rect key="frame" x="91.333333333333329" y="114" width="33" height="22"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Capture" translatesAutoresizingMaskIntoConstraints="NO" id="hSd-Ne-uD0">
+                                <rect key="frame" x="284" y="114" width="33" height="22"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="33" id="5eK-zr-xk9"/>
-                                    <constraint firstAttribute="height" constant="22" id="boO-sV-org"/>
+                                    <constraint firstAttribute="height" constant="22" id="6KR-m8-uUA"/>
+                                    <constraint firstAttribute="width" constant="33" id="blj-SE-J49"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Capture" translatesAutoresizingMaskIntoConstraints="NO" id="hSd-Ne-uD0">
-                                <rect key="frame" x="303.66666666666669" y="114" width="33" height="22"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Capture" translatesAutoresizingMaskIntoConstraints="NO" id="wjZ-fi-ela">
+                                <rect key="frame" x="337" y="114" width="33" height="22"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="22" id="DL7-7t-QnT"/>
-                                    <constraint firstAttribute="width" constant="33" id="IKi-dH-O1M"/>
+                                    <constraint firstAttribute="width" constant="33" id="HxQ-tT-dIe"/>
+                                    <constraint firstAttribute="height" constant="22" id="Lxm-gD-S3A"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rqy-2s-g2T">
@@ -756,33 +759,44 @@ Noviembre - Diciembre</string>
                                     <constraint firstItem="pL2-ZH-cpJ" firstAttribute="centerX" secondItem="pmx-fn-hgO" secondAttribute="centerX" id="x1S-9q-Wz6"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Capture" translatesAutoresizingMaskIntoConstraints="NO" id="Fuv-1z-dK5">
+                                <rect key="frame" x="111" y="114" width="33" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="33" id="DeO-fn-ZWg"/>
+                                    <constraint firstAttribute="height" constant="22" id="yib-nz-b6T"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KCG-xN-Ajp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lWZ-HI-5sU" firstAttribute="centerX" secondItem="YaQ-hJ-HV4" secondAttribute="centerX" id="97y-CA-YGl"/>
                             <constraint firstItem="KCG-xN-Ajp" firstAttribute="trailing" secondItem="pmx-fn-hgO" secondAttribute="trailing" constant="15" id="AnU-2M-yOD"/>
-                            <constraint firstItem="KCG-xN-Ajp" firstAttribute="trailing" secondItem="hSd-Ne-uD0" secondAttribute="trailing" constant="91.333333333333314" id="HgL-Uh-SD0"/>
-                            <constraint firstItem="iWV-lD-Yc1" firstAttribute="leading" secondItem="Fuv-1z-dK5" secondAttribute="trailing" constant="27" id="K6T-f9-pzo"/>
-                            <constraint firstItem="pmx-fn-hgO" firstAttribute="top" secondItem="iWV-lD-Yc1" secondAttribute="bottom" constant="20" id="KvL-DW-527"/>
+                            <constraint firstItem="pmx-fn-hgO" firstAttribute="top" secondItem="iWV-lD-Yc1" secondAttribute="bottom" constant="20" id="Hmj-mC-hvv"/>
                             <constraint firstItem="TG0-u8-ixO" firstAttribute="leading" secondItem="KCG-xN-Ajp" secondAttribute="leading" id="M51-YK-qhs"/>
                             <constraint firstItem="awB-mx-P8y" firstAttribute="top" secondItem="lWZ-HI-5sU" secondAttribute="bottom" constant="5" id="O83-ut-IC9"/>
                             <constraint firstItem="KCG-xN-Ajp" firstAttribute="trailing" secondItem="Rqy-2s-g2T" secondAttribute="trailing" constant="15" id="Qzg-b5-qES"/>
-                            <constraint firstItem="iWV-lD-Yc1" firstAttribute="centerX" secondItem="YaQ-hJ-HV4" secondAttribute="centerX" id="XPM-jt-y6C"/>
+                            <constraint firstItem="pmx-fn-hgO" firstAttribute="top" secondItem="hSd-Ne-uD0" secondAttribute="bottom" constant="23" id="Z1v-9e-L7s"/>
+                            <constraint firstItem="iWV-lD-Yc1" firstAttribute="leading" secondItem="Fuv-1z-dK5" secondAttribute="trailing" constant="20" id="Z3E-kG-nf0"/>
                             <constraint firstItem="Rqy-2s-g2T" firstAttribute="top" secondItem="pmx-fn-hgO" secondAttribute="bottom" id="Zpf-QX-fRY"/>
                             <constraint firstItem="TG0-u8-ixO" firstAttribute="trailing" secondItem="KCG-xN-Ajp" secondAttribute="trailing" id="ant-io-FOA"/>
                             <constraint firstItem="Rqy-2s-g2T" firstAttribute="leading" secondItem="KCG-xN-Ajp" secondAttribute="leading" constant="15" id="bS3-AD-0cA"/>
                             <constraint firstItem="KCG-xN-Ajp" firstAttribute="bottom" secondItem="TG0-u8-ixO" secondAttribute="bottom" id="ba0-ef-aSC"/>
-                            <constraint firstItem="hSd-Ne-uD0" firstAttribute="centerY" secondItem="iWV-lD-Yc1" secondAttribute="centerY" id="dJv-Du-hiS"/>
+                            <constraint firstItem="Fuv-1z-dK5" firstAttribute="top" secondItem="awB-mx-P8y" secondAttribute="bottom" constant="13" id="cFU-Hs-mAa"/>
                             <constraint firstItem="lWZ-HI-5sU" firstAttribute="top" secondItem="KCG-xN-Ajp" secondAttribute="top" constant="5" id="f7h-PZ-eKs"/>
-                            <constraint firstItem="Fuv-1z-dK5" firstAttribute="centerY" secondItem="iWV-lD-Yc1" secondAttribute="centerY" id="i0D-Tm-9xh"/>
+                            <constraint firstItem="hSd-Ne-uD0" firstAttribute="leading" secondItem="iWV-lD-Yc1" secondAttribute="trailing" constant="20" id="gXL-Qn-hG2"/>
                             <constraint firstItem="awB-mx-P8y" firstAttribute="leading" secondItem="YaQ-hJ-HV4" secondAttribute="leading" id="igl-TZ-nc3"/>
                             <constraint firstItem="TG0-u8-ixO" firstAttribute="top" secondItem="Rqy-2s-g2T" secondAttribute="bottom" constant="10" id="k2p-jO-5cb"/>
+                            <constraint firstItem="pmx-fn-hgO" firstAttribute="top" secondItem="Fuv-1z-dK5" secondAttribute="bottom" constant="23" id="kNY-nu-3V9"/>
+                            <constraint firstItem="iWV-lD-Yc1" firstAttribute="top" secondItem="awB-mx-P8y" secondAttribute="bottom" constant="10" id="kxy-m7-rkY"/>
                             <constraint firstItem="KCG-xN-Ajp" firstAttribute="trailing" secondItem="awB-mx-P8y" secondAttribute="trailing" id="lEu-tO-LP9"/>
-                            <constraint firstItem="pmx-fn-hgO" firstAttribute="centerX" secondItem="iWV-lD-Yc1" secondAttribute="centerX" id="rdC-KH-N6r"/>
+                            <constraint firstItem="hSd-Ne-uD0" firstAttribute="top" secondItem="awB-mx-P8y" secondAttribute="bottom" constant="13" id="mqA-Yd-VKk"/>
+                            <constraint firstItem="pmx-fn-hgO" firstAttribute="top" secondItem="wjZ-fi-ela" secondAttribute="bottom" constant="23" id="opD-gE-mnG"/>
+                            <constraint firstItem="wjZ-fi-ela" firstAttribute="top" secondItem="awB-mx-P8y" secondAttribute="bottom" constant="13" id="qCW-DA-wrm"/>
+                            <constraint firstItem="iWV-lD-Yc1" firstAttribute="centerX" secondItem="YaQ-hJ-HV4" secondAttribute="centerX" id="qSa-DC-FvT"/>
                             <constraint firstItem="pmx-fn-hgO" firstAttribute="leading" secondItem="KCG-xN-Ajp" secondAttribute="leading" constant="15" id="tFW-69-Rg8"/>
                             <constraint firstItem="Rqy-2s-g2T" firstAttribute="top" secondItem="pmx-fn-hgO" secondAttribute="bottom" id="tVJ-ia-vml"/>
-                            <constraint firstItem="iWV-lD-Yc1" firstAttribute="top" secondItem="awB-mx-P8y" secondAttribute="bottom" constant="10" id="w85-HS-Ln9"/>
+                            <constraint firstItem="wjZ-fi-ela" firstAttribute="leading" secondItem="hSd-Ne-uD0" secondAttribute="trailing" constant="20" id="x7q-qK-Cay"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="colibri_verde" id="k5l-fh-wI0">
@@ -790,8 +804,10 @@ Noviembre - Diciembre</string>
                     </tabBarItem>
                     <connections>
                         <outlet property="MunicipioTipo" destination="hSd-Ne-uD0" id="WAr-3y-l98"/>
+                        <outlet property="gasolinaFilterImage" destination="wjZ-fi-ela" id="lVa-16-yp7"/>
                         <outlet property="tableView" destination="Rqy-2s-g2T" id="dxB-Hr-tbi"/>
                         <outlet property="tiitleView" destination="pmx-fn-hgO" id="1Al-IO-H1P"/>
+                        <outlet property="topTittle" destination="iWV-lD-Yc1" id="J93-KS-8jF"/>
                         <outlet property="verificentroTaller" destination="Fuv-1z-dK5" id="ddx-VT-tvt"/>
                     </connections>
                 </viewController>

@@ -26,6 +26,11 @@ class ColibriPresenter: ColibriPresentationLogic
   // MARK: Do something
   
     func presentTableData(data: ColibriModel.Verificentros?) {
+        if data?.Table?.count != 0 {
         self.viewController?.displayTableData(data: data)
+        }else{
+            self.viewController?.displayTableData(data: data)
+        }
+        
     }
 }

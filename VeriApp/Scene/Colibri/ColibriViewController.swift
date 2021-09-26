@@ -17,10 +17,16 @@ import RSSelectionMenu
 protocol ColibriDisplayLogic: AnyObject
 {
     func displayTableData(data: ColibriModel.Verificentros?)
+    func displayAlert()
 }
 
 class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
 {
+    func displayAlert() {
+        print("SIN DATOS")
+       
+    }
+    
     func displayTableData(data: ColibriModel.Verificentros?) {
         self.tableData = data
     }
@@ -30,16 +36,25 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
     // MARK: Outlets
     
     
+    @IBOutlet weak var topTittle: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var tiitleView: UIView!
     @IBOutlet weak var verificentroTaller: UIImageView!
     @IBOutlet weak var MunicipioTipo: UIImageView!
-    
-   //
+    @IBOutlet weak var gasolinaFilterImage: UIImageView!
+    //
     var tableData : ColibriModel.Verificentros?
     let simpleDataArray = ["Verificentro", "Taller"]
-    let municipios = ["Acolman","Amecameca"]
+    let simpleTipoDataArray = ["Gasolina y diesel", "Solo gasolina"]
+    let Todosmunicipios = ["Acolman", "Amecameca", "Atizapán de Zaragoza", "Atlacomulco", "Chalco", "Chicoloapan", "Chimalhuacán", "Coacalco", "Cuautitlán Izcallí", "Ecatepec", "Huixquilucan", "Ixtapaluca", "Ixtapaluca", "Jilotepec", "La Paz", "Melchor Ocampo", "Metepec", "Naucalpan", "Nezahualcóyotl", "Nicolas Romero", "Santiago Tianguistenco", "Tecamac", "Tenancingo", "Teoloyucan", "Teotihuacan", "Tepotzotlán", "Texcoco", "Tlalnepantla", "Toluca", "Tultepec", "Tultitlan", "Valle De Chalco Solidaridad", "Zumpango"]
+    
+    let Tallermunicipios = ["Chalco", "Chicoloapan", "Coacalco", "Cuautitlán Izcalli", "Ecatepec", "Ixtapaluca", "La Paz", "Naucalpan", "Nezahualcóyotl", "Texcoco", "Tlalnepantla", "Toluca", "Tultitlan"]
+    
+    
+    
     var simpleSelectedArray = [String]()
+    var simpleSelectedMunicipiosArray = [String]()
+    var simpleSelectedTipoArray = [String]()
   // MARK: Object lifecycle
   
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
@@ -87,6 +102,9 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
+      //
+      let sortedArray = Tallermunicipios.sorted { $0.localizedCaseInsensitiveCompare($1) == ComparisonResult.orderedAscending }
+      print(sortedArray)
     Configure()
   }
   
@@ -96,6 +114,10 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
   
   func Configure()
   {
+     
+      //
+      
+      self.gasolinaFilterImage.isHidden = true
     //read json
      
       if let localData = self.interactor?.readLocalFile(forName: "ListaVeri") {
@@ -110,6 +132,10 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
       self.MunicipioTipo.isUserInteractionEnabled = true
       self.MunicipioTipo.addGestureRecognizer(tapFiltro2)
       
+      let tapFiltro3 = UITapGestureRecognizer(target: self, action: #selector(tapFiltroTipo))
+      self.gasolinaFilterImage.isUserInteractionEnabled = true
+      self.gasolinaFilterImage.addGestureRecognizer(tapFiltro3)
+      
     //table
     tableView.tableFooterView = UIView()
     self.tableView.delegate = self
@@ -122,6 +148,8 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
     self.tiitleView.layer.masksToBounds = true
     self.tiitleView.layer.borderColor = Constants.Color.ColibriGreen.cgColor
     self.tiitleView.layer.borderWidth = 3.0
+      //resetear  user defaults
+      UserDefaultsManager.saveUserDefaults(value: [""], key: .lugar)
   }
   
     @objc func tapFiltroVT(sender:UITapGestureRecognizer) {
@@ -130,34 +158,91 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
             cell.textLabel?.text = item
         }
         
-       
+        if  UserDefaultsManager.getUserDefaultsArray(.lugar) == nil {
+            UserDefaultsManager.saveUserDefaults(value: [""], key: .lugar)
+        }
+        
+        let rememberSelectedArray = UserDefaultsManager.getUserDefaultsArray(.lugar) as! [String]
+        
+        
+        
+        //recordar seleccion
+        selectionMenu.setSelectedItems(items: rememberSelectedArray) { [weak self] (item, index, isSelected, selectedItems) in
+
+            self?.simpleSelectedArray = selectedItems
+        }
+        
+        
         //mostrar pop
         selectionMenu.show(style: .popover(sourceView: self.verificentroTaller, size: CGSize(width: 250, height: 70)), from: self)
         
         //seleccionando
         selectionMenu.onDismiss = {selectedItems in
+            
+            if selectedItems == [""] {
+                return
+            }else{
+            
             UserDefaultsManager.saveUserDefaults(value: selectedItems, key: .lugar)
            
            let toprint = UserDefaultsManager.getUserDefaultsArray(.lugar)
             
             //de nuevo datos
             if let localData = self.interactor?.readLocalFile(forName: "ListaVeri") {
+                
                 self.interactor!.parseFiltered(jsonData: localData, filtro: toprint![0] as! String)
             }
+                //RESETEAR OTROS FILTROS
+                UserDefaultsManager.saveUserDefaults(value: [""], key: .municipio)
+                UserDefaultsManager.saveUserDefaults(value: [""], key: .tipo)
+            
+                self.topTittle.text = toprint![0] as? String
+                if self.topTittle.text != "Verificentro"{
+                    self.gasolinaFilterImage.isHidden = true
+                }else{self.gasolinaFilterImage.isHidden = false}
             self.tableView.reloadData()
+            }
         }
     }
     
     @objc func tapFiltroMunicipio(sender:UITapGestureRecognizer) {
         //dropDownList
-        let selectionMenu = RSSelectionMenu(dataSource: municipios) { (cell, item, indexPath) in
+        var municiposDesplegar:[String] = []
+        let toprint = UserDefaultsManager.getUserDefaultsArray(.lugar)
+        
+        if toprint![0] as? String == "Taller" {
+            municiposDesplegar = self.Tallermunicipios
+        }else {
+            municiposDesplegar = self.Todosmunicipios
+        }
+        
+        let selectionMenu = RSSelectionMenu(dataSource: municiposDesplegar) { (cell, item, indexPath) in
             cell.textLabel?.text = item
         }
+        
+        
+        if  UserDefaultsManager.getUserDefaultsArray(.municipio) == nil {
+            UserDefaultsManager.saveUserDefaults(value: [""], key: .municipio)
+        }
+        
+        let rememberSelectedArray = UserDefaultsManager.getUserDefaultsArray(.municipio) as! [String]
+        
+        
+        
+        //recordar seleccion
+        selectionMenu.setSelectedItems(items: rememberSelectedArray) { [weak self] (item, index, isSelected, selectedItems) in
+
+            self?.simpleSelectedMunicipiosArray = selectedItems
+        }
         //mostrar pop
-        selectionMenu.show(style: .popover(sourceView: self.MunicipioTipo, size: CGSize(width: 250, height: 70)), from: self)
+        selectionMenu.show(style: .popover(sourceView: self.MunicipioTipo, size: CGSize(width: 250, height: 250)), from: self)
         
         //seleccionando
         selectionMenu.onDismiss = {selectedItems in
+            
+            if selectedItems == [""] {
+                return
+            }else{
             UserDefaultsManager.saveUserDefaults(value: selectedItems, key: .municipio)
            
            let toprint = UserDefaultsManager.getUserDefaultsArray(.municipio)
@@ -167,8 +252,51 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
                 
                 self.interactor!.parseFiltered(jsonData: localData, filtro: toprint![0] as! String)
             }
+                //resetear filtro municipio
+                UserDefaultsManager.saveUserDefaults(value: [""], key: .tipo)
             self.tableView.reloadData()
         }
+        }
+    }
+    
+    @objc func tapFiltroTipo(sender:UITapGestureRecognizer) {
+        
+            //dropDownList
+            let selectionMenu = RSSelectionMenu(dataSource: simpleTipoDataArray) { (cell, item, indexPath) in
+                cell.textLabel?.text = item
+            }
+            
+            
+            if  UserDefaultsManager.getUserDefaultsArray(.tipo) == nil {
+                UserDefaultsManager.saveUserDefaults(value: [""], key: .tipo)
+            }
+            
+            let rememberSelectedArray = UserDefaultsManager.getUserDefaultsArray(.tipo) as! [String]
+            //recordar seleccion
+            selectionMenu.setSelectedItems(items: rememberSelectedArray) { [weak self] (item, index, isSelected, selectedItems) in
+
+                self?.simpleSelectedTipoArray = selectedItems
+            }
+            //mostrar pop
+            selectionMenu.show(style: .popover(sourceView: self.gasolinaFilterImage, size: CGSize(width: 250, height: 70)), from: self)
+            
+            //seleccionando
+            selectionMenu.onDismiss = {selectedItems in
+                
+                if selectedItems == [""] {
+                    return
+                }else{
+                UserDefaultsManager.saveUserDefaults(value: selectedItems, key: .tipo)
+               
+               let toprint = UserDefaultsManager.getUserDefaultsArray(.tipo)
+                //de nuevo datos
+                if let localData = self.interactor?.readLocalFile(forName: "ListaVeri") {
+                    
+                    self.interactor!.parseFiltered(jsonData: localData, filtro: toprint![0] as! String)
+                }
+                self.tableView.reloadData()
+            }
+            }
     }
 }
 

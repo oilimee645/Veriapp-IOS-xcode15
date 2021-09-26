@@ -23,9 +23,11 @@ class MainViewController: VeriAppViewController, MainDisplayLogic
 {
   //MARK: OUTLETS
     @IBOutlet weak var tableView: UITableView!
-  
     @IBOutlet weak var placasButton: UIImageView!
     
+    
+    
+ //
   var interactor: MainBusinessLogic?
   var router: (NSObjectProtocol & MainRoutingLogic & MainDataPassing)?
 

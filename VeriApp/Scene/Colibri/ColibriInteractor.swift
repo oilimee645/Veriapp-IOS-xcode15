@@ -32,7 +32,6 @@ class ColibriInteractor: ColibriBusinessLogic, ColibriDataStore
   //var name: String = ""
   
   // MARK: Do something
-  
      func readLocalFile(forName name: String) -> Data? {
         do {
             if let bundlePath = Bundle.main.path(forResource: name,
@@ -43,7 +42,6 @@ class ColibriInteractor: ColibriBusinessLogic, ColibriDataStore
         } catch {
             print(error)
         }
-        
         return nil
     }
     
@@ -73,11 +71,17 @@ class ColibriInteractor: ColibriBusinessLogic, ColibriDataStore
            if filtro == "Verificentro" || filtro == "Taller"{
            let filtroSucursal = self.tableData?.Table!.filter{ $0.Tipo == filtro}
            self.tableData?.Table = filtroSucursal
+           }else if filtro == "Gasolina y diesel" || filtro == "Solo gasolina"{
+               let Sucursal = UserDefaultsManager.getUserDefaultsArray(.lugar)
+               let municipio = UserDefaultsManager.getUserDefaultsArray(.municipio)
+               let filtroSucursal = self.tableData?.Table!.filter{ $0.Tipo == Sucursal![0] as? String}
+               let filtroMunicipio = filtroSucursal?.filter{ $0.Localidad == municipio![0] as? String}
+               let filtroCombustible = filtroMunicipio?.filter{$0.Especialidad == filtro}
+               self.tableData?.Table = filtroCombustible
            }else{
-               let filtroSucursal = self.tableData?.Table!.filter{ $0.Localidad == filtro}
-               self.tableData?.Table = filtroSucursal
+               let filtroMunicipio = self.tableData?.Table!.filter{ $0.Localidad == filtro}
+               self.tableData?.Table = filtroMunicipio
            }
-           
            self.presenter?.presentTableData(data: self.tableData)
        } catch {
            print("decode error")
