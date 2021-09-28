@@ -9,14 +9,51 @@ import UIKit
 import CoreData
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Override point for customization after application launch.
+                let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+                UNUserNotificationCenter.current().delegate = self
+                UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { (granted, error) in
+                    if granted {
+                        DispatchQueue.main.async {
+                            application.registerForRemoteNotifications()
+                        }
+                        
+                    } else{
+                        print(error?.localizedDescription ?? "Something went wrong")
+                    }
+                }
+        
         return true
     }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+            let userInfo = notification.request.content.userInfo
+            print(userInfo)
+            if let aps = userInfo["aps"] as? [ String : Any ] {
+                print(aps)
+            }
+            completionHandler([.alert, .sound])
+        }
+        
+        func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler:
+            @escaping () -> Void) {
+            // Get the meeting ID from the original notification.
+            let userInfo = response.notification.request.content.userInfo
+            print(userInfo)
+            
+            if let aps = userInfo["aps"] as? [ String : Any ] {
+                print(aps)
+            }
+            // Always call the completion handler when done.
+            completionHandler()
+        }
 
     // MARK: UISceneSession Lifecycle
 

@@ -102,7 +102,7 @@ class MainViewController: VeriAppViewController, MainDisplayLogic
         self.tableView.layer.borderColor = UIColor.black.cgColor
         
         //Constrains for differents models
-        let screenSize: CGRect = UIScreen.main.bounds
+        /*let screenSize: CGRect = UIScreen.main.bounds
         
         if Int(screenSize.height) <= Constants.DevicesHeight.eight {
         
@@ -112,7 +112,7 @@ class MainViewController: VeriAppViewController, MainDisplayLogic
             
             self.tableView.height(constant: 263)
             
-        }
+        }*/
 
         
         
@@ -175,6 +175,28 @@ extension MainViewController: UITableViewDataSource,UITableViewDelegate{
         let selectedPlaca = UserDefaultsManager.getUserDefaultsArray(.numeroPlacaUserDefault) as! [String]
         cell.selectedCelda = selectedPlaca[0]
         cell.CeldaIndex = indexPath.row
+        let height = UIScreen.main.bounds.height
+        print(height)
+        switch height {
+        case 667: //se
+            cell.heightConstraint.constant = 42.8
+        case 736: //se
+            cell.heightConstraint.constant = 52.8
+        case 812: //12 mini
+            cell.heightConstraint.constant = 56
+        case 844: //12 pro
+            cell.heightConstraint.constant = 61.8
+        case 847: //12 mini
+            cell.heightConstraint.constant = 64.8
+        case 896: //11 pro max
+            cell.heightConstraint.constant = 70.8
+        case 926: //12 pro max
+            cell.heightConstraint.constant = 75
+        
+        default:
+            cell.heightConstraint.constant = 42.8
+        }
+        
         return cell
     }
     

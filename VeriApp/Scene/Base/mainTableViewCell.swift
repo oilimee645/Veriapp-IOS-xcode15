@@ -12,6 +12,7 @@ class mainTableViewCell: UITableViewCell {
     @IBOutlet weak var cellLabel: UILabel!
     @IBOutlet weak var cellBackground: UIView!
     
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     
     var CeldaIndex: Int?
     var selectedCelda: String?
