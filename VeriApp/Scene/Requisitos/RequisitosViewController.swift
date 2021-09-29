@@ -94,25 +94,6 @@ class RequisitosViewController: VeriAppViewController, RequisitosDisplayLogic
   {
     let request = Requisitos.Something.Request()
     interactor?.doSomething(request: request)
-    
-    //
-    let identifier = "learn-swift"
-    let notificationContent = UNMutableNotificationContent()
-    notificationContent.body = "TEXTO DE LA NOTIFICACION DE VERIAPP"
-    notificationContent.sound = UNNotificationSound.default
-    notificationContent.badge = 1
-    notificationContent.userInfo = ["customParameterKey_from": "Sergey"] // Array of custom
-    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 2.0, repeats: false)
-            
-    let requests = UNNotificationRequest(identifier: identifier,
-                                                content: notificationContent,
-                                                trigger: trigger)
-    UNUserNotificationCenter.current().add(requests) { error in
-       if let error = error {
-          print("Error: \(error)")
-          return
-       }
-    }
   }
   
   func displaySomething(viewModel: Requisitos.Something.ViewModel)

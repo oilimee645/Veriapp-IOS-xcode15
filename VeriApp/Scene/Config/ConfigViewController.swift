@@ -68,9 +68,8 @@ class ConfigViewController: VeriAppViewController, ConfigDisplayLogic
     router.viewController = viewController
     router.dataStore = interactor
   }
-  
+
   // MARK: Routing
-  
   override func prepare(for segue: UIStoryboardSegue, sender: Any?)
   {
     if let scene = segue.identifier {
@@ -80,15 +79,14 @@ class ConfigViewController: VeriAppViewController, ConfigDisplayLogic
       }
     }
   }
-  
   // MARK: View lifecycle
   
+
   override func viewDidLoad()
   {
     super.viewDidLoad()
     configure()
   }
-  
     func configure() {
         
         //Constrains for differents models
@@ -101,9 +99,7 @@ class ConfigViewController: VeriAppViewController, ConfigDisplayLogic
             self.LblEstadoAlarma.text = "Estado    de alarma"
             
         }
-        
-        
-        
+
         //add action to switches
         self.s1.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
         self.s2.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
@@ -115,6 +111,41 @@ class ConfigViewController: VeriAppViewController, ConfigDisplayLogic
     @objc func switchChanged(Switch: UISwitch)  {
        let switchTag = "s\(Switch.tag)"
        UserDefaultsManager.saveUserDefaults(value: Switch.isOn, key: enumUDKeys(rawValue: switchTag)!)
+        //
+        if Switch.isOn == true{
+        let identifier = "learn-swift"
+        let notificationContent = UNMutableNotificationContent()
+        switch switchTag {
+        case "s1":
+            notificationContent.body = "NOTIFICACION PLACA 5 Y 6"
+        case "s2":
+            notificationContent.body = "NOTIFICACION PLACA 7 Y 8"
+        case "s3":
+            notificationContent.body = "NOTIFICACION PLACA 3 Y 4"
+        case "s4":
+            notificationContent.body = "NOTIFICACION PLACA 1 Y 2"
+        case "s5":
+            notificationContent.body = "NOTIFICACION PLACA 0 Y 9"
+        default:
+            notificationContent.body = "NOTIFICACION DE VERIAPP"
+        }
+        notificationContent.sound = UNNotificationSound.default
+        notificationContent.badge = 1
+        notificationContent.userInfo = ["customParameterKey_from": "Sergey"] // Array of custom
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 2.0, repeats: false)
+                
+        let requests = UNNotificationRequest(identifier: identifier,
+                                                    content: notificationContent,
+                                                    trigger: trigger)
+        UNUserNotificationCenter.current().add(requests) { error in
+           if let error = error {
+              print("Error: \(error)")
+              return
+           }
+        }
+            
+        }
+        //
     }
     
     
@@ -127,10 +158,6 @@ class ConfigViewController: VeriAppViewController, ConfigDisplayLogic
     }
   
     func rememberSwitchSelection(){
-        
-        
-        
-        
         let rS1 = UserDefaultsManager.getUserDefaultsBool(.s1)
         if rS1 == true{
             self.s1.isOn = true
@@ -151,27 +178,54 @@ class ConfigViewController: VeriAppViewController, ConfigDisplayLogic
         if rS5 == true{
             self.s5.isOn = true
         }else{self.s5.isOn = false}
-
     }
     
     func rememberSwitchSelectionFromMain(){
         let placaR = UserDefaultsManager.getUserDefaultsArray(.numeroPlacaUserDefault)
         let placa = placaR![0] as! String
+        print(placa)
+        //
+        if placa != ""{
+        let identifier = "learn-swift"
+        let notificationContent = UNMutableNotificationContent()
+        
+        
+        
                                             if placa == "5" || placa == "6" {
                                                 self.s1.isOn = true
+                                                notificationContent.body = "NOTIFICACION PLACA 5 Y 6"
                                             }
                                             if placa == "7" || placa == "8" {
                                                 self.s2.isOn = true
+                                                notificationContent.body = "NOTIFICACION PLACA 7 Y 8"
                                             }
                                             if placa == "3" || placa == "4" {
                                                 self.s3.isOn = true
+                                                notificationContent.body = "NOTIFICACION PLACA 3 Y 4"
                                             }
                                             if placa == "1" || placa == "2" {
                                                 self.s4.isOn = true
+                                                notificationContent.body = "NOTIFICACION PLACA 1 Y 2"
                                             }
                                             if placa == "0" || placa == "9" {
                                                 self.s5.isOn = true
+                                                notificationContent.body = "NOTIFICACION PLACA 0 Y 9"
                                             }
+        notificationContent.sound = UNNotificationSound.default
+        notificationContent.badge = 1
+        notificationContent.userInfo = ["customParameterKey_from": "Sergey"] // Array of custom
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 2.0, repeats: false)
+                
+        let requests = UNNotificationRequest(identifier: identifier,
+                                                    content: notificationContent,
+                                                    trigger: trigger)
+        UNUserNotificationCenter.current().add(requests) { error in
+           if let error = error {
+              print("Error: \(error)")
+              return
+           }
+        }}
+        //
     }
     
     
