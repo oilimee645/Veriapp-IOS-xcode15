@@ -24,12 +24,12 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
 {
     func displayAlert() {
         print("SIN DATOS")
-       
     }
     
     func displayTableData(data: ColibriModel.Verificentros?) {
         self.tableData = data
     }
+    
     
   var interactor: ColibriBusinessLogic?
   var router: (NSObjectProtocol & ColibriRoutingLogic & ColibriDataPassing)?
@@ -302,8 +302,6 @@ class ColibriViewController: VeriAppViewController, ColibriDisplayLogic
 
 
 extension ColibriViewController: UITableViewDelegate,UITableViewDataSource{
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (self.tableData?.Table!.count)!
         
@@ -337,6 +335,10 @@ extension ColibriViewController: UITableViewDelegate,UITableViewDataSource{
         }
         return indexPath
     }
+    
+    
+    
+    
     
     
 }

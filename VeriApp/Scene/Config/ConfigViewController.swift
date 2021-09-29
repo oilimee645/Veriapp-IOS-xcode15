@@ -104,23 +104,57 @@ class ConfigViewController: VeriAppViewController, ConfigDisplayLogic
         
         
         
+        //add action to switches
+        self.s1.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
+        self.s2.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
+        self.s3.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
+        self.s4.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
+        self.s5.addTarget(self, action: #selector(switchChanged), for: UIControl.Event.valueChanged)
     }
  
+    @objc func switchChanged(Switch: UISwitch)  {
+       let switchTag = "s\(Switch.tag)"
+       UserDefaultsManager.saveUserDefaults(value: Switch.isOn, key: enumUDKeys(rawValue: switchTag)!)
+    }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
-        //swithcs
-        self.s1.isOn = false
-        self.s2.isOn = false
-        self.s3.isOn = false
-        self.s4.isOn = false
-        self.s5.isOn = false
+        // reneber los demas
         rememberSwitchSelection()
+        //seleccion del main
+        rememberSwitchSelectionFromMain()
+        //setear notificaciones
     }
   
     func rememberSwitchSelection(){
-        //remember touch switchs
         
         
-        //remember placa desde main
+        
+        
+        let rS1 = UserDefaultsManager.getUserDefaultsBool(.s1)
+        if rS1 == true{
+            self.s1.isOn = true
+        }else{self.s1.isOn = false}
+        let rS2 = UserDefaultsManager.getUserDefaultsBool(.s2)
+        if rS2 == true{
+            self.s2.isOn = true
+        }else{self.s2.isOn = false}
+        let rS3 = UserDefaultsManager.getUserDefaultsBool(.s3)
+        if rS3 == true{
+            self.s3.isOn = true
+        }else{self.s3.isOn = false}
+        let rS4 = UserDefaultsManager.getUserDefaultsBool(.s4)
+        if rS4 == true{
+            self.s4.isOn = true
+        }else{self.s4.isOn = false}
+        let rS5 = UserDefaultsManager.getUserDefaultsBool(.s5)
+        if rS5 == true{
+            self.s5.isOn = true
+        }else{self.s5.isOn = false}
+
+    }
+    
+    func rememberSwitchSelectionFromMain(){
         let placaR = UserDefaultsManager.getUserDefaultsArray(.numeroPlacaUserDefault)
         let placa = placaR![0] as! String
                                             if placa == "5" || placa == "6" {
@@ -138,7 +172,6 @@ class ConfigViewController: VeriAppViewController, ConfigDisplayLogic
                                             if placa == "0" || placa == "9" {
                                                 self.s5.isOn = true
                                             }
-        
     }
     
     
