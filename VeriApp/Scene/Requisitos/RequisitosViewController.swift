@@ -28,7 +28,7 @@ class RequisitosViewController: VeriAppViewController, RequisitosDisplayLogic
     @IBOutlet weak var view1: UIView!
     @IBOutlet weak var view2: UIView!
     @IBOutlet weak var view3: UIView!
-    
+    @IBOutlet weak var citaLinkLabel: UILabel!
     
     var interactor: RequisitosBusinessLogic?
   var router: (NSObjectProtocol & RequisitosRoutingLogic & RequisitosDataPassing)?
@@ -94,8 +94,27 @@ class RequisitosViewController: VeriAppViewController, RequisitosDisplayLogic
   {
     let request = Requisitos.Something.Request()
     interactor?.doSomething(request: request)
+    
+    
+    //
+    let text = self.citaLinkLabel.text
+      let textRange = NSRange(location: 0, length: (text?.count)!)
+      let attributedText = NSMutableAttributedString(string: text!)
+    attributedText.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: textRange)
+    self.citaLinkLabel.attributedText = attributedText
+    //
+    let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapFunction))
+    self.citaLinkLabel.isUserInteractionEnabled = true
+    self.citaLinkLabel.addGestureRecognizer(tap)
   }
   
+    @objc func tapFunction() {
+        if let url = URL(string: "https://citaverificacion.edomex.gob.mx/RegistroCitas/" ){
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    
   func displaySomething(viewModel: Requisitos.Something.ViewModel)
   {
     //nameTextField.text = viewModel.name

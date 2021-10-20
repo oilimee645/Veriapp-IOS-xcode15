@@ -117,15 +117,15 @@ class ConfigViewController: VeriAppViewController, ConfigDisplayLogic
         let notificationContent = UNMutableNotificationContent()
         switch switchTag {
         case "s1":
-            notificationContent.body = "NOTIFICACION PLACA 5 Y 6"
+            notificationContent.body = "Recuerda que inicia el periodo de verificación vehicular de la terminación de placa 5 y 6 primer semestre"
         case "s2":
-            notificationContent.body = "NOTIFICACION PLACA 7 Y 8"
+            notificationContent.body = "Recuerda que inicia el periodo de verificación vehicular de la terminación de placa 7 y 8 primer semestre"
         case "s3":
-            notificationContent.body = "NOTIFICACION PLACA 3 Y 4"
+            notificationContent.body = "Recuerda que inicia el periodo de verificación vehicular de la terminación de placa 3 y 4 primer semestre"
         case "s4":
-            notificationContent.body = "NOTIFICACION PLACA 1 Y 2"
+            notificationContent.body = "Recuerda que inicia el periodo de verificación vehicular de la terminación de placa 1 y 2 primer semestre"
         case "s5":
-            notificationContent.body = "NOTIFICACION PLACA 0 Y 9"
+            notificationContent.body = "Recuerda que inicia el periodo de verificación vehicular de la terminación de placa 0 y 9 primer semestre"
         default:
             notificationContent.body = "NOTIFICACION DE VERIAPP"
         }

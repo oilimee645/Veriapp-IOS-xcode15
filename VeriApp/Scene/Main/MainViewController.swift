@@ -25,6 +25,7 @@ class MainViewController: VeriAppViewController, MainDisplayLogic
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var placasButton: UIImageView!
     
+    @IBOutlet weak var gasetaLink: UILabel!
     
     
  //
@@ -84,6 +85,7 @@ class MainViewController: VeriAppViewController, MainDisplayLogic
   {
     super.viewDidLoad()
     configure()
+   
   }
     func configure() {
        
@@ -100,23 +102,24 @@ class MainViewController: VeriAppViewController, MainDisplayLogic
         
         self.tableView.layer.borderWidth = 2
         self.tableView.layer.borderColor = UIColor.black.cgColor
-        
-        //Constrains for differents models
-        /*let screenSize: CGRect = UIScreen.main.bounds
-        
-        if Int(screenSize.height) <= Constants.DevicesHeight.eight {
-        
-            self.tableView.height(constant: 263)
-            
-        }else if Int(screenSize.height) >= Constants.DevicesHeight.TwelveProMax{
-            
-            self.tableView.height(constant: 263)
-            
-        }*/
-
+        //
+        let text = self.gasetaLink.text
+          let textRange = NSRange(location: 0, length: (text?.count)!)
+          let attributedText = NSMutableAttributedString(string: text!)
+        attributedText.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: textRange)
+        self.gasetaLink.attributedText = attributedText
+        //
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapFunction))
+        self.gasetaLink.isUserInteractionEnabled = true
+        self.gasetaLink.addGestureRecognizer(tap)
         
         
-        
+    }
+    
+    @objc func tapFunction() {
+        if let url = URL(string: "https://sma.edomex.gob.mx/sites/sma.edomex.gob.mx/files/files/TramitesServicios/VerificacioVehicular/2021/2doSemestre/Pvvo%202do%20Semestre%202021.pdf" ){
+            UIApplication.shared.open(url)
+        }
     }
   
     @objc func tapPlaca(sender:UITapGestureRecognizer) {
@@ -201,3 +204,6 @@ extension MainViewController: UITableViewDataSource,UITableViewDelegate{
     }
     
 }
+
+
+
