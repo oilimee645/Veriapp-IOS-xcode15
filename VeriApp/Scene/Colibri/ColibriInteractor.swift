@@ -74,16 +74,10 @@ class ColibriInteractor: ColibriBusinessLogic, ColibriDataStore
            }else if filtro == "Gasolina y diesel" || filtro == "Solo gasolina"{
                let Sucursal = UserDefaultsManager.getUserDefaultsArray(.lugar)
                let municipio = UserDefaultsManager.getUserDefaultsArray(.municipio)
-            if municipio![0] as? String == "" {
-                //Solo tipo sin municipio
-                let filtroSucursal = self.tableData?.Table!.filter{ $0.Tipo == "Verificentro"}
-                let filtroCombustible = filtroSucursal?.filter{$0.Especialidad == filtro}
-                self.tableData?.Table = filtroCombustible
-            }else{
                let filtroSucursal = self.tableData?.Table!.filter{ $0.Tipo == Sucursal![0] as? String}
                let filtroMunicipio = filtroSucursal?.filter{ $0.Localidad == municipio![0] as? String}
                let filtroCombustible = filtroMunicipio?.filter{$0.Especialidad == filtro}
-                self.tableData?.Table = filtroCombustible}
+               self.tableData?.Table = filtroCombustible
            }else{
                let filtroMunicipio = self.tableData?.Table!.filter{ $0.Localidad == filtro}
                self.tableData?.Table = filtroMunicipio
