@@ -25,7 +25,7 @@ class mainTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
 
-        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 3, left: 0, bottom: 3, right: 0))
+     //   contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 3, left: 0, bottom: 3, right: 0))
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -67,31 +67,7 @@ class mainTableViewCell: UITableViewCell {
            default:
                return
            }
-     /*   switch CeldaIndex {
-        case 0:
-            self.cellLabel.text = "Periodo"
-            self.cellBackground.layer.style = .none
-            self.cellBackground.layer.borderWidth = 2
-            self.cellBackground.layer.borderColor = UIColor.black.cgColor
-            self.cellBackground.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        case 1:
-            self.cellLabel.text = "Enero/Febrero - Julio/Agosto"
-            self.cellBackground.backgroundColor = #colorLiteral(red: 0.997649014, green: 0.9352294207, blue: 0.2911881506, alpha: 1)
-        case 2:
-            self.cellLabel.text = "Febrero/Marzo - Agosto/Septiembre"
-            self.cellBackground.backgroundColor = #colorLiteral(red: 0.8500673771, green: 0.5391050577, blue: 0.5661689043, alpha: 1)
-        case 3:
-            self.cellLabel.text = "Marzo/Abril - Septiembre/Octubre"
-            self.cellBackground.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
-        case 4:
-            self.cellLabel.text = "Abril/Mayo - Octubre/Noviembre"
-            self.cellBackground.backgroundColor = #colorLiteral(red: 0.5071501732, green: 0.7042508721, blue: 0.2952148318, alpha: 1)
-        case 5:
-            self.cellLabel.text = "Mayo/Junio - Noviembre/Diciembre"
-            self.cellBackground.backgroundColor = #colorLiteral(red: 0, green: 0.6739116311, blue: 0.8871545196, alpha: 1)
-        default:
-            return
-        }*/
+    
     }
 
 }

@@ -200,6 +200,12 @@ extension MainViewController: UITableViewDataSource,UITableViewDelegate{
             cell.heightConstraint.constant = 42.8
         }
         
+        if indexPath.row == 5{
+            cell.cellBackground.layer.style = .none
+            cell.cellBackground.layer.borderWidth = 0
+            cell.cellBackground.layer.borderColor = UIColor.white.cgColor
+            cell.cellBackground.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        }
         return cell
     }
     
