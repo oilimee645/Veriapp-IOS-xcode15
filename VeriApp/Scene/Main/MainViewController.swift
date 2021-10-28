@@ -117,7 +117,7 @@ class MainViewController: VeriAppViewController, MainDisplayLogic
     }
     
     @objc func tapFunction() {
-        if let url = URL(string: "https://sma.edomex.gob.mx/sites/sma.edomex.gob.mx/files/files/TramitesServicios/VerificacioVehicular/2021/2doSemestre/Pvvo%202do%20Semestre%202021.pdf" ){
+        if let url = URL(string: "https://drive.google.com/file/d/1ynXRFEOkUbSuGgGkPIzYJWT0KcebC4Pz/view" ){
             UIApplication.shared.open(url)
         }
     }
